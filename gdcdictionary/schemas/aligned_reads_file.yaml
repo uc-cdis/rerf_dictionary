@@ -70,6 +70,13 @@ properties:
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
 
+  data_format:
+    term:
+      $ref: "_terms.yaml#/data_format"
+    enum:
+      - BAM
+      - BED
+
   read_groups:
     $ref: "_definitions.yaml#/to_many"
 
