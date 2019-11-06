@@ -1,0 +1,66 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "base_mortality"
+title: Base Mortality
+type: object
+nodeTerms: null
+namespace: https://rerf.datacommons.org/
+category: clinical
+program: '*'
+project: '*'
+description: Cohort data related to study entry and death from cancer.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: base_mortalities
+    label: describing
+    target_type: subject
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - subjects
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  age_in:
+    description: Age at entry date (entry_dt). From RERF 'base_mortality' table.
+    type: number
+
+  age_out:
+    description: Age at last follow-up, age at death, or age at end of study. From
+      RERF 'base_mortality' table.
+    type: number
+
+  cancerdeath:
+    description: Indicator for a death of interest. From RERF 'base_mortality' table.
+    type: integer
+
+  col_dose:
+    description: Radiation dose received by colon. From RERF 'base_mortality' table.
+    type: number
+
+  nic:
+    description: Not in City. From RERF 'base_mortality' table.
+    type: integer
+
+  subjects:
+    $ref: "_definitions.yaml#/to_one"
