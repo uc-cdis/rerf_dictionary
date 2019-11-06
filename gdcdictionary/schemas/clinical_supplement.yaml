@@ -55,6 +55,8 @@ uniqueKeys:
 
 properties:
 
+  $ref: "_definitions.yaml#/data_file_properties"
+
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
 
