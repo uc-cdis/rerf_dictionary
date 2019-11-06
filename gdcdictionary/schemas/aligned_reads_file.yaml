@@ -77,6 +77,13 @@ properties:
       - BAM
       - BED
 
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    enum:
+      - Aligned Reads
+      - Alignment Coordinates
+
   read_groups:
     $ref: "_definitions.yaml#/to_many"
 
