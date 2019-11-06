@@ -1,0 +1,69 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "birth"
+title: Births
+type: object
+nodeTerms: null
+namespace: https://rerf.datacommons.org/
+category: clinical
+program: '*'
+project: '*'
+description: Birth date data.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: births
+    label: describing
+    target_type: subject
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - subjects
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  bdy:
+    description: Birth day. From RERF 'births' table.
+    type: integer
+
+  birth_dt:
+    description: Birth date (DDmonYYYY, e.g., 21dec1912). From RERF 'births' table.
+    type: string
+
+  bmo:
+    description: Birth month. From RERF 'births' table.
+    type: integer
+
+  byr:
+    description: Birth year. From RERF 'births' table.
+    type: integer
+
+  ind:
+    description: Indicates eligibility for Lifespan Study. From RERF 'births' table.
+    type: integer
+
+  source:
+    description: Source (KO or MF). From RERF 'births' table.
+    type: string
+
+  subjects:
+    $ref: "_definitions.yaml#/to_one"
