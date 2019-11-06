@@ -1,0 +1,133 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "dose"
+title: Dose
+type: object
+nodeTerms: null
+namespace: https://rerf.datacommons.org/
+category: clinical
+program: '*'
+project: '*'
+description: Radiation dose data.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: doses
+    label: describing
+    target_type: subject
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - subjects
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  a02g:
+    description: a02g. From RERF 'ds02_dose' table.
+    type: number
+
+  a02n:
+    description: a02n. From RERF 'ds02_dose' table.
+    type: number
+
+  abscissa:
+    description: abscissa. From RERF 'dose_masterlist' table.
+    type: integer
+
+  calgroup02:
+    description: calgroup02. From RERF 'dose_masterlist' table.
+    type: integer
+
+  dose_organ:
+    description: dose_organ. From RERF 'dosetype_fk' table.
+    type: string
+
+  dosetype:
+    description: dosetype. From RERF 'ds02_dose' table.
+    type: integer
+
+  ds02cal:
+    description: ds02cal. From RERF 'dose_masterlist' table.
+    type: integer
+
+  ds02cat:
+    description: ds02cat. From RERF 'dose_masterlist' table.
+    type: integer
+
+  ds86cal:
+    description: ds86cal. From RERF 'dose_masterlist' table.
+    type: integer
+
+  expcity:
+    description: The city of exposure. From RERF 'dose_masterlist' table.
+    type: integer
+
+  expstatus02:
+    description: expstatus02. From RERF 'dose_masterlist' table.
+    type: integer
+
+  expstatus86:
+    description: expstatus86. From RERF 'dose_masterlist' table.
+    type: integer
+
+  gdist:
+    description: Ground distance (meters). From RERF 'dose_masterlist' table.
+    type: integer
+
+  ordinate:
+    description: ordinate. From RERF 'dose_masterlist' table.
+    type: integer
+
+  organ_cancer:
+    description: organ_cancer. From RERF 'dosetype_fk' table.
+    type: string
+
+  prish:
+    description: prish. From RERF 'dose_masterlist' table.
+    type: integer
+
+  sdist:
+    description: sdist. From RERF 'dose_masterlist' table.
+    type: integer
+
+  sealevel02:
+    description: sealevel02. From RERF 'dose_masterlist' table.
+    type: number
+
+  sealevel86:
+    description: sealevel86. From RERF 'dose_masterlist' table.
+    type: integer
+
+  shloc:
+    description: shloc. From RERF 'dose_masterlist' table.
+    type: integer
+
+  survangle:
+    description: survangle. From RERF 'dose_masterlist' table.
+    type: integer
+
+  t65cal:
+    description: t65cal. From RERF 'dose_masterlist' table.
+    type: integer
+
+  subjects:
+    $ref: "_definitions.yaml#/to_one"

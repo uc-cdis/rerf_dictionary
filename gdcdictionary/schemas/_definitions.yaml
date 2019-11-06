@@ -229,6 +229,11 @@ ubiquitous_properties:
   id:
     $ref: "#/UUID"
     systemAlias: node_id
+  subject_id:
+    type:
+      - string
+    description: >
+      A unique identifier for an individual subject within a project.
   submitter_id:
     type:
       - string

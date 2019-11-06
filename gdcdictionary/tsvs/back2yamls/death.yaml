@@ -1,0 +1,77 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "death"
+title: Death
+type: object
+nodeTerms: null
+namespace: https://rerf.datacommons.org/
+category: clinical
+program: '*'
+project: '*'
+description: Data related to a person's death.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: deaths
+    label: describing
+    target_type: subject
+    multiplicity: one_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - subjects
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  death_cause:
+    description: The cause of death. From RERF 'icd_grp_fk' table.
+    type: string
+
+  death_df:
+    description: death_df. From RERF 'deaths' table.
+    type: integer
+
+  death_dt:
+    description: Death date. From RERF 'deaths' table.
+    type: string
+
+  death_icd:
+    description: The ICD code for the cause of death. From RERF 'death_icd' table.
+    type: string
+
+  death_icd_grp:
+    description: A grouping for the cause of death. From RERF 'death_icd' table.
+    type: integer
+
+  death_icd_rev:
+    description: The revision number of the ICD code used. From RERF 'death_icd' table.
+    type: integer
+
+  death_icd_sgrp:
+    description: A grouping for the cause of death. From RERF 'death_icd' table.
+    type: integer
+
+  death_res:
+    description: death_res. From RERF 'death_icd' table.
+    type: integer
+
+  subjects:
+    $ref: "_definitions.yaml#/to_one"
