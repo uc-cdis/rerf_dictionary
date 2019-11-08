@@ -235,7 +235,7 @@ ubiquitous_properties:
   id:
     $ref: "#/UUID"
     systemAlias: node_id
-  subject_id:
+  sysid:
     type:
       - string
     description: >
