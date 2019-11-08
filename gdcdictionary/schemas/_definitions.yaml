@@ -239,7 +239,7 @@ ubiquitous_properties:
     type:
       - string
     description: >
-      A unique identifier for an individual subject within a project.
+      A unique identifier for an individual person within a project. The 'sysid' key in RERF tables.
   submitter_id:
     type:
       - string
