@@ -41,7 +41,31 @@ uniqueKeys:
 
 properties:
 
-  $ref: "_definitions.yaml#/ubiquitous_properties"
+  type:
+    type: string
+
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+    description: "UUID for the project."
+
+  submitter_id:
+    type: string
+    description: >
+      A project-specific identifier for a node. This property is the calling card/nickname/alias for
+      a unit of submission. It can be used in place of the UUID for identifying or recalling a node.
+
+  state:
+    $ref: "_definitions.yaml#/state"
+
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
 
   associated_study:
     description: The submitter_id for any study with which this study is associated,
