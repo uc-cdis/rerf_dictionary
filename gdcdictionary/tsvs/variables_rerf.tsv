@@ -35,6 +35,14 @@ imaging_file	study_date			_definitions.yaml#/datetime
 imaging_file	study_description	Type of the study and a studied body part.	string												
 imaging_file	study_id	Identifier of a study.	number												
 imaging_file	study_instance_uid	Unique identifier of a study.	string												
+study	type		string												
+study	id	The UUID for the study.		_definitions.yaml#/UUID											
+study	submitter_id	"A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.
+"	string												
+study	state			_definitions.yaml#/state											
+study	project_id			_definitions.yaml#/project_id											
+study	created_datetime			_definitions.yaml#/datetime											
+study	updated_datetime			_definitions.yaml#/datetime											
 study	associated_study	The submitter_id for any study with which this study is associated, paired, or matched.	string												
 study	data_description	Brief description of the data being provided for this study. Free text	string												
 study	study_description	A brief description of the study being performed. Free text	string												
@@ -145,6 +153,9 @@ variant_call_file	data_format		enum	_terms.yaml#/data_format				VCF
 variant_call_file	data_type		enum	_terms.yaml#/data_type				Annotated Somatic Mutation | Raw Simple Somatic Mutation 							
 variant_call_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				Low Pass WGS | Targeted Sequencing | Validation | WGS | WXS 							
 variant_call_file	variant_calling_workflow	Indicate the variant calling workflow or pipeline used to generate the variant calls.	string												
+clinical_supplement	data_category	A broad category for the type of data contained in the supplemental file.	string												
+clinical_supplement	data_format		enum	_terms.yaml#/data_format				CSV | DOC | PDF | TSV | TXT | XLSX 							
+clinical_supplement	data_type	The specific type of data contained in the supplemental file.	string												
 diagnostic_test	analyte_name	The name of analyte or biomarker tested in the case that the test is a quantitative assay.	string												
 diagnostic_test	assay_kit_name	The name of the kit used for the test or assay; please also indicate the kit vendor and version in 'assay_kit_vendor' and 'assay_kit_version'.	string												
 diagnostic_test	assay_kit_vendor	The name of the vendor or manufacturer of the kit used for the test; please also indicate the kit name and version in 'assay_kit_name' and 'assay_kit_version'.	string												
@@ -160,6 +171,10 @@ diagnostic_test	test_type	The general type or category of the laboratory test	en
 diagnostic_test	test_units	The units corresponding to a test_value for a test_analyte_type	enum					Array Signal (log2) | Average Ct | Cell Count | Coefficient of Variance (PCT) | Copy Number per 25ng RNA | Cycle threshold (Ct) | Normalized Ion Intensity by Endogenous Arginine and Autoscaled | Not Applicable | Optical Density | Other (specify) | SD | Standard Deviation Ct | U/mL | Units of Activity | cells/microliter | copies/microliter | counts | katal | mM | mg/dL | mg/mL | micrograms/mL | micromoles/g/h | nM | ng/mL | pg/mL | uIU/mL 							
 diagnostic_test	test_units_other	The units corresponding to a 'test_value' for an 'analyte_name' if 'Other (specify)' was chosen for 'test_units	string												
 diagnostic_test	test_value	The numerical value representing the diagnostic test measurement of the 'analyte_name'; also indicate the 'test_units'.	number												
+aligned_reads_file	data_category		enum	_terms.yaml#/data_category				Sequencing Reads 							
+aligned_reads_file	data_format		enum	_terms.yaml#/data_format				BAM | BED 							
+aligned_reads_file	data_type		enum	_terms.yaml#/data_type				Aligned Reads | Alignment Coordinates 							
+aligned_reads_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				WGS | WXS | Low Pass WGS | Validation | RNA-Seq | miRNA-Seq | Total RNA-Seq | DNA Panel 							
 subject	ahs	Indication of whether a person was in the Adult Health Study (AHS) cohort (0- not AHS, 1- AHS (original), 2- AHS (addition)). From RERF 'lss_master' table.	integer												
 subject	city	The city in which a person was exposed to radiation (1- Hiroshima, 2- Nagasaki). From RERF 'id' table.	integer												
 subject	entry_dt	Entry date (DDmonYYYY, e.g., 21dec1912). From RERF 'lss_master' table.	string												
