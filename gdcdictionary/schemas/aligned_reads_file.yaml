@@ -8,7 +8,7 @@ namespace: https://rerf.datacommons.org/
 category: data_file
 program: '*'
 project: '*'
-description: Data file containing aligned reads.
+description: A Data file containing aligned reads.
 additionalProperties: false
 submittable: true
 validators: null
