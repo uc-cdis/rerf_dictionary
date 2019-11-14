@@ -237,7 +237,7 @@ ubiquitous_properties:
     systemAlias: node_id
   sysid:
     type:
-      - string
+      - integer
     description: >
       A unique identifier for an individual person within a project. The 'sysid' key in RERF tables.
   submitter_id:
