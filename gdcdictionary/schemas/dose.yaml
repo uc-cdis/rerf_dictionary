@@ -32,6 +32,7 @@ required:
   - submitter_id
   - type
   - subjects
+  - dose_organ
 
 uniqueKeys:
   - [id]
@@ -56,10 +57,6 @@ properties:
   calgroup02:
     description: calgroup02. From RERF 'dose_masterlist' table.
     type: integer
-
-  dose_organ:
-    description: dose_organ. From RERF 'dosetype_fk' table.
-    type: string
 
   dosetype:
     description: dosetype. From RERF 'ds02_dose' table.
