@@ -41,6 +41,10 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  new_prop:
+    description: New property
+    type: string
+
   bdy:
     description: Birth day. From RERF 'births' table.
     type: integer
