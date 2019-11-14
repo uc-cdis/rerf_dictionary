@@ -58,6 +58,10 @@ properties:
     description: calgroup02. From RERF 'dose_masterlist' table.
     type: integer
 
+  dose_organ:
+    description: the organ for the dose.
+    type: integer
+
   dosetype:
     description: dosetype. From RERF 'ds02_dose' table.
     type: integer
