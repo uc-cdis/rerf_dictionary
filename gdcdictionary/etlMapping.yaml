@@ -1,0 +1,274 @@
+mappings:
+  - name: etl
+    doc_type: subject
+    type: aggregator
+    root: subject
+    props:
+      - name: submitter_id
+      - name: project_id
+      - name: city
+      - name: ahs
+      - name: entry_dt
+      - name: index_date
+    flatten_props:
+      - path: deaths
+        props:
+          - name: death_cause
+          - name: death_df
+          - name: death_dt
+          - name: death_icd
+          - name: death_icd_grp
+          - name: death_icd_rev
+          - name: death_icd_sgrp
+          - name: death_res
+    aggregated_props:
+      - name: _followup
+        path: followups
+        src: fup
+        fn: set
+      - name: _last_date_followup
+        path: followups
+        src: last_dt
+        fn: set
+      - name: _birth_year
+        path: births
+        src: byr
+        fn: set
+      - name: _birth_ind
+        path: births
+        src: ind
+        fn: set
+      - name: _birth_source
+        path: births
+        src: source
+        fn: set
+      - name: _dose_a02g
+        path: doses
+        src: a02g
+        fn: set
+      - name: _dose_a02n
+        path: doses
+        src: a02n
+        fn: set
+      - name: _dose_abscissa
+        path: doses
+        src: abscissa
+        fn: set
+      - name: _dose_calgroup02
+        path: doses
+        src: calgroup02
+        fn: set
+      - name: _dose_organ
+        path: doses
+        src: dose_organ
+        fn: set
+      - name: _dose_type
+        path: doses
+        src: dose_type
+        fn: set
+      - name: _dose_ds02cal
+        path: doses
+        src: ds02cal
+        fn: set
+      - name: _dose_ds02cat
+        path: doses
+        src: ds02cat
+        fn: set
+      - name: _dose_ds86cal
+        path: doses
+        src: ds86cal
+        fn: set
+      - name: _dose_expcity
+        path: doses
+        src: expcity
+        fn: set
+      - name: _dose_expstatus02
+        path: doses
+        src: expstatus02
+        fn: set
+      - name: _dose_expstatus86
+        path: doses
+        src: expstatus86
+        fn: set
+      - name: _dose_gdist
+        path: doses
+        src: gdist
+        fn: set
+      - name: _dose_ordinate
+        path: doses
+        src: ordinate
+        fn: set
+      - name: _dose_organ_cancer
+        path: doses
+        src: organ_cancer
+        fn: set
+      - name: _dose_prish
+        path: doses
+        src: prish
+        fn: set
+      - name: _dose_sdist
+        path: doses
+        src: sdist
+        fn: set
+      - name: _dose_sealevel02
+        path: doses
+        src: sealevel02
+        fn: set
+      - name: _dose_sealevel86
+        path: doses
+        src: sealevel86
+        fn: set
+      - name: _dose_shloc
+        path: doses
+        src: shloc
+        fn: set
+      - name: _dose_survangle
+        path: doses
+        src: survangle
+        fn: set
+      - name: _dose_t65cal
+        path: doses
+        src: t65cal
+        fn: set
+      - name: _cancer_incidence_atm
+        path: cancer_incidences
+        src: atm
+        fn: set
+      - name: _cancer_incidence_autopsy
+        path: cancer_incidences
+        src: autopsy
+        fn: set
+      - name: _cancer_incidence_behavior
+        path: cancer_incidences
+        src: behavior
+        fn: set
+      - name: _cancer_incidence_dco
+        path: cancer_incidences
+        src: dco
+        fn: set
+      - name: _cancer_incidence_early
+        path: cancer_incidences
+        src: early
+        fn: set
+      - name: _cancer_incidence_fileno
+        path: cancer_incidences
+        src: fileno
+        fn: set
+      - name: _cancer_incidence_icd_conf
+        path: cancer_incidences
+        src: icd_conf
+        fn: set
+      - name: _cancer_incidence_icd_grp
+        path: cancer_incidences
+        src: icd_grp
+        fn: set
+      - name: _cancer_incidence_icd_sgrp
+        path: cancer_incidences
+        src: icd_sgrp
+        fn: set
+      - name: _cancer_incidence_icdom
+        path: cancer_incidences
+        src: icdom
+        fn: set
+      - name: _cancer_incidence_icdot
+        path: cancer_incidences
+        src: icdot
+        fn: set
+      - name: _cancer_incidence_latent
+        path: cancer_incidences
+        src: latent
+        fn: set
+      - name: _cancer_incidence_leftright
+        path: cancer_incidences
+        src: leftright
+        fn: set
+      - name: _cancer_incidence_loc
+        path: cancer_incidences
+        src: loc
+        fn: set
+      - name: _cancer_incidence_machi
+        path: cancer_incidences
+        src: machi
+        fn: set
+      - name: _cancer_incidence_motiv
+        path: cancer_incidences
+        src: motiv
+        fn: set
+      - name: _cancer_incidence_multiple
+        path: cancer_incidences
+        src: multiple
+        fn: set
+      - name: _cancer_incidence_onc_rev
+        path: cancer_incidences
+        src: onc_rev
+        fn: set
+      - name: _cancer_incidence_res
+        path: cancer_incidences
+        src: res
+        fn: set
+      - name: _cancer_incidence_s_death
+        path: cancer_incidences
+        src: s_death
+        fn: set
+      - name: _cancer_incidence_seqno
+        path: cancer_incidences
+        src: seqno
+        fn: set
+      - name: _base_mortality_age_in
+        path: base_mortalities
+        src: age_in
+        fn: set
+      - name: _base_mortality_age_out
+        path: base_mortalities
+        src: age_out
+        fn: set
+      - name: _base_mortality_cancer_death
+        path: base_mortalities
+        src: cancerdeath
+        fn: set
+      - name: _base_mortality_col_dose
+        path: base_mortalities
+        src: col_dose
+        fn: set
+      - name: _base_mortality_nic
+        path: base_mortalities
+        src: nic
+        fn: set
+      - name: _samples_count
+        path: samples
+        fn: count
+      - name: _aliquots_count
+        path: samples.aliquots
+        fn: count
+      - name: _pathology_slide_count
+        path: samples.pathology_slides
+        fn: count
+    joining_props:
+      - index: file
+        join_on: subject_id
+        props:
+          - name: data_format
+            src: data_format
+            fn: set
+          - name: data_type
+            src: data_type
+            fn: set
+  - name: file
+    doc_type: file
+    type: collector
+    root: None
+    category: data_file
+    props:
+      - name: object_id
+      - name: md5sum
+      - name: file_name
+      - name: file_size
+      - name: data_format
+      - name: data_type
+      - name: state
+    injecting_props:
+      subject:
+        props:
+          - name: subject_id
+            src: id
+          - name: project_id
