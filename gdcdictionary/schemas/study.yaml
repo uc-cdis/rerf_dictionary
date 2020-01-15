@@ -41,8 +41,6 @@ uniqueKeys:
 
 properties:
 
-  $ref: "nan"
-
   associated_study:
     description: The submitter_id for any study with which this study is associated,
       paired, or matched.
