@@ -42,10 +42,47 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  abscissa:
+    description: abscissa. From RERF 'dose_masterlist' table.
+    type: integer
+
+  age_in:
+    description: Age at entry date (entry_dt). From RERF 'base_mortality' table.
+    type: number
+
+  age_out:
+    description: Age at last follow-up, age at death, or age at end of study. From
+      RERF 'base_mortality' table.
+    type: number
+
   ahs:
     description: Indication of whether a person was in the Adult Health Study (AHS)
       cohort (0- not AHS, 1- AHS (original), 2- AHS (addition)). From RERF 'lss_master'
       table.
+    type: integer
+
+  bdy:
+    description: Birth day. From RERF 'births' table.
+    type: integer
+
+  birth_dt:
+    description: Birth date (DDmonYYYY, e.g., 21dec1912). From RERF 'births' table.
+    type: string
+
+  bmo:
+    description: Birth month. From RERF 'births' table.
+    type: integer
+
+  byr:
+    description: Birth year. From RERF 'births' table.
+    type: integer
+
+  calgroup02:
+    description: calgroup02. From RERF 'dose_masterlist' table.
+    type: integer
+
+  cancerdeath:
+    description: Indicator for a death of interest. From RERF 'base_mortality' table.
     type: integer
 
   city:
@@ -53,9 +90,82 @@ properties:
       2- Nagasaki). From RERF 'id' table.
     type: integer
 
+  col_dose:
+    description: Radiation dose received by colon. From RERF 'base_mortality' table.
+    type: number
+
+  death_cause:
+    description: The cause of death. From RERF 'icd_grp_fk' table.
+    type: string
+
+  death_df:
+    description: death_df. From RERF 'deaths' table.
+    type: integer
+
+  death_dt:
+    description: Death date. From RERF 'deaths' table.
+    type: string
+
+  death_icd:
+    description: The ICD code for the cause of death. From RERF 'death_icd' table.
+    type: string
+
+  death_icd_grp:
+    description: A grouping for the cause of death. From RERF 'death_icd' table.
+    type: integer
+
+  death_icd_rev:
+    description: The revision number of the ICD code used. From RERF 'death_icd' table.
+    type: integer
+
+  death_icd_sgrp:
+    description: A grouping for the cause of death. From RERF 'death_icd' table.
+    type: integer
+
+  death_res:
+    description: death_res. From RERF 'death_icd' table.
+    type: integer
+
+  dose_organ:
+    description: dose_organ. From RERF 'dosetype_fk' table.
+    type: string
+
+  ds02cal:
+    description: ds02cal. From RERF 'dose_masterlist' table.
+    type: integer
+
+  ds02cat:
+    description: ds02cat. From RERF 'dose_masterlist' table.
+    type: integer
+
+  ds86cal:
+    description: ds86cal. From RERF 'dose_masterlist' table.
+    type: integer
+
   entry_dt:
     description: Entry date (DDmonYYYY, e.g., 21dec1912). From RERF 'lss_master' table.
     type: string
+
+  expcity:
+    description: The city of exposure. From RERF 'dose_masterlist' table.
+    type: integer
+
+  expstatus02:
+    description: expstatus02. From RERF 'dose_masterlist' table.
+    type: integer
+
+  expstatus86:
+    description: expstatus86. From RERF 'dose_masterlist' table.
+    type: integer
+
+  fup:
+    description: Indicates vital status at last follow-up ("1" or "3" is alive; "2"
+      indicates dead). From RERF 'mort_fup' table.
+    type: integer
+
+  gdist:
+    description: Ground distance (meters). From RERF 'dose_masterlist' table.
+    type: integer
 
   index_date:
     description: The reference or anchor date used during date obfuscation, where
@@ -67,17 +177,69 @@ properties:
       - Infection
       - Study Enrollment
 
+  last_dt:
+    description: Last contact date (DDmonYYYY). From RERF 'mort_fup' table.
+    type: string
+
+  machi:
+    description: Location. From RERF 'summ_dx_fix' table.
+    type: integer
+
+  nic:
+    description: Not in City. From RERF 'base_mortality' table.
+    type: integer
+
+  ordinate:
+    description: ordinate. From RERF 'dose_masterlist' table.
+    type: integer
+
+  prish:
+    description: prish. From RERF 'dose_masterlist' table.
+    type: integer
+
+  res:
+    description: res. From RERF 'summ_dx_fix' table.
+    type: integer
+
+  s_death:
+    description: s_death. From RERF 'summ_dx_fix' table.
+    type: integer
+
   sc:
     description: sc (1, 2, 3, 4, 5). From RERF 'lss_master' table.
+    type: integer
+
+  sdist:
+    description: sdist. From RERF 'dose_masterlist' table.
+    type: integer
+
+  sealevel02:
+    description: sealevel02. From RERF 'dose_masterlist' table.
+    type: number
+
+  sealevel86:
+    description: sealevel86. From RERF 'dose_masterlist' table.
     type: integer
 
   sex:
     description: The sex of a person (1- Male, 2- Female). From RERF 'id' table.
     type: integer
 
+  shloc:
+    description: shloc. From RERF 'dose_masterlist' table.
+    type: integer
+
+  survangle:
+    description: survangle. From RERF 'dose_masterlist' table.
+    type: integer
+
   sysid:
     description: A unique identifier for an individual person in a study. From RERF
       'id' table.
+    type: integer
+
+  t65cal:
+    description: t65cal. From RERF 'dose_masterlist' table.
     type: integer
 
   studies:

@@ -41,41 +41,30 @@ uniqueKeys:
 
 properties:
 
-  type:
-    type: string
-
-  id:
-    $ref: "_definitions.yaml#/UUID"
-    systemAlias: node_id
-    description: "The UUID for the study."
-
-  submitter_id:
-    type: string
-    description: >
-      A project-specific identifier for a node. This property is the calling card/nickname/alias for
-      a unit of submission. It can be used in place of the UUID for identifying or recalling a node.
-
-  state:
-    $ref: "_definitions.yaml#/state"
-
-  project_id:
-    $ref: "_definitions.yaml#/project_id"
-
-  created_datetime:
-    $ref: "_definitions.yaml#/datetime"
-
-  updated_datetime:
-    $ref: "_definitions.yaml#/datetime"
+  $ref: "nan"
 
   associated_study:
     description: The submitter_id for any study with which this study is associated,
       paired, or matched.
     type: string
 
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
   data_description:
     description: Brief description of the data being provided for this study. Free
       text
     type: string
+
+  id:
+    description: The UUID for the study.
+    $ref: "_definitions.yaml#/UUID"
+
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+
+  state:
+    $ref: "_definitions.yaml#/state"
 
   study_description:
     description: A brief description of the study being performed. Free text
@@ -110,6 +99,18 @@ properties:
     enum:
       - Detection/Enumeration/Isolation
       - Genetic Analysis
+
+  submitter_id:
+    description: A project-specific identifier for a node. This property is the calling
+      card/nickname/alias for a unit of submission. It can be used in place of the
+      UUID for identifying or recalling a node.
+    type: string
+
+  type:
+    type: string
+
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
 
   projects:
     $ref: "_definitions.yaml#/to_one_project"

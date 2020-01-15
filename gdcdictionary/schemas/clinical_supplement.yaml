@@ -58,7 +58,8 @@ properties:
   $ref: "_definitions.yaml#/data_file_properties"
 
   data_category:
-    description: "A broad category for the type of data contained in the supplemental file."
+    description: A broad category for the type of data contained in the supplemental
+      file.
     type: string
 
   data_format:
@@ -73,7 +74,7 @@ properties:
       - XLSX
 
   data_type:
-    description: "The specific type of data contained in the supplemental file."
+    description: The specific type of data contained in the supplemental file.
     type: string
 
   core_metadata_collections:

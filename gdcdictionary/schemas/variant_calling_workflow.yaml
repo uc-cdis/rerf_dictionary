@@ -48,8 +48,6 @@ uniqueKeys:
 
 properties:
 
-  $ref: "_definitions.yaml#/workflow_properties"
-
   aligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
 
