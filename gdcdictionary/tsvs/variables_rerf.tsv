@@ -35,20 +35,19 @@ imaging_file	study_date			_definitions.yaml#/datetime
 imaging_file	study_description	Type of the study and a studied body part.	string												
 imaging_file	study_id	Identifier of a study.	number												
 imaging_file	study_instance_uid	Unique identifier of a study.	string												
-study	type		string												
-study	id	The UUID for the study.		_definitions.yaml#/UUID											
-study	submitter_id	"A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.
-"	string												
-study	state			_definitions.yaml#/state											
-study	project_id			_definitions.yaml#/project_id											
-study	created_datetime			_definitions.yaml#/datetime											
-study	updated_datetime			_definitions.yaml#/datetime											
 study	associated_study	The submitter_id for any study with which this study is associated, paired, or matched.	string												
+study	created_datetime			_definitions.yaml#/datetime											
 study	data_description	Brief description of the data being provided for this study. Free text	string												
+study	id	The UUID for the study.		_definitions.yaml#/UUID											
+study	project_id			_definitions.yaml#/project_id											
+study	state			_definitions.yaml#/state											
 study	study_description	A brief description of the study being performed. Free text	string												
 study	study_design	Summary of the goals the study is designed to discover. General description of the study's place in relation to a clinical application.	enum					Analytical | Clinical | Clinical Assay | Clinical Utility | Pre-Analytical | Research/Early Development 							
 study	study_objective	The general objective of the study. What the study hopes to discover or determine through testing.	enum					Accuracy | Clinical Detection | Interference | Limit of Detection | Precision (Repeatability) | Precision (Reproducibility) | Specificity/Sensitivity | Stability 							
 study	study_setup	A high level description of the setup used to achieve the study objectives.	enum					Detection/Enumeration/Isolation | Genetic Analysis 							
+study	submitter_id	A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.	string												
+study	type		string												
+study	updated_datetime			_definitions.yaml#/datetime											
 birth	bdy	Birth day. From RERF 'births' table.	integer												
 birth	birth_dt	Birth date (DDmonYYYY, e.g., 21dec1912). From RERF 'births' table.	string												
 birth	bmo	Birth month. From RERF 'births' table.	integer												
@@ -174,14 +173,54 @@ diagnostic_test	test_value	The numerical value representing the diagnostic test 
 aligned_reads_file	data_category		enum	_terms.yaml#/data_category				Sequencing Reads 							
 aligned_reads_file	data_format		enum	_terms.yaml#/data_format				BAM | BED 							
 aligned_reads_file	data_type		enum	_terms.yaml#/data_type				Aligned Reads | Alignment Coordinates 							
-aligned_reads_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				WGS | WXS | Low Pass WGS | Validation | RNA-Seq | miRNA-Seq | Total RNA-Seq | DNA Panel 							
+aligned_reads_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				DNA Panel | Low Pass WGS | RNA-Seq | Total RNA-Seq | Validation | WGS | WXS | miRNA-Seq 							
+subject	abscissa	abscissa. From RERF 'dose_masterlist' table.	integer												
+subject	age_in	Age at entry date (entry_dt). From RERF 'base_mortality' table.	number												
+subject	age_out	Age at last follow-up, age at death, or age at end of study. From RERF 'base_mortality' table.	number												
 subject	ahs	Indication of whether a person was in the Adult Health Study (AHS) cohort (0- not AHS, 1- AHS (original), 2- AHS (addition)). From RERF 'lss_master' table.	integer												
+subject	bdy	Birth day. From RERF 'births' table.	integer												
+subject	birth_dt	Birth date (DDmonYYYY, e.g., 21dec1912). From RERF 'births' table.	string												
+subject	bmo	Birth month. From RERF 'births' table.	integer												
+subject	byr	Birth year. From RERF 'births' table.	integer												
+subject	calgroup02	calgroup02. From RERF 'dose_masterlist' table.	integer												
+subject	cancerdeath	Indicator for a death of interest. From RERF 'base_mortality' table.	integer												
 subject	city	The city in which a person was exposed to radiation (1- Hiroshima, 2- Nagasaki). From RERF 'id' table.	integer												
+subject	col_dose	Radiation dose received by colon. From RERF 'base_mortality' table.	number												
+subject	death_cause	The cause of death. From RERF 'icd_grp_fk' table.	string												
+subject	death_df	death_df. From RERF 'deaths' table.	integer												
+subject	death_dt	Death date. From RERF 'deaths' table.	string												
+subject	death_icd	The ICD code for the cause of death. From RERF 'death_icd' table.	string												
+subject	death_icd_grp	A grouping for the cause of death. From RERF 'death_icd' table.	integer												
+subject	death_icd_rev	The revision number of the ICD code used. From RERF 'death_icd' table.	integer												
+subject	death_icd_sgrp	A grouping for the cause of death. From RERF 'death_icd' table.	integer												
+subject	death_res	death_res. From RERF 'death_icd' table.	integer												
+subject	dose_organ	dose_organ. From RERF 'dosetype_fk' table.	string												
+subject	ds02cal	ds02cal. From RERF 'dose_masterlist' table.	integer												
+subject	ds02cat	ds02cat. From RERF 'dose_masterlist' table.	integer												
+subject	ds86cal	ds86cal. From RERF 'dose_masterlist' table.	integer												
 subject	entry_dt	Entry date (DDmonYYYY, e.g., 21dec1912). From RERF 'lss_master' table.	string												
+subject	expcity	The city of exposure. From RERF 'dose_masterlist' table.	integer												
+subject	expstatus02	expstatus02. From RERF 'dose_masterlist' table.	integer												
+subject	expstatus86	expstatus86. From RERF 'dose_masterlist' table.	integer												
+subject	fup	"Indicates vital status at last follow-up (""1"" or ""3"" is alive; ""2"" indicates dead). From RERF 'mort_fup' table."	integer												
+subject	gdist	Ground distance (meters). From RERF 'dose_masterlist' table.	integer												
 subject	index_date	The reference or anchor date used during date obfuscation, where a single date is obscurred by creating one or more date ranges in relation to this date.	enum					Diagnosis | First Patient Visit | Infection | Study Enrollment 							
+subject	last_dt	Last contact date (DDmonYYYY). From RERF 'mort_fup' table.	string												
+subject	machi	Location. From RERF 'summ_dx_fix' table.	integer												
+subject	nic	Not in City. From RERF 'base_mortality' table.	integer												
+subject	ordinate	ordinate. From RERF 'dose_masterlist' table.	integer												
+subject	prish	prish. From RERF 'dose_masterlist' table.	integer												
+subject	res	res. From RERF 'summ_dx_fix' table.	integer												
+subject	s_death	s_death. From RERF 'summ_dx_fix' table.	integer												
 subject	sc	sc (1, 2, 3, 4, 5). From RERF 'lss_master' table.	integer												
+subject	sdist	sdist. From RERF 'dose_masterlist' table.	integer												
+subject	sealevel02	sealevel02. From RERF 'dose_masterlist' table.	number												
+subject	sealevel86	sealevel86. From RERF 'dose_masterlist' table.	integer												
 subject	sex	The sex of a person (1- Male, 2- Female). From RERF 'id' table.	integer												
+subject	shloc	shloc. From RERF 'dose_masterlist' table.	integer												
+subject	survangle	survangle. From RERF 'dose_masterlist' table.	integer												
 subject	sysid	A unique identifier for an individual person in a study. From RERF 'id' table.	integer												
+subject	t65cal	t65cal. From RERF 'dose_masterlist' table.	integer												
 pathology_slide	body_part_examined	What part of the body was studied.	string												
 pathology_slide	data_category		enum	_terms.yaml#/data_category				Pathology Slide 							
 pathology_slide	data_format		enum	_terms.yaml#/data_format				DCM | GIF | JPEG | PNG | SVS | TIFF 							
