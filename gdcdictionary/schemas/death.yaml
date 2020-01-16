@@ -73,5 +73,17 @@ properties:
     description: death_res. From RERF 'death_icd' table.
     type: integer
 
+  dyr:
+    description: The year of death date.
+    type: integer
+
+  dmo:
+    description: The month of the year of death date.
+    type: integer
+
+  ddy:
+    description: The day of the month of death date.
+    type: integer
+
   subjects:
     $ref: "_definitions.yaml#/to_one"
