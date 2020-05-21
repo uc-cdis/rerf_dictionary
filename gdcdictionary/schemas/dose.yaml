@@ -42,7 +42,7 @@ properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
   a02g:
-    description: a02g. From RERF 'ds02_dose' table.
+    description: a02g. From RERF 'ds02_dose' table. Change.
     type: number
 
   a02n:
