@@ -58,11 +58,11 @@ properties:
     type: integer
 
   ind:
-    description: Indicates eligibility for Lifespan Study. From RERF 'births' table.
+    description: Birthdate information can come from multiple sources.  ind=1 indicates the "best" source of information. From RERF 'births' table.
     type: integer
 
   source:
-    description: Source (KO or MF). From RERF 'births' table.
+    description: Source (KO or MF).  The source of the birthdate information. From RERF 'births' table.
     type: string
 
   subjects:
