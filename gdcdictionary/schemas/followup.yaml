@@ -43,7 +43,7 @@ properties:
 
   fup:
     description: Indicates vital status at last follow-up ("1" or "3" is alive; "2"
-      indicates dead). From RERF 'mort_fup' table.
+      indicates dead; "3" is lost to follow-up). From RERF 'mort_fup' table.
     type: integer
 
   last_dt:
