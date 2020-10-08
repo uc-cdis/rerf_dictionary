@@ -1,0 +1,79 @@
+<node>	<property>	<enum_value>	<enum_def>	<deprecated>
+study	study_design	Analytical
+study	study_design	Clinical
+study	study_design	Clinical Assay
+study	study_design	Clinical Utility
+study	study_design	Pre-Analytical
+study	study_design	Research/Early Development
+study	study_objective	Accuracy
+study	study_objective	Clinical Detection
+study	study_objective	Interference
+study	study_objective	Limit of Detection
+study	study_objective	Precision (Repeatability)
+study	study_objective	Precision (Reproducibility)
+study	study_objective	Specificity/Sensitivity
+study	study_objective	Stability
+study	study_setup	Detection/Enumeration/Isolation
+study	study_setup	Genetic Analysis
+subject	death_src	60 - 1960 census
+subject	death_src	AH - Adult Health Study
+subject	death_src	BR - Birth record
+subject	death_src	CN - Contact Card
+subject	death_src	CR - Cross Index
+subject	death_src	DE - Death Certification
+subject	death_src	FU - Fuhyo
+subject	death_src	G3 - Genetic study (GE-3)
+subject	death_src	JS - Residence registry inquiry (regional cancer registry)
+subject	death_src	KO - Koseki
+subject	death_src	MC - Master File Code
+subject	death_src	MF - Master File record
+subject	death_src	MO - Mortality
+subject	death_src	MQ - Master Sample Questionnaire
+subject	death_src	OT - Other
+subject	death_src	SK - Death certificate (regional cancer registry)
+subject	death_src	TE - Hibakusha Techo
+subject	death_src	TI - Tissue Registry Data Base
+subject	death_src	TR - Tumor Registry Data Base
+subject	death_src	YU - Mail Survey
+subject	dose_expcity	1 - Hiroshima
+subject	dose_expcity	2 - Nagasaki
+subject	dose_expstatus02	"1 - In city, No distal terrain"
+subject	dose_expstatus02	"2 - In city, Distal terrain (Hijiyama and Konpirasan)"
+subject	dose_expstatus02	3 - NIC late entry or extrance unknown
+subject	dose_expstatus02	4 - NIC early entry
+subject	dose_expstatus02	5 - NIC presumed (F1 original mortality sample parent)
+subject	dose_expstatus02	6 - NIC from GE3
+subject	dose_expstatus02	9 - Unknown
+subject	dose_expstatus86	1 - In city ATB
+subject	dose_expstatus86	2 - NIC late entry or entrance unknown
+subject	dose_expstatus86	3 - NIC early entry
+subject	dose_expstatus86	4 - NIC presumed (F1 orginal mortality sample's parent)
+subject	dose_expstatus86	5 - NIC from GE3
+subject	dose_expstatus86	8 - No Information
+subject	dose_expstatus86	9 - Unknown
+subject	dose_prish	"1 - Open, with flush burns"
+subject	dose_prish	10 - Other shielding
+subject	dose_prish	11 - No shielding information
+subject	dose_prish	12 - NIC
+subject	dose_prish	2 - Japanese-house (inside and outside)
+subject	dose_prish	3 - Tenement house (row-house)
+subject	dose_prish	4 - Japanese house and Terrain
+subject	dose_prish	5 - Tenement and Terrain
+subject	dose_prish	6 - Globe terrain
+subject	dose_prish	7 - Modelled factory
+subject	dose_prish	8 - Unmodelled factory
+subject	dose_prish	9 - Concrete building
+subject	dose_source	CD300 - CD300
+subject	dose_source	F1MO - F1 Mortality Original Parents without DS86
+subject	dose_source	GE3 - GE3
+subject	dose_source	LSS - LSS
+subject	dose_source	M - Acute Effects known
+subject	dose_source	MSQ - PLC
+subject	dose_source	T65D - T65D
+subject	mfup_last_status	1 - Alive
+subject	mfup_last_status	2 - Dead
+subject	mfup_last_status	3 - foreign nationality
+subject	mfup_last_status	6 - cessation of follow-up
+subject	mfup_last_status	7 - unknown permanent domicile
+subject	mfup_last_status	8 - exclusion from study subjects
+subject	mfup_last_status	9 - Follow-up halted due to excessive subject age

@@ -1,0 +1,109 @@
+<node>	<property>	<terms>	<description>	<type>	<pattern>	<maximum>	<minimum>	<systemAlias>	<format>	<default>
+subject	lss		Is the subject in the LSS cohort?	boolean
+subject	inutero		Is the subject in the Inutero cohort?	boolean
+subject	f1		Is the subject in the F1 cohort?	boolean
+subject	ahs		Is the subject in the AHS cohort?	boolean
+subject	updt		Last updated date	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	lss_entry_dt		Subject's date of entry into the LSS cohort	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	lss_updt		Last update of subject's LSS record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	inutero_entry_dt		Date when the subject became a member of the Inutero cohort	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	inutero_updt		Last update of subject's Inutero record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	f1_entry_dt		Date when the subject became a member of the F1 cohort	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	f1_updt		Last update of subject's F1 record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	ahs_updt		Last update of subject's AHS record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	mfup_last_contact		Mortality follow-up date of last contact	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	death_dt		Date of death of the subject	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	death_updt		Last update of the subject's death record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	death_icd_updt		Last update of subject's death ICD record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+birth	birth_dt		Date of birth	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+birth	birth_updt		Last update of subject's birth records	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+cancer_diag	diag_dt		Date of diagnosis	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+cancer_diag	updt		Last update of cancer diagnosis record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+inutero_prog	updt		Last update of inutero program record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+f1_prog	updt		Last update of F1 program record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+ahs_exam_index	smp_dt		Date of visit	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+ahs_exam_index	updt		Last update of AHS exam index record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+ahs_diag	updt		Last update of subject's diagnosis	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+ahs_meas	updt		Last update of measure record	string	"^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$"
+subject	mfup_last_status		"Mortality follow-up last known status of the subject (1 - alive, 2 - dead, 3 - lost, etc)"	enum
+subject	dose_expcity		"Subject's city of exposure  1 - Hiro, 2 - Naga"	enum
+subject	dose_expstatus86		Exposure status based on 1986 algorithm	enum
+subject	dose_expstatus02		Exposure status based on 2002 algorithm	enum
+subject	dose_prish		Subject's primary shield	enum
+subject	death_src		"Source of the information of subject's death (ex. Death certificate, etc.)"	enum
+study	study_objective		The general objective of the study. What the study hopes to discover or determine through testing.	enum
+study	study_design		Summary of the goals the study is designed to discover. General description of the study's place in relation to a clinical application.	enum
+subject	dose_source		What is the source of the exposure information?  Ex. Questionnaire	enum
+study	study_setup		A high level description of the setup used to achieve the study objectives.	enum
+subject	sys_id		Globally unique identifier for subject	integer
+subject	city		"1 = Hiro, 2 = Naga"	integer
+subject	sex		1 = male	integer
+subject	lss_sample_class		Subject's recruitment class into LSS cohort?	integer
+subject	lss_census		Census info used for recruitment into LSS cohort?	integer
+subject	mother_sys_id		The globally unique identifier for the subject's mother	integer
+subject	father_sys_id		The globally unique identifier for the subject's father	integer
+subject	f1_sample		Subject's recruitment class into F1 cohort?	integer
+subject	f1_ind		???   Must = 1	integer
+subject	ahs_subgroup		Subgroup to which the subject belongs.	integer
+subject	ahs_exp_category		Exposure category?	integer
+subject	death_icd_rev		ICD version	integer
+subject	death_icd_grp		RERF-specific ICD grouping code	integer
+subject	dose_abscissa		X coordinate of subject's position on exposure	integer
+subject	dose_ordinate		Y coordinate of subject's position on exposure	integer
+subject	dose_gdist		Subject's ground distance from explosion	integer
+subject	dose_shloc		Shield location	integer
+subject	dose_ds02cal		Calculated location?	integer
+subject	dose_ds02cat		Calculation algorithm	integer
+subject	dose_calgroup02		Calculation information	integer
+birth	birth_sysid		Globally unique identifier for subject	integer
+birth	birth_ind		Indicator of quality of birth data (1 - best information)	integer
+organ_dose	organ_sysid		Globally unique identifier for subject	integer
+organ_dose	dosetype		Type of dose (organ)	integer
+cancer_diag	cancer_sysid		Globally unique identifier for subject	integer
+cancer_diag	file_no		Case number (or file number) for the subject	integer
+cancer_diag	seq_no		Sequence number for multiple occurrence of cancer	integer
+cancer_diag	res		"1=in city, 2=in prefecture, 3=outside prefecture, 9=unknown"	integer
+cancer_diag	city		"City where patient was living at the time of diagnosis 1=Hiro, 2=Naga"	integer
+cancer_diag	machi		Similar to zip code	integer
+cancer_diag	motiv		Reason for subject's visit to the hospital	integer
+cancer_diag	behavior		Behavior of the cancer (1 = malignant)	integer
+cancer_diag	onc_rev		ICDO version	integer
+cancer_diag	dco		Death-certificate-only diagnosis	integer
+inutero_prog	sys_id		Globally unique identifier for subject	integer
+f1_prog	sys_id		Globally unique identifier for subject	integer
+ahs_exam_index	sys_id		Globally unique identifier for subject	integer
+ahs_exam_index	smp_id		Unique visit ID	integer
+ahs_exam_index	primary_id		Matches smp_id on a primary visit (subject might be asked to attend a follow-up)	integer
+ahs_diag	smp_id		Visit ID	integer
+ahs_diag	icd_rev		ICD version	integer
+ahs_meas	smp_id		Visit ID	integer
+ahs_meas	item_no		Identifier for measure	integer
+subject	kerma_fiau02g		Overall dose (gamma radiation)	number
+subject	kerma_fiau02n		Overall dose (neutron radiation)	number
+subject	kerma_trunc02		Truncation factor	number
+subject	kerma_adjust02		Adjustment factor	number
+organ_dose	a02g		Gamma dose	number
+organ_dose	a02n		Neutron dose	number
+ahs_meas	amount		Measure amount	number
+study	associated_study		"The submitter_id for any study with which this study is associated, paired, or matched."	string
+study	data_description		Brief description of the data being provided for this study. Free text	string
+study	study_description		A brief description of the study being performed. Free text	string
+study	submitter_id		A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.	string
+study	type			string
+subject	death_icd		ICD code	string
+birth	birth_source		"Source of the information of subject's birth (ex. Birth certificate, etc.)"	string
+organ_dose	discript		Organ name	string
+cancer_diag	icdot		ICDO topography code	string
+cancer_diag	icdom		ICDO morphology code	string
+cancer_diag	icd_grp		Code to gather specific ICDOT/ICDOM values into a simple diagnosis code	string
+inutero_prog	prog		Program code	string
+f1_prog	prog		Program code	string
+ahs_diag	icd		ICD code for diagnosis	string
+ahs_meas	unit		Unit of measure	string
+ahs_meas	explain_s		Short explanation	string
+ahs_meas	explain_l		Long explanation	string
+study	created_datetime	_definitions.yaml#/datetime
+study	id	_definitions.yaml#/UUID	The UUID for the study.
+study	project_id	_definitions.yaml#/project_id	The dash separated combination of the program code and project name.
+study	state	_definitions.yaml#/state
+study	updated_datetime	_definitions.yaml#/datetime
