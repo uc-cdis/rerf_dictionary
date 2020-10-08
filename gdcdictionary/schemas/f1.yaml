@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "dose"
-title: Organ Dose
+id: "f1"
+title: F1 Program
 type: object
 namespace: https://rerf.datacommons.org/
-category: clinical
+category: administrative
 program: '*'
 project: '*'
 description: >-
-  Estimates of organ-level radiation dosage
+  Programs within the F1 cohort
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,8 +22,8 @@ systemProperties:
 
 links:
   - name: subjects
-    backref: doses
-    label: describing
+    backref: f1s
+    label: member_of
     target_type: subject
     multiplicity: many_to_one
     required: true
@@ -32,7 +32,7 @@ required:
   - submitter_id
   - type
   - subjects
-  - organ_sysid
+  - sys_id
 
 uniqueKeys:
   - [id]

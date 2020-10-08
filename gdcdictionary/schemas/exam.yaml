@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "dose"
-title: Organ Dose
+id: "exam"
+title: AHS Exam Index
 type: object
 namespace: https://rerf.datacommons.org/
-category: clinical
+category: administrative
 program: '*'
 project: '*'
 description: >-
-  Estimates of organ-level radiation dosage
+  Adult Health Study clinical follow-up visits
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,8 +22,8 @@ systemProperties:
 
 links:
   - name: subjects
-    backref: doses
-    label: describing
+    backref: exams
+    label: performed_on
     target_type: subject
     multiplicity: many_to_one
     required: true
@@ -32,7 +32,8 @@ required:
   - submitter_id
   - type
   - subjects
-  - organ_sysid
+  - sys_id
+  - smp_id
 
 uniqueKeys:
   - [id]
