@@ -1,0 +1,108 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "cancer_diag"
+title: Cancer Diagnoses
+type: object
+namespace: https://rerf.datacommons.org/
+category: medical_history
+program: '*'
+project: '*'
+description: History of subject's cancer diagnoses
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: cancer_diags
+    label: describing
+    target_type: subject
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - subjects
+  - cancer_sysid
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  diag_dt:
+    description: Date of diagnosis
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  updt:
+    description: Last update of cancer diagnosis record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  cancer_sysid:
+    description: Globally unique identifier for subject
+    type: integer
+
+  file_no:
+    description: Case number (or file number) for the subject
+    type: integer
+
+  seq_no:
+    description: Sequence number for multiple occurrence of cancer
+    type: integer
+
+  res:
+    description: 1=in city, 2=in prefecture, 3=outside prefecture, 9=unknown
+    type: integer
+
+  city:
+    description: City where patient was living at the time of diagnosis 1=Hiro, 2=Naga
+    type: integer
+
+  machi:
+    description: Similar to zip code
+    type: integer
+
+  motiv:
+    description: Reason for subject's visit to the hospital
+    type: integer
+
+  behavior:
+    description: Behavior of the cancer (1 = malignant)
+    type: integer
+
+  onc_rev:
+    description: ICDO version
+    type: integer
+
+  dco:
+    description: Death-certificate-only diagnosis
+    type: integer
+
+  icdot:
+    description: ICDO topography code
+    type: string
+
+  icdom:
+    description: ICDO morphology code
+    type: string
+
+  icd_grp:
+    description: Code to gather specific ICDOT/ICDOM values into a simple diagnosis
+      code
+    type: string
+
+  subjects:
+    $ref: "_definitions.yaml#/to_one"
