@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "dose"
-title: Organ Dose
+id: "exam_meas"
+title: AHS Exam Measures
 type: object
 namespace: https://rerf.datacommons.org/
-category: clinical
+category: medical_history
 program: '*'
 project: '*'
 description: >-
-  Estimates of organ-level radiation dosage
+  Adult Health Study diagnostic measures at visits
 additionalProperties: false
 submittable: true
 validators: null
@@ -21,18 +21,18 @@ systemProperties:
   - updated_datetime
 
 links:
-  - name: subjects
-    backref: doses
-    label: describing
-    target_type: subject
+  - name: ahs_exam_indexes
+    backref: exam_meas
+    label: derived_from
+    target_type: exam
     multiplicity: many_to_one
     required: true
 
 required:
   - submitter_id
   - type
-  - subjects
-  - organ_sysid
+  - ahs_exam_indexes
+  - smp_id
 
 uniqueKeys:
   - [id]
@@ -43,5 +43,5 @@ properties:
   $ref:
     - "_definitions.yaml#/ubiquitous_properties"
 
-  subjects:
+  ahs_exam_indexes:
     $ref: "_definitions.yaml#/to_one"
