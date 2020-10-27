@@ -3,12 +3,11 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "birth"
 title: Births
 type: object
-nodeTerms: null
 namespace: https://rerf.datacommons.org/
 category: clinical
 program: '*'
 project: '*'
-description: Birth date data.
+description: Birth data from multiple sources
 additionalProperties: false
 submittable: true
 validators: null
@@ -32,6 +31,7 @@ required:
   - submitter_id
   - type
   - subjects
+  - birth_sysid
 
 uniqueKeys:
   - [id]
@@ -41,29 +41,62 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  bdy:
-    description: Birth day. From RERF 'births' table.
-    type: integer
-
   birth_dt:
-    description: Birth date (DDmonYYYY, e.g., 21dec1912). From RERF 'births' table.
+    description: Date of birth
     type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
 
-  bmo:
-    description: Birth month. From RERF 'births' table.
-    type: integer
-
-  byr:
-    description: Birth year. From RERF 'births' table.
-    type: integer
-
-  ind:
-    description: Birthdate information can come from multiple sources.  ind=1 indicates the "best" source of information. From RERF 'births' table.
-    type: integer
-
-  source:
-    description: Source (KO or MF).  The source of the birthdate information. From RERF 'births' table.
+  birth_updt:
+    description: Last update of subject's birth records
     type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  birth_sysid:
+    description: Globally unique identifier for subject
+    type: integer
+
+  birth_ind:
+    description: Indicator of quality of birth data (1 - best information)
+    enum:
+      - 0 - Not use
+      - 1 - use
+
+  birth_source:
+    description: Source of the information of subject's birth (ex. Birth certificate,
+      etc.)
+    enum:
+      - 60 - 1960 census
+      - AH - Adult Health Study
+      - BR - Birth record
+      - CN - Contact Card
+      - CR - Cross Index
+      - DE - Death Certification
+      - FU - Fuhyo
+      - G3 - Genetic study (GE-3)
+      - JS - Residence registry inquiry (regional cancer registry)
+      - KO - Koseki
+      - MC - Master File Code
+      - MF - Master File record
+      - MO - Mortality
+      - MQ - Master Sample Questionnaire
+      - OT - Other
+      - SK - Death certificate (regional cancer registry)
+      - TE - Hibakusha Techo
+      - TI - Tissue Registry Data Base
+      - TR - Tumor Registry Data Base
+      - YU - Mail Survey
+
+  birth_dt_year:
+    description: Year of birth
+    type: integer
+
+  birth_dt_month:
+    description: Month of birth
+    type: integer
+
+  birth_dt_day:
+    description: Day of birth
+    type: integer
 
   subjects:
     $ref: "_definitions.yaml#/to_one"

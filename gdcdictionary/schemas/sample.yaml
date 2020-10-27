@@ -3,9 +3,8 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "sample"
 title: Sample
 type: object
-nodeTerms: null
 namespace: https://rerf.datacommons.org/
-category: biospecimen
+category: clinical
 program: '*'
 project: '*'
 description: Any material sample taken from a biological entity for testing, diagnostic,
@@ -28,7 +27,7 @@ systemProperties:
 links:
   - name: subjects
     backref: samples
-    label: derived_from
+    label: taken_from
     target_type: subject
     multiplicity: many_to_one
     required: true
@@ -37,6 +36,7 @@ required:
   - submitter_id
   - type
   - subjects
+  - sys_id
 
 uniqueKeys:
   - [id]
@@ -45,6 +45,157 @@ uniqueKeys:
 properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  tissue_type:
+    term:
+      $ref: "_terms.yaml#/tissue_type"
+    enum:
+      - Abnormal
+      - Normal
+      - Not Reported
+      - Peritumoral
+      - Tumor
+      - Unknown
+
+  preservation_method:
+    term:
+      $ref: "_terms.yaml#/preservation_method"
+    enum:
+      - Cryopreserved
+      - FFPE
+      - Fresh
+      - Frozen
+      - Not Applicable
+      - Not Reported
+      - OCT
+      - Snap Frozen
+      - Unknown
+
+  method_of_sample_procurement:
+    term:
+      $ref: "_terms.yaml#/method_of_sample_procurement"
+    enum:
+      - Abdomino-perineal Resection of Rectum
+      - Anterior Resection of Rectum
+      - Aspirate
+      - Autopsy
+      - Biopsy
+      - Blood Draw
+      - Bone Marrow Aspirate
+      - Core Biopsy
+      - Cystectomy
+      - Endo Rectal Tumor Resection
+      - Endoscopic Biopsy
+      - Endoscopic Mucosal Resection (EMR)
+      - Enucleation
+      - Excisional Biopsy
+      - Fine Needle Aspiration
+      - Full Hysterectomy
+      - Gross Total Resection
+      - Hand Assisted Laparoscopic Radical Nephrectomy
+      - Hysterectomy NOS
+      - Incisional Biopsy
+      - Indeterminant
+      - Laparoscopic Biopsy
+      - Laparoscopic Partial Nephrectomy
+      - Laparoscopic Radical Nephrectomy
+      - Laparoscopic Radical Prostatectomy with Robotics
+      - Laparoscopic Radical Prostatectomy without Robotics
+      - Left Hemicolectomy
+      - Lobectomy
+      - Local Resection (Exoresection, wall resection)
+      - Lumpectomy
+      - Modified Radical Mastectomy
+      - Needle Biopsy
+      - Not Reported
+      - Open Craniotomy
+      - Open Partial Nephrectomy
+      - Open Radical Nephrectomy
+      - Open Radical Prostatectomy
+      - Orchiectomy
+      - Other
+      - Other Surgical Resection
+      - Pan-Procto Colectomy
+      - Pancreatectomy
+      - Paracentesis
+      - Pneumonectomy
+      - Right Hemicolectomy
+      - Sigmoid Colectomy
+      - Simple Mastectomy
+      - Subtotal Resection
+      - Surgical Resection
+      - Thoracoscopic Biopsy
+      - Total Colectomy
+      - Total Mastectomy
+      - Transplant
+      - Transurethral resection (TURBT)
+      - Transverse Colectomy
+      - Tumor Resection
+      - Unknown
+      - Wedge Resection
+      - Whipple Procedure
+
+  initial_weight:
+    term:
+      $ref: "_terms.yaml#/initial_weight"
+    type: number
+
+  freezing_method:
+    term:
+      $ref: "_terms.yaml#/freezing_method"
+    type: string
+
+  days_to_collection:
+    term:
+      $ref: "_terms.yaml#/days_to_collection"
+    type: integer
+
+  composition:
+    term:
+      $ref: "_terms.yaml#/composition"
+    enum:
+      - 2D Classical Conditionally Reprogrammed Cells
+      - 2D Modified Conditionally Reprogrammed Cells
+      - 3D Air-Liquid Interface Organoid
+      - 3D Neurosphere
+      - 3D Organoid
+      - Adherent Cell Line
+      - Bone Marrow Components
+      - Bone Marrow Components NOS
+      - Buccal Cells
+      - Buffy Coat
+      - Cell
+      - Control Analyte
+      - Derived Cell Line
+      - EBV Immortalized
+      - Fibroblasts from Bone Marrow Normal
+      - Granulocytes
+      - Human Original Cells
+      - Liquid Suspension Cell Line
+      - Lymphocytes
+      - Mononuclear Cells from Bone Marrow Normal
+      - Not Reported
+      - Peripheral Blood Components NOS
+      - Peripheral Whole Blood
+      - Plasma
+      - Pleural Effusion
+      - Saliva
+      - Serum
+      - Solid Tissue
+      - Sorted Cells
+      - Sputum
+      - Unknown
+      - Whole Bone Marrow
+
+  biospecimen_laterality:
+    term:
+      $ref: "_terms.yaml#/biospecimen_laterality"
+    enum:
+      - Bilateral
+      - Left
+      - Not Reported
+      - Right
+      - Unknown
 
   biospecimen_anatomic_site:
     term:
@@ -333,157 +484,6 @@ properties:
       - Vulva
       - White Blood Cells
       - Wrist
-
-  biospecimen_laterality:
-    term:
-      $ref: "_terms.yaml#/biospecimen_laterality"
-    enum:
-      - Bilateral
-      - Left
-      - Not Reported
-      - Right
-      - Unknown
-
-  composition:
-    term:
-      $ref: "_terms.yaml#/composition"
-    enum:
-      - 2D Classical Conditionally Reprogrammed Cells
-      - 2D Modified Conditionally Reprogrammed Cells
-      - 3D Air-Liquid Interface Organoid
-      - 3D Neurosphere
-      - 3D Organoid
-      - Adherent Cell Line
-      - Bone Marrow Components
-      - Bone Marrow Components NOS
-      - Buccal Cells
-      - Buffy Coat
-      - Cell
-      - Control Analyte
-      - Derived Cell Line
-      - EBV Immortalized
-      - Fibroblasts from Bone Marrow Normal
-      - Granulocytes
-      - Human Original Cells
-      - Liquid Suspension Cell Line
-      - Lymphocytes
-      - Mononuclear Cells from Bone Marrow Normal
-      - Not Reported
-      - Peripheral Blood Components NOS
-      - Peripheral Whole Blood
-      - Plasma
-      - Pleural Effusion
-      - Saliva
-      - Serum
-      - Solid Tissue
-      - Sorted Cells
-      - Sputum
-      - Unknown
-      - Whole Bone Marrow
-
-  days_to_collection:
-    term:
-      $ref: "_terms.yaml#/days_to_collection"
-    type: integer
-
-  freezing_method:
-    term:
-      $ref: "_terms.yaml#/freezing_method"
-    type: string
-
-  initial_weight:
-    term:
-      $ref: "_terms.yaml#/initial_weight"
-    type: number
-
-  method_of_sample_procurement:
-    term:
-      $ref: "_terms.yaml#/method_of_sample_procurement"
-    enum:
-      - Abdomino-perineal Resection of Rectum
-      - Anterior Resection of Rectum
-      - Aspirate
-      - Autopsy
-      - Biopsy
-      - Blood Draw
-      - Bone Marrow Aspirate
-      - Core Biopsy
-      - Cystectomy
-      - Endo Rectal Tumor Resection
-      - Endoscopic Biopsy
-      - Endoscopic Mucosal Resection (EMR)
-      - Enucleation
-      - Excisional Biopsy
-      - Fine Needle Aspiration
-      - Full Hysterectomy
-      - Gross Total Resection
-      - Hand Assisted Laparoscopic Radical Nephrectomy
-      - Hysterectomy NOS
-      - Incisional Biopsy
-      - Indeterminant
-      - Laparoscopic Biopsy
-      - Laparoscopic Partial Nephrectomy
-      - Laparoscopic Radical Nephrectomy
-      - Laparoscopic Radical Prostatectomy with Robotics
-      - Laparoscopic Radical Prostatectomy without Robotics
-      - Left Hemicolectomy
-      - Lobectomy
-      - Local Resection (Exoresection, wall resection)
-      - Lumpectomy
-      - Modified Radical Mastectomy
-      - Needle Biopsy
-      - Not Reported
-      - Open Craniotomy
-      - Open Partial Nephrectomy
-      - Open Radical Nephrectomy
-      - Open Radical Prostatectomy
-      - Orchiectomy
-      - Other
-      - Other Surgical Resection
-      - Pan-Procto Colectomy
-      - Pancreatectomy
-      - Paracentesis
-      - Pneumonectomy
-      - Right Hemicolectomy
-      - Sigmoid Colectomy
-      - Simple Mastectomy
-      - Subtotal Resection
-      - Surgical Resection
-      - Thoracoscopic Biopsy
-      - Total Colectomy
-      - Total Mastectomy
-      - Transplant
-      - Transurethral resection (TURBT)
-      - Transverse Colectomy
-      - Tumor Resection
-      - Unknown
-      - Wedge Resection
-      - Whipple Procedure
-
-  preservation_method:
-    term:
-      $ref: "_terms.yaml#/preservation_method"
-    enum:
-      - Cryopreserved
-      - FFPE
-      - Fresh
-      - Frozen
-      - Not Applicable
-      - Not Reported
-      - OCT
-      - Snap Frozen
-      - Unknown
-
-  tissue_type:
-    term:
-      $ref: "_terms.yaml#/tissue_type"
-    enum:
-      - Abnormal
-      - Normal
-      - Not Reported
-      - Peritumoral
-      - Tumor
-      - Unknown
 
   subjects:
     $ref: "_definitions.yaml#/to_one"

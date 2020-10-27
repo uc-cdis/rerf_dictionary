@@ -3,9 +3,8 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "aliquot"
 title: Aliquot
 type: object
-nodeTerms: null
 namespace: https://rerf.datacommons.org/
-category: biospecimen
+category: clinical
 program: '*'
 project: '*'
 description: A portion taken from a sample used for analysis, including analytes extracted
@@ -24,7 +23,7 @@ systemProperties:
 links:
   - name: samples
     backref: aliquots
-    label: derived_from
+    label: taken_from
     target_type: sample
     multiplicity: many_to_many
     required: true
@@ -32,7 +31,8 @@ links:
 required:
   - submitter_id
   - type
-  - samples
+  - subjects
+  - sys_id
 
 uniqueKeys:
   - [id]
