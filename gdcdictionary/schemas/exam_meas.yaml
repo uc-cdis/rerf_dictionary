@@ -41,5 +41,34 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  updt:
+    description: Last update of measure record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  smp_id:
+    description: Visit ID
+    type: integer
+
+  item_no:
+    description: Identifier for measure
+    type: integer
+
+  amount:
+    description: Measure amount
+    type: number
+
+  unit:
+    description: Unit of measure
+    type: string
+
+  explain_s:
+    description: Short explanation
+    type: string
+
+  explain_l:
+    description: Long explanation
+    type: string
+
   ahs_exam_indexes:
     $ref: "_definitions.yaml#/to_one"

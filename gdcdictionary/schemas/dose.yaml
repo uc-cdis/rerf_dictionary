@@ -31,7 +31,7 @@ required:
   - submitter_id
   - type
   - subjects
-  - organ_sysid
+  - sysid
 
 uniqueKeys:
   - [id]
@@ -40,6 +40,45 @@ uniqueKeys:
 properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  sysid:
+    description: Globally unique identifier for subject
+    type: integer
+
+  dosetype:
+    description: Type of dose (organ)
+    type: integer
+
+  a02g:
+    description: Gamma dose
+    type: number
+
+  a02n:
+    description: Neutron dose
+    type: number
+
+  discript:
+    description: Organ name
+    enum:
+      - 1 - skeleton
+      - 2 - marrow
+      - 3 - urinary
+      - 4 - brain
+      - 5 - breast
+      - 6 - eye lense
+      - 7 - colon
+      - 8 - liver
+      - 9 - lungs
+      - 10 - ovary
+      - 11 - pancreas
+      - 12 - stomach
+      - 13 - testes
+      - 14 - thyroid
+      - 15 - uterus
+      - 16 - fia_kerma
+      - 17 - skin
+      - 18 - distal_fia
+      - 19 - sh_kerma
 
   subjects:
     $ref: "_definitions.yaml#/to_one"

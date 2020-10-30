@@ -36,7 +36,7 @@ required:
   - submitter_id
   - type
   - subjects
-  - sys_id
+  - sysid
 
 uniqueKeys:
   - [id]

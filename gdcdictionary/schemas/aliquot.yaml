@@ -32,7 +32,7 @@ required:
   - submitter_id
   - type
   - subjects
-  - sys_id
+  - sysid
 
 uniqueKeys:
   - [id]
@@ -121,6 +121,10 @@ properties:
     description: The temperature, in centigrade, at which the aliquot was preserved
       and/or stored.
     type: number
+
+  sysid:
+    description: Unique subject identifier
+    type: integer
 
   samples:
     $ref: "_definitions.yaml#/to_many"

@@ -31,7 +31,7 @@ required:
   - submitter_id
   - type
   - subjects
-  - sys_id
+  - sysid
   - smp_id
 
 uniqueKeys:
@@ -41,6 +41,41 @@ uniqueKeys:
 properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  smp_dt:
+    description: Date of visit
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  updt:
+    description: Last update of AHS exam index record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  sysid:
+    description: Globally unique identifier for subject
+    type: integer
+
+  smp_id:
+    description: Unique visit ID
+    type: integer
+
+  primary_id:
+    description: Matches smp_id on a primary visit (subject might be asked to attend
+      a follow-up)
+    type: integer
+
+  smp_dt_year:
+    description: Year of visit
+    type: integer
+
+  smp_dt_month:
+    description: Month of visit
+    type: integer
+
+  smp_dt_day:
+    description: Day of visit
+    type: integer
 
   subjects:
     $ref: "_definitions.yaml#/to_one"

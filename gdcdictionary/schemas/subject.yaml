@@ -32,7 +32,7 @@ required:
   - submitter_id
   - type
   - studies
-  - sys_id
+  - sysid
 
 uniqueKeys:
   - [id]
@@ -210,7 +210,7 @@ properties:
       - MSQ - PLC
       - T65D - T65D
 
-  sys_id:
+  sysid:
     description: Globally unique identifier for subject
     type: integer
 
@@ -246,11 +246,11 @@ properties:
       - 4 - NIC 1953 census (Hiroshima)
       - 5 - Setai-Daicho (Nagasaki)
 
-  mother_sys_id:
+  mother_sysid:
     description: The globally unique identifier for the subject's mother
     type: integer
 
-  father_sys_id:
+  father_sysid:
     description: The globally unique identifier for the subject's father
     type: integer
 

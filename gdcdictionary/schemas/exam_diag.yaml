@@ -41,5 +41,26 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  updt:
+    description: Last update of subject's diagnosis
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  smp_id:
+    description: Visit ID
+    type: integer
+
+  icd_rev:
+    description: ICD version
+    enum:
+      - "7"
+      - "8"
+      - "9"
+      - "10"
+
+  icd:
+    description: ICD code for diagnosis
+    type: string
+
   ahs_exam_indexes:
     $ref: "_definitions.yaml#/to_one"

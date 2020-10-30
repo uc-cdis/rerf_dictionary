@@ -31,7 +31,7 @@ required:
   - submitter_id
   - type
   - subjects
-  - cancer_sysid
+  - sysid
 
 uniqueKeys:
   - [id]
@@ -51,7 +51,7 @@ properties:
     type: string
     pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
 
-  cancer_sysid:
+  sysid:
     description: Globally unique identifier for subject
     type: integer
 
