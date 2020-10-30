@@ -31,7 +31,7 @@ links:
 required:
   - submitter_id
   - type
-  - subjects
+  - samples
   - sysid
 
 uniqueKeys:
