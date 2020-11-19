@@ -1,0 +1,156 @@
+<node>	<property>	<terms>	<description>	<type>	<pattern>	<maximum>	<minimum>	<systemAlias>	<format>	<default>
+subject	lss		Is the subject in the LSS cohort?	boolean						
+subject	inutero		Is the subject in the Inutero cohort?	boolean						
+subject	f1		Is the subject in the F1 cohort?	boolean						
+subject	ahs		Is the subject in the AHS cohort?	boolean						
+subject	updt		Last updated date	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	lss_entry_dt		Subject's date of entry into the LSS cohort	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	lss_updt		Last update of subject's LSS record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	inutero_entry_dt		Date when the subject became a member of the Inutero cohort	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	inutero_updt		Last update of subject's Inutero record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	f1_entry_dt		Date when the subject became a member of the F1 cohort	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	f1_updt		Last update of subject's F1 record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	ahs_updt		Last update of subject's AHS record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	mfup_last_contact		Mortality follow-up date of last contact	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	death_dt		Date of death of the subject	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	death_updt		Last update of the subject's death record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	death_icd_updt		Last update of subject's death ICD record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+birth	birth_dt		Date of birth	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+birth	birth_updt		Last update of subject's birth records	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+cancer_diag	diag_dt		Date of diagnosis	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+cancer_diag	updt		Last update of cancer diagnosis record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+inutero	updt		Last update of inutero program record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+f1	updt		Last update of F1 program record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+exam	smp_dt		Date of visit	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+exam	updt		Last update of AHS exam index record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+exam_diag	updt		Last update of subject's diagnosis	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+exam_meas	updt		Last update of measure record	string	^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$					
+subject	mfup_last_status		Mortality follow-up last known status of the subject (1 - alive, 2 - dead, 3 - lost, etc)	enum						
+subject	dose_expcity		Subject's city of exposure  1 - Hiro, 2 - Naga	enum						
+subject	dose_expstatus86		Exposure status based on 1986 algorithm	enum						
+subject	dose_expstatus02		Exposure status based on 2002 algorithm	enum						
+subject	dose_prish		Subject's primary shield	enum						
+subject	death_src		Source of the information of subject's death (ex. Death certificate, etc.)	enum						
+study	study_objective		The general objective of the study. What the study hopes to discover or determine through testing.	enum						
+study	study_design		Summary of the goals the study is designed to discover. General description of the study's place in relation to a clinical application.	enum						
+subject	dose_source		What is the source of the exposure information?  Ex. Questionnaire	enum						
+study	study_setup		A high level description of the setup used to achieve the study objectives.	enum						
+subject	sysid		Globally unique identifier for subject	integer						
+subject	city		1 = Hiro, 2 = Naga	enum						
+subject	sex		1 = male	enum						
+subject	lss_sample_class		Subject's recruitment class into LSS cohort?	enum						
+subject	lss_census		Census info used for recruitment into LSS cohort?	enum						
+subject	mother_sysid		The globally unique identifier for the subject's mother	integer						
+subject	father_sysid		The globally unique identifier for the subject's father	integer						
+subject	f1_sample		Subject's recruitment class into F1 cohort?	enum						
+subject	f1_ind		Must = 1	enum						
+subject	ahs_subgroup		Subgroup to which the subject belongs.	enum						
+subject	ahs_exp_category		Exposure category?	enum						
+subject	death_icd_rev		ICD version	enum						
+subject	death_icd_grp		RERF-specific ICD grouping code	enum						
+subject	dose_abscissa		X coordinate of subject's position on exposure	integer						
+subject	dose_ordinate		Y coordinate of subject's position on exposure	integer						
+subject	dose_gdist		Subject's ground distance from explosion	integer						
+subject	dose_shloc		Shield location	enum						
+subject	dose_ds02cal		Calculated location?	enum						
+subject	dose_ds02cat		Calculation algorithm	enum						
+subject	dose_calgroup02		Calculation information	integer						
+birth	sysid		Globally unique identifier for subject	integer						
+birth	birth_ind		Indicator of quality of birth data (1 - best information)	enum						
+dose	sysid		Globally unique identifier for subject	integer						
+dose	dosetype		Type of dose (organ)	integer						
+cancer_diag	sysid		Globally unique identifier for subject	integer						
+cancer_diag	file_no		Case number (or file number) for the subject	integer						
+cancer_diag	seq_no		Sequence number for multiple occurrence of cancer	integer						
+cancer_diag	res		1=in city, 2=in prefecture, 3=outside prefecture, 9=unknown	enum						
+cancer_diag	city		City where patient was living at the time of diagnosis 1=Hiro, 2=Naga	enum						
+cancer_diag	machi		Similar to zip code	enum						
+cancer_diag	motiv		Reason for subject's visit to the hospital	enum						
+cancer_diag	behavior		Behavior of the cancer (1 = malignant)	enum						
+cancer_diag	onc_rev		ICDO version	enum						
+cancer_diag	dco		Death-certificate-only diagnosis	integer						
+inutero	sysid		Globally unique identifier for subject	integer						
+f1	sysid		Globally unique identifier for subject	integer						
+exam	sysid		Globally unique identifier for subject	integer						
+exam	smp_id		Unique visit ID	integer						
+exam	primary_id		Matches smp_id on a primary visit (subject might be asked to attend a follow-up)	integer						
+exam_diag	smp_id		Visit ID	integer						
+exam_diag	icd_rev		ICD version	enum						
+exam_meas	smp_id		Visit ID	integer						
+exam_meas	item_no		Identifier for measure	integer						
+subject	kerma_fiau02g		Overall dose (gamma radiation)	number						
+subject	kerma_fiau02n		Overall dose (neutron radiation)	number						
+subject	kerma_trunc02		Truncation factor	number						
+subject	kerma_adjust02		Adjustment factor	number						
+dose	a02g		Gamma dose	number						
+dose	a02n		Neutron dose	number						
+exam_meas	amount		Measure amount	number						
+study	associated_study		The submitter_id for any study with which this study is associated, paired, or matched.	string						
+study	data_description		Brief description of the data being provided for this study. Free text	string						
+study	study_description		A brief description of the study being performed. Free text	string						
+study	submitter_id		A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.	string						
+study	type			string						
+subject	death_icd		ICD code	string						
+birth	birth_source		Source of the information of subject's birth (ex. Birth certificate, etc.)	enum						
+dose	discript		Organ name	enum						
+cancer_diag	icdot		ICDO topography code	string						
+cancer_diag	icdom		ICDO morphology code	string						
+cancer_diag	icd_grp		Code to gather specific ICDOT/ICDOM values into a simple diagnosis code	enum						
+inutero	prog		Program code	enum						
+f1	prog		Program code	enum						
+exam_diag	icd		ICD code for diagnosis	string						
+exam_meas	unit		Unit of measure	string						
+exam_meas	explain_s		Short explanation	string						
+exam_meas	explain_l		Long explanation	string						
+study	created_datetime	_definitions.yaml#/datetime								
+study	id	_definitions.yaml#/UUID	The UUID for the study.							
+study	project_id	_definitions.yaml#/project_id	The dash separated combination of the program code and project name.							
+study	state	_definitions.yaml#/state								
+study	updated_datetime	_definitions.yaml#/datetime								
+sample	tissue_type	_terms.yaml#/tissue_type		enum						
+sample	preservation_method	_terms.yaml#/preservation_method		enum						
+sample	method_of_sample_procurement	_terms.yaml#/method_of_sample_procurement		enum						
+sample	initial_weight	_terms.yaml#/initial_weight		number						
+sample	freezing_method	_terms.yaml#/freezing_method		string						
+sample	days_to_collection	_terms.yaml#/days_to_collection		integer						
+sample	composition	_terms.yaml#/composition		enum						
+sample	biospecimen_laterality	_terms.yaml#/biospecimen_laterality		enum						
+sample	biospecimen_anatomic_site	_terms.yaml#/biospecimen_anatomic_site		enum						
+aliquot	aliquot_container		The device in which the final aliquot is held. Slides or vials.	enum						
+aliquot	aliquot_quantity	_terms.yaml#/aliquot_quantity		number						
+aliquot	aliquot_volume	_terms.yaml#/aliquot_volume		number						
+aliquot	analyte_a260_a280_ratio		The ratio of absorbance at 260 and 280 nm for nucleic acid analytes.	number						
+aliquot	analyte_concentration		Concentration of the analyte in the aliquot.	number						
+aliquot	analyte_isolation_method		The name or general description of the method used to isolate the analyte.	string						
+aliquot	analyte_type		Any aspect of an aliquot used in an analysis or assay to characterize the sample. These aspects range from molecules, such as DNA and RNA, that can be extracted from the aliquot to general descriptions of the aliquot's components, such as cell count and morphology.	enum						
+aliquot	days_to_aliquot		The amount of time, in days, between the date used for index and the time the aliquot was separated from the whole sample.	integer						
+aliquot	hours_to_analyte		The amount of time, in hours, that it took between the sample being fractionated and the analyte being extracted.	number						
+aliquot	hours_to_preservation		The amount of time, in hours, that it took between the sample being fractionated and the aliquot being frozen or otherwise preserved.	number						
+aliquot	preservation_method		The method used to preserve the aliquot.	enum						
+aliquot	source_center	_terms.yaml#/source_center		string						
+aliquot	storage_temperature		The temperature, in centigrade, at which the aliquot was preserved and/or stored.	number						
+exam	smp_dt_year		Year of visit	integer						
+exam	smp_dt_month		Month of visit	integer						
+exam	smp_dt_day		Day of visit	integer						
+birth	birth_dt_year		Year of birth	integer						
+birth	birth_dt_month		Month of birth	integer						
+birth	birth_dt_day		Day of birth	integer						
+cancer_diag	diag_dt_year		Year of diagnosis	integer						
+cancer_diag	diag_dt_month		Month of diagnosis	integer						
+cancer_diag	diag_dt_day		Day of diagnosis	integer						
+subject	lss_entry_dt_year		Subject's year of entry into the LSS cohort	integer						
+subject	lss_entry_dt_month		Subject's month of entry into the LSS cohort	integer						
+subject	lss_entry_dt_day		Subject's day of entry into the LSS cohort	integer						
+subject	inutero_entry_dt_year		Year when the subject became a member of the Inutero cohort	integer						
+subject	inutero_entry_dt_month		Month when the subject became a member of the Inutero cohort	integer						
+subject	inutero_entry_dt_day		Day when the subject became a member of the Inutero cohort	integer						
+subject	f1_entry_dt_year		Year when the subject became a member of the F1 cohort	integer						
+subject	f1_entry_dt_month		Month when the subject became a member of the F1 cohort	integer						
+subject	f1_entry_dt_day		Day when the subject became a member of the F1 cohort	integer						
+subject	mfup_last_contact_year		Mortality follow-up year of last contact	integer						
+subject	mfup_last_contact_month		Mortality follow-up month of last contact	integer						
+subject	mfup_last_contact_day		Mortality follow-up day of last contact	integer						
+subject	death_dt_year		Year of death of the subject	integer						
+subject	death_dt_month		Month of death of the subject	integer						
+subject	death_dt_day		Day of death of the subject	integer						
+aliquot	sysid		Unique subject identifier	integer						
