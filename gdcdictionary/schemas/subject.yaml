@@ -3,7 +3,6 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "subject"
 title: Subject
 type: object
-nodeTerms: null
 namespace: https://rerf.datacommons.org/
 category: administrative
 program: '*'
@@ -33,6 +32,7 @@ required:
   - submitter_id
   - type
   - studies
+  - sysid
 
 uniqueKeys:
   - [id]
@@ -42,204 +42,487 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  abscissa:
-    description: abscissa. From RERF 'dose_masterlist' table.
-    type: integer
+  lss:
+    description: Is the subject in the LSS cohort?
+    type: boolean
 
-  age_in:
-    description: Age at entry date (entry_dt). From RERF 'base_mortality' table.
-    type: number
+  inutero:
+    description: Is the subject in the Inutero cohort?
+    type: boolean
 
-  age_out:
-    description: Age at last follow-up, age at death, or age at end of study. From
-      RERF 'base_mortality' table.
-    type: number
+  f1:
+    description: Is the subject in the F1 cohort?
+    type: boolean
 
   ahs:
-    description: Indication of whether a person was in the Adult Health Study (AHS)
-      cohort (0- not AHS, 1- AHS (original), 2- AHS (addition)). From RERF 'lss_master'
-      table.
-    type: integer
+    description: Is the subject in the AHS cohort?
+    type: boolean
 
-  bdy:
-    description: Birth day. From RERF 'births' table.
-    type: integer
-
-  birth_dt:
-    description: Birth date (DDmonYYYY, e.g., 21dec1912). From RERF 'births' table.
+  updt:
+    description: Last updated date
     type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
 
-  bmo:
-    description: Birth month. From RERF 'births' table.
-    type: integer
+  lss_entry_dt:
+    description: Subject's date of entry into the LSS cohort
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
 
-  byr:
-    description: Birth year. From RERF 'births' table.
-    type: integer
+  lss_updt:
+    description: Last update of subject's LSS record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
 
-  calgroup02:
-    description: calgroup02. From RERF 'dose_masterlist' table.
-    type: integer
+  inutero_entry_dt:
+    description: Date when the subject became a member of the Inutero cohort
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
 
-  cancerdeath:
-    description: Indicator for a death of interest. From RERF 'base_mortality' table.
+  inutero_updt:
+    description: Last update of subject's Inutero record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  f1_entry_dt:
+    description: Date when the subject became a member of the F1 cohort
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  f1_updt:
+    description: Last update of subject's F1 record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  ahs_updt:
+    description: Last update of subject's AHS record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  mfup_last_contact:
+    description: Mortality follow-up date of last contact
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  death_dt:
+    description: Date of death of the subject
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  death_updt:
+    description: Last update of the subject's death record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  death_icd_updt:
+    description: Last update of subject's death ICD record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  mfup_last_status:
+    description: Mortality follow-up last known status of the subject (1 - alive,
+      2 - dead, 3 - lost, etc)
+    enum:
+      - 1 - Alive
+      - 2 - Dead
+      - 3 - foreign nationality
+      - 6 - cessation of follow-up
+      - 7 - unknown permanent domicile
+      - 8 - exclusion from study subjects
+      - 9 - Follow-up halted due to excessive subject age
+
+  dose_expcity:
+    description: Subject's city of exposure  1 - Hiro, 2 - Naga
+    enum:
+      - 1 - Hiroshima
+      - 2 - Nagasaki
+
+  dose_expstatus86:
+    description: Exposure status based on 1986 algorithm
+    enum:
+      - 1 - In city ATB
+      - 2 - NIC late entry or entrance unknown
+      - 3 - NIC early entry
+      - 4 - NIC presumed (F1 orginal mortality sample's parent)
+      - 5 - NIC from GE3
+      - 8 - No Information
+      - 9 - Unknown
+
+  dose_expstatus02:
+    description: Exposure status based on 2002 algorithm
+    enum:
+      - 1 - In city, No distal terrain
+      - 2 - In city, Distal terrain (Hijiyama and Konpirasan)
+      - 3 - NIC late entry or extrance unknown
+      - 4 - NIC early entry
+      - 5 - NIC presumed (F1 original mortality sample parent)
+      - 6 - NIC from GE3
+      - 9 - Unknown
+
+  dose_prish:
+    description: Subject's primary shield
+    enum:
+      - 1 - Open, with flush burns
+      - 10 - Other shielding
+      - 11 - No shielding information
+      - 12 - NIC
+      - 2 - Japanese-house (inside and outside)
+      - 3 - Tenement house (row-house)
+      - 4 - Japanese house and Terrain
+      - 5 - Tenement and Terrain
+      - 6 - Globe terrain
+      - 7 - Modelled factory
+      - 8 - Unmodelled factory
+      - 9 - Concrete building
+
+  death_src:
+    description: Source of the information of subject's death (ex. Death certificate,
+      etc.)
+    enum:
+      - 60 - 1960 census
+      - AH - Adult Health Study
+      - BR - Birth record
+      - CN - Contact Card
+      - CR - Cross Index
+      - DE - Death Certification
+      - FU - Fuhyo
+      - G3 - Genetic study (GE-3)
+      - JS - Residence registry inquiry (regional cancer registry)
+      - KO - Koseki
+      - MC - Master File Code
+      - MF - Master File record
+      - MO - Mortality
+      - MQ - Master Sample Questionnaire
+      - OT - Other
+      - SK - Death certificate (regional cancer registry)
+      - TE - Hibakusha Techo
+      - TI - Tissue Registry Data Base
+      - TR - Tumor Registry Data Base
+      - YU - Mail Survey
+
+  dose_source:
+    description: What is the source of the exposure information?  Ex. Questionnaire
+    enum:
+      - CD300 - CD300
+      - F1MO - F1 Mortality Original Parents without DS86
+      - GE3 - GE3
+      - LSS - LSS
+      - M - Acute Effects known
+      - MSQ - PLC
+      - T65D - T65D
+
+  sysid:
+    description: Globally unique identifier for subject
     type: integer
 
   city:
-    description: The city in which a person was exposed to radiation (1- Hiroshima,
-      2- Nagasaki). From RERF 'id' table.
-    type: integer
-
-  col_dose:
-    description: Radiation dose received by colon. From RERF 'base_mortality' table.
-    type: number
-
-  death_cause:
-    description: The cause of death. From RERF 'icd_grp_fk' table.
-    type: string
-
-  death_df:
-    description: death_df. From RERF 'deaths' table.
-    type: integer
-
-  death_dt:
-    description: Death date. From RERF 'deaths' table.
-    type: string
-
-  death_icd:
-    description: The ICD code for the cause of death. From RERF 'death_icd' table.
-    type: string
-
-  death_icd_grp:
-    description: A grouping for the cause of death. From RERF 'death_icd' table.
-    type: integer
-
-  death_icd_rev:
-    description: The revision number of the ICD code used. From RERF 'death_icd' table.
-    type: integer
-
-  death_icd_sgrp:
-    description: A grouping for the cause of death. From RERF 'death_icd' table.
-    type: integer
-
-  death_res:
-    description: death_res. From RERF 'death_icd' table.
-    type: integer
-
-  dose_organ:
-    description: dose_organ. From RERF 'dosetype_fk' table.
-    type: string
-
-  ds02cal:
-    description: ds02cal. From RERF 'dose_masterlist' table.
-    type: integer
-
-  ds02cat:
-    description: ds02cat. From RERF 'dose_masterlist' table.
-    type: integer
-
-  ds86cal:
-    description: ds86cal. From RERF 'dose_masterlist' table.
-    type: integer
-
-  entry_dt:
-    description: Entry date (DDmonYYYY, e.g., 21dec1912). From RERF 'lss_master' table.
-    type: string
-
-  expcity:
-    description: The city of exposure. From RERF 'dose_masterlist' table.
-    type: integer
-
-  expstatus02:
-    description: expstatus02. From RERF 'dose_masterlist' table.
-    type: integer
-
-  expstatus86:
-    description: expstatus86. From RERF 'dose_masterlist' table.
-    type: integer
-
-  fup:
-    description: Indicates vital status at last follow-up ("1" or "3" is alive; "2"
-      indicates dead). From RERF 'mort_fup' table.
-    type: integer
-
-  gdist:
-    description: Ground distance (meters). From RERF 'dose_masterlist' table.
-    type: integer
-
-  index_date:
-    description: The reference or anchor date used during date obfuscation, where
-      a single date is obscurred by creating one or more date ranges in relation to
-      this date.
+    description: 1 = Hiro, 2 = Naga
     enum:
-      - Diagnosis
-      - First Patient Visit
-      - Infection
-      - Study Enrollment
-
-  last_dt:
-    description: Last contact date (DDmonYYYY). From RERF 'mort_fup' table.
-    type: string
-
-  machi:
-    description: Location. From RERF 'summ_dx_fix' table.
-    type: integer
-
-  nic:
-    description: Not in City. From RERF 'base_mortality' table.
-    type: integer
-
-  ordinate:
-    description: ordinate. From RERF 'dose_masterlist' table.
-    type: integer
-
-  prish:
-    description: prish. From RERF 'dose_masterlist' table.
-    type: integer
-
-  res:
-    description: res. From RERF 'summ_dx_fix' table.
-    type: integer
-
-  s_death:
-    description: s_death. From RERF 'summ_dx_fix' table.
-    type: integer
-
-  sc:
-    description: sc (1, 2, 3, 4, 5). From RERF 'lss_master' table.
-    type: integer
-
-  sdist:
-    description: sdist. From RERF 'dose_masterlist' table.
-    type: integer
-
-  sealevel02:
-    description: sealevel02. From RERF 'dose_masterlist' table.
-    type: number
-
-  sealevel86:
-    description: sealevel86. From RERF 'dose_masterlist' table.
-    type: integer
+      - 1 - Hiroshima
+      - 2 - Nagasaki
 
   sex:
-    description: The sex of a person (1- Male, 2- Female). From RERF 'id' table.
+    description: 1 = male
+    enum:
+      - 1 - Male
+      - 2 - Female
+      - 3 - Other
+      - 4 - Unknown
+
+  lss_sample_class:
+    description: Subject's recruitment class into LSS cohort?
+    enum:
+      - 1 - Original LSS
+      - 2 - Reserved (less than 2.5km)
+      - 3 - Nagasaki Distal Additions
+      - 4 - NIC - early
+      - 5 - NIC - late
+
+  lss_census:
+    description: Census info used for recruitment into LSS cohort?
+    enum:
+      - 1 - national census 1950
+      - 2 - ABCC 1st sample census
+      - 3 - ABCC 2nd sample census
+      - 4 - NIC 1953 census (Hiroshima)
+      - 5 - Setai-Daicho (Nagasaki)
+
+  mother_sysid:
+    description: The globally unique identifier for the subject's mother
     type: integer
 
-  shloc:
-    description: shloc. From RERF 'dose_masterlist' table.
+  father_sysid:
+    description: The globally unique identifier for the subject's father
     type: integer
 
-  survangle:
-    description: survangle. From RERF 'dose_masterlist' table.
+  f1_sample:
+    description: Subject's recruitment class into F1 cohort?
+    enum:
+      - 1 - F1 mortality original
+      - 2 - F1 mortality extension
+      - 3 - F1 BGS original
+      - 4 - F1 BGS extension
+      - 5 - F1 GE3 only
+
+  f1_ind:
+    description: Must = 1
+    enum:
+      - 0 - Not included in F1 cohort
+      - 1 - Included in F1 cohort
+
+  ahs_subgroup:
+    description: Subgroup to which the subject belongs.
+    enum:
+      - 1 - original(ME-200)
+      - 2 - extension(ME-200-1)
+      - 3 - PE-86(ME-200-2)
+      - 4 - young extension(ME-200-3)
+
+  ahs_exp_category:
+    description: Exposure category?
+    enum:
+      - 1 - proximal (< 2000m), some symptom
+      - 2 - proximal (< 2000m), no symptom
+      - 3 - distal (Hiroshima; 3000-3499m, Nagasaki; 3000-3999m)
+      - 4 - Unexposed
+
+  death_icd_rev:
+    description: ICD version
+    enum:
+      - "7"
+      - "8"
+      - "9"
+      - "10"
+
+  death_icd_grp:
+    description: RERF-specific ICD grouping code
+    enum:
+      - 10 - Tuberculosis
+      - 99 - Other Infect/Parasit Dis
+      - 140 - Lip
+      - 141 - Tongue
+      - 142 - Salivary Glands (Major)
+      - 143 - Mouth
+      - 146 - Pharynx
+      - 150 - Esophagus
+      - 151 - Stomach
+      - 152 - Small intestine
+      - 153 - Colon
+      - 154 - Rectum
+      - 155 - Liver (primary)
+      - 155 - Liver (NOS)
+      - 156 - Gallbladder  etc.
+      - 157 - Pancreas
+      - 159 - Other Digestive
+      - 159 - Other Digestive
+      - 160 - Nasal cavity  etc.
+      - 161 - Larynx
+      - 162 - Lung
+      - 169 - Other respiratory
+      - 170 - Bone
+      - 171 - Connective Tissue
+      - 172 - Melanoma of the Skin
+      - 173 - Non-melanoma skin
+      - 174 - Breast (Male and Female)
+      - 179 - Uterus NOS
+      - 180 - Cervix Uteri
+      - 182 - Corpus Uteri
+      - 183 - Ovary  etc.
+      - 183 - Ovary  etc.
+      - 184 - Other Female genital
+      - 185 - Prostate
+      - 187 - Other male genital
+      - 188 - Urinary bladder
+      - 189 - Kidney
+      - 189 - Renal Pelvis & Ureter
+      - 189 - Other Urinary
+      - 191 - Brain
+      - 192 - Meninges
+      - 192 - Other nervous system
+      - 193 - Thyroid
+      - 194 - Other primary
+      - 199 - Secondary & unspecified
+      - 200 - Non - Hodgkin's lymphoma
+      - 201 - Hodgkin's lymphoma
+      - 203 - Multiple myeloma
+      - 204 - Acute lymphoid leukemia
+      - 204 - Chronic lymphoid leukemia
+      - 204 - Other/unspec lymphoid leukemia
+      - 205 - Acute myeloid leukemia
+      - 205 - Chronic myeloid leukemia
+      - 205 - Other/unspec myeloid leukemia
+      - 208 - Acute NOS
+      - 208 - Chronic NOS
+      - 208 - Adult T-cell leukemia
+      - 208 - Other/unspec leukemia
+      - 210 - Salivary Gland (Major)
+      - 211 - Stomach
+      - 211 - Colon
+      - 218 - Myoma Uteri
+      - 225 - Brain
+      - 225 - Meninges
+      - 225 - Other nervous system
+      - 226 - Thyroid
+      - 229 - Other benign neoplasm
+      - 240 - Thyroid
+      - 250 - Diabetes
+      - 250 - Other Endocrine
+      - 260 - Nutritional and metabolic
+      - 280 - Blood and Blood-Forming organs
+      - 290 - Mental disorders
+      - 320 - Nerv syst & sense organs
+      - 390 - Rheumatic heart disease
+      - 402 - Hypertensive heart disease
+      - 404 - Other Hypertensive disease
+      - 410 - Coronary heart disease
+      - 429 - Other heart disease
+      - 430 - Stroke
+      - 459 - Other Circulatory disease
+      - 480 - Pneumonia & influenza
+      - 490 - Emphysema & bronchitis
+      - 519 - Other respiratory disease
+      - 531 - Ulcer
+      - 570 - Other liver disease
+      - 571 - Cirrhosis
+      - 579 - Other digestive disease
+      - 580 - Urinary disease
+      - 600 - Genital disease
+      - 780 - Ill-defined conditions  incl. senility
+      - 799 - Other non-external causes
+      - 800 - Accident
+      - 850 - Injury and poisoning (**)
+      - 950 - Suicide
+      - 960 - Homicide & other external
+      - 999 - unknown
+
+  dose_abscissa:
+    description: X coordinate of subject's position on exposure
     type: integer
 
-  sysid:
-    description: A unique identifier for an individual person in a study. From RERF
-      'id' table.
+  dose_ordinate:
+    description: Y coordinate of subject's position on exposure
     type: integer
 
-  t65cal:
-    description: t65cal. From RERF 'dose_masterlist' table.
+  dose_gdist:
+    description: Subject's ground distance from explosion
+    type: integer
+
+  dose_shloc:
+    description: Shield location
+    enum:
+      - 1 - Inside
+      - 2 - Outside
+      - 3 - NIC
+      - 4 - Unknown
+
+  dose_ds02cal:
+    description: Calculated location?
+    enum:
+      - Unexposed (NIC)
+      - Dose Known (FIA known SKR known)
+      - No selected for DS86 Calculation, ground distance > 3000m
+      - Dose Uncalculated (FIA known SKR uncalculated)
+      - Dose Unknown (FIA unknown, SKR unknown)
+
+  dose_ds02cat:
+    description: Calculation algorithm
+    enum:
+      - 0 - InOpen
+      - 1 - 9P House
+      - 2 - 9P School
+      - 3 - Factory
+      - 4 - 9P Factory
+      - 5 - Globe
+      - 6 - Globe Terrain
+      - 7 - Other House
+      - 8 - 9P Other
+      - 9 - Concrete building
+      - 10 - Other Outside
+      - 11 - Other Inside
+      - 12 - NIC
+      - 13 - No Shielding Information
+
+  dose_calgroup02:
+    description: Calculation information
+    type: integer
+
+  kerma_fiau02g:
+    description: Overall dose (gamma radiation)
+    type: number
+
+  kerma_fiau02n:
+    description: Overall dose (neutron radiation)
+    type: number
+
+  kerma_trunc02:
+    description: Truncation factor
+    type: number
+
+  kerma_adjust02:
+    description: Adjustment factor
+    type: number
+
+  death_icd:
+    description: ICD code
+    type: string
+
+  lss_entry_dt_year:
+    description: Subject's year of entry into the LSS cohort
+    type: integer
+
+  lss_entry_dt_month:
+    description: Subject's month of entry into the LSS cohort
+    type: integer
+
+  lss_entry_dt_day:
+    description: Subject's day of entry into the LSS cohort
+    type: integer
+
+  inutero_entry_dt_year:
+    description: Year when the subject became a member of the Inutero cohort
+    type: integer
+
+  inutero_entry_dt_month:
+    description: Month when the subject became a member of the Inutero cohort
+    type: integer
+
+  inutero_entry_dt_day:
+    description: Day when the subject became a member of the Inutero cohort
+    type: integer
+
+  f1_entry_dt_year:
+    description: Year when the subject became a member of the F1 cohort
+    type: integer
+
+  f1_entry_dt_month:
+    description: Month when the subject became a member of the F1 cohort
+    type: integer
+
+  f1_entry_dt_day:
+    description: Day when the subject became a member of the F1 cohort
+    type: integer
+
+  mfup_last_contact_year:
+    description: Mortality follow-up year of last contact
+    type: integer
+
+  mfup_last_contact_month:
+    description: Mortality follow-up month of last contact
+    type: integer
+
+  mfup_last_contact_day:
+    description: Mortality follow-up day of last contact
+    type: integer
+
+  death_dt_year:
+    description: Year of death of the subject
+    type: integer
+
+  death_dt_month:
+    description: Month of death of the subject
+    type: integer
+
+  death_dt_day:
+    description: Day of death of the subject
     type: integer
 
   studies:

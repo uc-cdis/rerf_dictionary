@@ -1,14 +1,13 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "followup"
-title: Follow-up
+id: "f1"
+title: F1 Program
 type: object
-nodeTerms: null
 namespace: https://rerf.datacommons.org/
-category: clinical
+category: administrative
 program: '*'
 project: '*'
-description: Mortality follow-up data.
+description: Programs within the F1 cohort
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,8 +21,8 @@ systemProperties:
 
 links:
   - name: subjects
-    backref: followups
-    label: describing
+    backref: f1s
+    label: member_of
     target_type: subject
     multiplicity: many_to_one
     required: true
@@ -32,6 +31,7 @@ required:
   - submitter_id
   - type
   - subjects
+  - sysid
 
 uniqueKeys:
   - [id]
@@ -41,14 +41,26 @@ properties:
 
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  fup:
-    description: Indicates vital status at last follow-up ("1" or "3" is alive; "2"
-      indicates dead; "3" is lost to follow-up). From RERF 'mort_fup' table.
+  updt:
+    description: Last update of F1 program record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  sysid:
+    description: Globally unique identifier for subject
     type: integer
 
-  last_dt:
-    description: Last contact date (DDmonYYYY). From RERF 'mort_fup' table.
-    type: string
+  prog:
+    description: Program code
+    enum:
+      - A - AHS sample (ME-200-2)
+      - B - BGS
+      - C - Cyto
+      - G - GE3
+      - I - IQ sample
+      - M - Mortality sample
+      - P - PLC
+      - Y - mail
 
   subjects:
     $ref: "_definitions.yaml#/to_one"

@@ -1,0 +1,74 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "exam_meas"
+title: AHS Exam Measures
+type: object
+namespace: https://rerf.datacommons.org/
+category: medical_history
+program: '*'
+project: '*'
+description: Adult Health Study diagnostic measures at visits
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: ahs_exam_indexes
+    backref: exam_meas
+    label: derived_from
+    target_type: exam
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - ahs_exam_indexes
+  - smp_id
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  updt:
+    description: Last update of measure record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  smp_id:
+    description: Visit ID
+    type: integer
+
+  item_no:
+    description: Identifier for measure
+    type: integer
+
+  amount:
+    description: Measure amount
+    type: number
+
+  unit:
+    description: Unit of measure
+    type: string
+
+  explain_s:
+    description: Short explanation
+    type: string
+
+  explain_l:
+    description: Long explanation
+    type: string
+
+  ahs_exam_indexes:
+    $ref: "_definitions.yaml#/to_one"

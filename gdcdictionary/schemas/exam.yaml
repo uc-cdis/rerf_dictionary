@@ -1,0 +1,81 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "exam"
+title: AHS Exam Index
+type: object
+namespace: https://rerf.datacommons.org/
+category: administrative
+program: '*'
+project: '*'
+description: Adult Health Study clinical follow-up visits
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: exams
+    label: performed_on
+    target_type: subject
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - subjects
+  - sysid
+  - smp_id
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  smp_dt:
+    description: Date of visit
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  updt:
+    description: Last update of AHS exam index record
+    type: string
+    pattern: "^[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}$"
+
+  sysid:
+    description: Globally unique identifier for subject
+    type: integer
+
+  smp_id:
+    description: Unique visit ID
+    type: integer
+
+  primary_id:
+    description: Matches smp_id on a primary visit (subject might be asked to attend
+      a follow-up)
+    type: integer
+
+  smp_dt_year:
+    description: Year of visit
+    type: integer
+
+  smp_dt_month:
+    description: Month of visit
+    type: integer
+
+  smp_dt_day:
+    description: Day of visit
+    type: integer
+
+  subjects:
+    $ref: "_definitions.yaml#/to_one"

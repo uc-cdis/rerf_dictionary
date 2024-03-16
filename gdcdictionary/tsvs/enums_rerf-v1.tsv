@@ -1,0 +1,2757 @@
+<node>	<property>	<enum_value>	<enum_def>	<deprecated>
+study	study_design	Analytical		
+study	study_design	Clinical		
+study	study_design	Clinical Assay		
+study	study_design	Clinical Utility		
+study	study_design	Pre-Analytical		
+study	study_design	Research/Early Development		
+study	study_objective	Accuracy		
+study	study_objective	Clinical Detection		
+study	study_objective	Interference		
+study	study_objective	Limit of Detection		
+study	study_objective	Precision (Repeatability)		
+study	study_objective	Precision (Reproducibility)		
+study	study_objective	Specificity/Sensitivity		
+study	study_objective	Stability		
+study	study_setup	Detection/Enumeration/Isolation		
+study	study_setup	Genetic Analysis		
+subject	death_src	60 - 1960 census		
+subject	death_src	AH - Adult Health Study		
+subject	death_src	BR - Birth record		
+subject	death_src	CN - Contact Card		
+subject	death_src	CR - Cross Index		
+subject	death_src	DE - Death Certification		
+subject	death_src	FU - Fuhyo		
+subject	death_src	G3 - Genetic study (GE-3)		
+subject	death_src	JS - Residence registry inquiry (regional cancer registry)		
+subject	death_src	KO - Koseki		
+subject	death_src	MC - Master File Code		
+subject	death_src	MF - Master File record		
+subject	death_src	MO - Mortality		
+subject	death_src	MQ - Master Sample Questionnaire		
+subject	death_src	OT - Other		
+subject	death_src	SK - Death certificate (regional cancer registry)		
+subject	death_src	TE - Hibakusha Techo		
+subject	death_src	TI - Tissue Registry Data Base		
+subject	death_src	TR - Tumor Registry Data Base		
+subject	death_src	YU - Mail Survey		
+subject	dose_expcity	1 - Hiroshima		
+subject	dose_expcity	2 - Nagasaki		
+subject	dose_expstatus02	1 - In city, No distal terrain		
+subject	dose_expstatus02	2 - In city, Distal terrain (Hijiyama and Konpirasan)		
+subject	dose_expstatus02	3 - NIC late entry or extrance unknown		
+subject	dose_expstatus02	4 - NIC early entry		
+subject	dose_expstatus02	5 - NIC presumed (F1 original mortality sample parent)		
+subject	dose_expstatus02	6 - NIC from GE3		
+subject	dose_expstatus02	9 - Unknown		
+subject	dose_expstatus86	1 - In city ATB		
+subject	dose_expstatus86	2 - NIC late entry or entrance unknown		
+subject	dose_expstatus86	3 - NIC early entry		
+subject	dose_expstatus86	4 - NIC presumed (F1 orginal mortality sample's parent)		
+subject	dose_expstatus86	5 - NIC from GE3		
+subject	dose_expstatus86	8 - No Information		
+subject	dose_expstatus86	9 - Unknown		
+subject	dose_prish	1 - Open, with flush burns		
+subject	dose_prish	10 - Other shielding		
+subject	dose_prish	11 - No shielding information		
+subject	dose_prish	12 - NIC		
+subject	dose_prish	2 - Japanese-house (inside and outside)		
+subject	dose_prish	3 - Tenement house (row-house)		
+subject	dose_prish	4 - Japanese house and Terrain		
+subject	dose_prish	5 - Tenement and Terrain		
+subject	dose_prish	6 - Globe terrain		
+subject	dose_prish	7 - Modelled factory		
+subject	dose_prish	8 - Unmodelled factory		
+subject	dose_prish	9 - Concrete building		
+subject	dose_source	CD300 - CD300		
+subject	dose_source	F1MO - F1 Mortality Original Parents without DS86		
+subject	dose_source	GE3 - GE3		
+subject	dose_source	LSS - LSS		
+subject	dose_source	M - Acute Effects known		
+subject	dose_source	MSQ - PLC		
+subject	dose_source	T65D - T65D		
+subject	mfup_last_status	1 - Alive		
+subject	mfup_last_status	2 - Dead		
+subject	mfup_last_status	3 - foreign nationality		
+subject	mfup_last_status	6 - cessation of follow-up		
+subject	mfup_last_status	7 - unknown permanent domicile		
+subject	mfup_last_status	8 - exclusion from study subjects		
+subject	mfup_last_status	9 - Follow-up halted due to excessive subject age		
+sample	tissue_type	Abnormal		
+sample	tissue_type	Normal		
+sample	tissue_type	Not Reported		
+sample	tissue_type	Peritumoral		
+sample	tissue_type	Tumor		
+sample	tissue_type	Unknown		
+sample	preservation_method	Cryopreserved		
+sample	preservation_method	FFPE		
+sample	preservation_method	Fresh		
+sample	preservation_method	Frozen		
+sample	preservation_method	Not Applicable		
+sample	preservation_method	Not Reported		
+sample	preservation_method	OCT		
+sample	preservation_method	Snap Frozen		
+sample	preservation_method	Unknown		
+sample	method_of_sample_procurement	Abdomino-perineal Resection of Rectum		
+sample	method_of_sample_procurement	Anterior Resection of Rectum		
+sample	method_of_sample_procurement	Aspirate		
+sample	method_of_sample_procurement	Autopsy		
+sample	method_of_sample_procurement	Biopsy		
+sample	method_of_sample_procurement	Blood Draw		
+sample	method_of_sample_procurement	Bone Marrow Aspirate		
+sample	method_of_sample_procurement	Core Biopsy		
+sample	method_of_sample_procurement	Cystectomy		
+sample	method_of_sample_procurement	Endo Rectal Tumor Resection		
+sample	composition	2D Classical Conditionally Reprogrammed Cells		
+sample	composition	2D Modified Conditionally Reprogrammed Cells		
+sample	composition	3D Air-Liquid Interface Organoid		
+sample	composition	3D Neurosphere		
+sample	composition	3D Organoid		
+sample	composition	Adherent Cell Line		
+sample	biospecimen_laterality	Bilateral		
+sample	biospecimen_laterality	Left		
+sample	biospecimen_laterality	Not Reported		
+sample	biospecimen_laterality	Right		
+sample	biospecimen_laterality	Unknown		
+sample	biospecimen_anatomic_site	Abdomen		
+sample	biospecimen_anatomic_site	Abdominal Wall		
+sample	biospecimen_anatomic_site	Acetabulum		
+sample	biospecimen_anatomic_site	Adenoid		
+sample	biospecimen_anatomic_site	Adipose		
+sample	biospecimen_anatomic_site	Adrenal		
+sample	biospecimen_anatomic_site	Alveolar Ridge		
+sample	biospecimen_anatomic_site	Amniotic Fluid		
+sample	biospecimen_anatomic_site	Ampulla Of Vater		
+sample	biospecimen_anatomic_site	Anal Sphincter		
+sample	biospecimen_anatomic_site	Ankle		
+sample	biospecimen_anatomic_site	Anorectum		
+sample	biospecimen_anatomic_site	Antecubital Fossa		
+sample	biospecimen_anatomic_site	Antrum		
+sample	biospecimen_anatomic_site	Anus		
+sample	biospecimen_anatomic_site	Aorta		
+sample	biospecimen_anatomic_site	Aortic Body		
+sample	biospecimen_anatomic_site	Appendix		
+sample	biospecimen_anatomic_site	Aqueous Fluid		
+sample	biospecimen_anatomic_site	Arm		
+sample	biospecimen_anatomic_site	Artery		
+sample	biospecimen_anatomic_site	Ascending Colon		
+sample	biospecimen_anatomic_site	Ascending Colon Hepatic Flexure		
+sample	biospecimen_anatomic_site	Auditory Canal		
+sample	biospecimen_anatomic_site	Autonomic Nervous System		
+sample	biospecimen_anatomic_site	Axilla		
+sample	biospecimen_anatomic_site	Back		
+sample	biospecimen_anatomic_site	Bile Duct		
+sample	biospecimen_anatomic_site	Bladder		
+sample	biospecimen_anatomic_site	Blood		
+sample	biospecimen_anatomic_site	Blood Vessel		
+sample	biospecimen_anatomic_site	Bone		
+sample	biospecimen_anatomic_site	Bone Marrow		
+sample	biospecimen_anatomic_site	Bowel		
+sample	biospecimen_anatomic_site	Brain		
+sample	biospecimen_anatomic_site	Brain Stem		
+sample	biospecimen_anatomic_site	Breast		
+sample	biospecimen_anatomic_site	Broad Ligament		
+sample	biospecimen_anatomic_site	Bronchiole		
+sample	biospecimen_anatomic_site	Bronchus		
+sample	biospecimen_anatomic_site	Brow		
+sample	biospecimen_anatomic_site	Buccal Cavity		
+sample	biospecimen_anatomic_site	Buccal Mucosa		
+sample	biospecimen_anatomic_site	Buttock		
+sample	biospecimen_anatomic_site	Calf		
+sample	biospecimen_anatomic_site	Capillary		
+sample	biospecimen_anatomic_site	Cardia		
+sample	biospecimen_anatomic_site	Carina		
+sample	biospecimen_anatomic_site	Carotid Artery		
+sample	biospecimen_anatomic_site	Carotid Body		
+sample	biospecimen_anatomic_site	Cartilage		
+sample	biospecimen_anatomic_site	Cecum		
+sample	biospecimen_anatomic_site	Cell-Line		
+sample	biospecimen_anatomic_site	Central Nervous System		
+sample	biospecimen_anatomic_site	Cerebellum		
+sample	biospecimen_anatomic_site	Cerebral Cortex		
+sample	biospecimen_anatomic_site	Cerebrospinal Fluid		
+sample	biospecimen_anatomic_site	Cerebrum		
+sample	biospecimen_anatomic_site	Cervical Spine		
+sample	biospecimen_anatomic_site	Cervix		
+sample	biospecimen_anatomic_site	Chest		
+sample	biospecimen_anatomic_site	Chest Wall		
+sample	biospecimen_anatomic_site	Chin		
+sample	biospecimen_anatomic_site	Clavicle		
+sample	biospecimen_anatomic_site	Clitoris		
+sample	biospecimen_anatomic_site	Colon		
+sample	biospecimen_anatomic_site	Colon - Mucosa Only		
+sample	biospecimen_anatomic_site	Common Duct		
+sample	biospecimen_anatomic_site	Conjunctiva		
+sample	biospecimen_anatomic_site	Connective Tissue		
+sample	biospecimen_anatomic_site	Dermal		
+sample	biospecimen_anatomic_site	Descending Colon		
+sample	biospecimen_anatomic_site	Diaphragm		
+sample	biospecimen_anatomic_site	Duodenum		
+sample	biospecimen_anatomic_site	Ear		
+sample	biospecimen_anatomic_site	Ear Canal		
+sample	biospecimen_anatomic_site	Ear, Pinna (External)		
+sample	biospecimen_anatomic_site	Effusion		
+sample	biospecimen_anatomic_site	Elbow		
+sample	biospecimen_anatomic_site	Endocrine Gland		
+sample	biospecimen_anatomic_site	Epididymis		
+sample	biospecimen_anatomic_site	Epidural Space		
+sample	biospecimen_anatomic_site	Esophageal, Distal		
+sample	biospecimen_anatomic_site	Esophageal, Mid		
+sample	biospecimen_anatomic_site	Esophageal, Proximal		
+sample	biospecimen_anatomic_site	Esophagogastric Junction		
+sample	biospecimen_anatomic_site	Esophagus		
+sample	biospecimen_anatomic_site	Esophagus - Mucosa Only		
+sample	biospecimen_anatomic_site	Eye		
+sample	biospecimen_anatomic_site	Fallopian Tube		
+sample	biospecimen_anatomic_site	Femoral Artery		
+sample	biospecimen_anatomic_site	Femoral Vein		
+sample	biospecimen_anatomic_site	Femur		
+sample	biospecimen_anatomic_site	Fibroblasts		
+sample	biospecimen_anatomic_site	Fibula		
+sample	biospecimen_anatomic_site	Finger		
+sample	biospecimen_anatomic_site	Floor Of Mouth		
+sample	biospecimen_anatomic_site	Fluid		
+sample	biospecimen_anatomic_site	Foot		
+sample	biospecimen_anatomic_site	Forearm		
+sample	biospecimen_anatomic_site	Forehead		
+sample	biospecimen_anatomic_site	Foreskin		
+sample	biospecimen_anatomic_site	Frontal Cortex		
+sample	biospecimen_anatomic_site	Frontal Lobe		
+sample	biospecimen_anatomic_site	Fundus Of Stomach		
+sample	biospecimen_anatomic_site	Gallbladder		
+sample	biospecimen_anatomic_site	Ganglia		
+sample	biospecimen_anatomic_site	Gastroesophageal Junction		
+sample	biospecimen_anatomic_site	Gastrointestinal Tract		
+sample	biospecimen_anatomic_site	Groin		
+sample	biospecimen_anatomic_site	Gum		
+sample	biospecimen_anatomic_site	Hand		
+sample	biospecimen_anatomic_site	Hard Palate		
+sample	biospecimen_anatomic_site	Head - Face Or Neck, Nos		
+sample	biospecimen_anatomic_site	Head and Neck		
+sample	biospecimen_anatomic_site	Heart		
+sample	biospecimen_anatomic_site	Hepatic		
+sample	biospecimen_anatomic_site	Hepatic Duct		
+sample	biospecimen_anatomic_site	Hepatic Flexure		
+sample	biospecimen_anatomic_site	Hepatic Vein		
+sample	biospecimen_anatomic_site	Hip		
+sample	biospecimen_anatomic_site	Hippocampus		
+sample	biospecimen_anatomic_site	Humerus		
+sample	biospecimen_anatomic_site	Hypopharynx		
+sample	biospecimen_anatomic_site	Ileum		
+sample	biospecimen_anatomic_site	Ilium		
+sample	biospecimen_anatomic_site	Index Finger		
+sample	biospecimen_anatomic_site	Ischium		
+sample	biospecimen_anatomic_site	Islet Cells		
+sample	biospecimen_anatomic_site	Jaw		
+sample	biospecimen_anatomic_site	Jejunum		
+sample	biospecimen_anatomic_site	Joint		
+sample	biospecimen_anatomic_site	Kidney		
+sample	biospecimen_anatomic_site	Knee		
+sample	biospecimen_anatomic_site	Lacrimal Gland		
+sample	biospecimen_anatomic_site	Large Bowel		
+sample	biospecimen_anatomic_site	Laryngopharynx		
+sample	biospecimen_anatomic_site	Larynx		
+sample	biospecimen_anatomic_site	Leg		
+sample	biospecimen_anatomic_site	Leptomeninges		
+sample	biospecimen_anatomic_site	Ligament		
+sample	biospecimen_anatomic_site	Lip		
+sample	biospecimen_anatomic_site	Liver		
+sample	biospecimen_anatomic_site	Lumbar Spine		
+sample	biospecimen_anatomic_site	Lung		
+sample	biospecimen_anatomic_site	Lymph Node		
+sample	biospecimen_anatomic_site	Lymph Node(s) Axilla		
+sample	biospecimen_anatomic_site	Lymph Node(s) Cervical		
+sample	biospecimen_anatomic_site	Lymph Node(s) Distant		
+sample	biospecimen_anatomic_site	Lymph Node(s) Epitrochlear		
+sample	biospecimen_anatomic_site	Lymph Node(s) Femoral		
+sample	biospecimen_anatomic_site	Lymph Node(s) Hilar		
+sample	biospecimen_anatomic_site	Lymph Node(s) Iliac-Common		
+sample	biospecimen_anatomic_site	Lymph Node(s) Iliac-External		
+sample	biospecimen_anatomic_site	Lymph Node(s) Inguinal		
+sample	biospecimen_anatomic_site	Lymph Node(s) Internal Mammary		
+sample	biospecimen_anatomic_site	Lymph Node(s) Mammary		
+sample	biospecimen_anatomic_site	Lymph Node(s) Mesenteric		
+sample	biospecimen_anatomic_site	Lymph Node(s) Occipital		
+sample	biospecimen_anatomic_site	Lymph Node(s) Paraaortic		
+sample	biospecimen_anatomic_site	Lymph Node(s) Parotid		
+sample	biospecimen_anatomic_site	Lymph Node(s) Pelvic		
+sample	biospecimen_anatomic_site	Lymph Node(s) Popliteal		
+sample	biospecimen_anatomic_site	Lymph Node(s) Regional		
+sample	biospecimen_anatomic_site	Lymph Node(s) Retroperitoneal		
+sample	biospecimen_anatomic_site	Lymph Node(s) Scalene		
+sample	biospecimen_anatomic_site	Lymph Node(s) Splenic		
+sample	biospecimen_anatomic_site	Lymph Node(s) Subclavicular		
+sample	biospecimen_anatomic_site	Lymph Node(s) Submandibular		
+sample	biospecimen_anatomic_site	Lymph Node(s) Supraclavicular		
+sample	biospecimen_anatomic_site	Lymph Nodes(s) Mediastinal		
+sample	biospecimen_anatomic_site	Mandible		
+sample	biospecimen_anatomic_site	Maxilla		
+sample	biospecimen_anatomic_site	Mediastinal Soft Tissue		
+sample	biospecimen_anatomic_site	Mediastinum		
+sample	biospecimen_anatomic_site	Mesentery		
+sample	biospecimen_anatomic_site	Mesothelium		
+sample	biospecimen_anatomic_site	Middle Finger		
+sample	biospecimen_anatomic_site	Mitochondria		
+sample	biospecimen_anatomic_site	Muscle		
+sample	biospecimen_anatomic_site	Nails		
+sample	biospecimen_anatomic_site	Nasal Cavity		
+sample	biospecimen_anatomic_site	Nasal Soft Tissue		
+sample	biospecimen_anatomic_site	Nasopharynx		
+sample	biospecimen_anatomic_site	Neck		
+sample	biospecimen_anatomic_site	Nerve		
+sample	biospecimen_anatomic_site	Nerve(s) Cranial		
+sample	biospecimen_anatomic_site	Occipital Cortex		
+sample	biospecimen_anatomic_site	Ocular Orbits		
+sample	biospecimen_anatomic_site	Omentum		
+sample	biospecimen_anatomic_site	Oral Cavity		
+sample	biospecimen_anatomic_site	Oral Cavity - Mucosa Only		
+sample	biospecimen_anatomic_site	Oropharynx		
+sample	biospecimen_anatomic_site	Other		
+sample	biospecimen_anatomic_site	Ovary		
+sample	biospecimen_anatomic_site	Palate		
+sample	biospecimen_anatomic_site	Pancreas		
+sample	biospecimen_anatomic_site	Paraspinal Ganglion		
+sample	biospecimen_anatomic_site	Parathyroid		
+sample	biospecimen_anatomic_site	Parotid Gland		
+sample	biospecimen_anatomic_site	Patella		
+sample	biospecimen_anatomic_site	Pelvis		
+sample	biospecimen_anatomic_site	Penis		
+sample	biospecimen_anatomic_site	Pericardium		
+sample	biospecimen_anatomic_site	Periorbital Soft Tissue		
+sample	biospecimen_anatomic_site	Peritoneal Cavity		
+sample	biospecimen_anatomic_site	Peritoneum		
+sample	biospecimen_anatomic_site	Pharynx		
+sample	biospecimen_anatomic_site	Pineal		
+sample	biospecimen_anatomic_site	Pineal Gland		
+sample	biospecimen_anatomic_site	Pituitary Gland		
+sample	biospecimen_anatomic_site	Placenta		
+sample	biospecimen_anatomic_site	Pleura		
+sample	biospecimen_anatomic_site	Popliteal Fossa		
+sample	biospecimen_anatomic_site	Prostate		
+sample	biospecimen_anatomic_site	Pylorus		
+sample	biospecimen_anatomic_site	Rectosigmoid Junction		
+sample	biospecimen_anatomic_site	Rectum		
+sample	biospecimen_anatomic_site	Retina		
+sample	biospecimen_anatomic_site	Retro-Orbital Region		
+sample	biospecimen_anatomic_site	Retroperitoneum		
+sample	biospecimen_anatomic_site	Rib		
+sample	biospecimen_anatomic_site	Ring Finger		
+sample	biospecimen_anatomic_site	Round Ligament		
+sample	biospecimen_anatomic_site	Sacrum		
+sample	biospecimen_anatomic_site	Salivary Gland		
+sample	biospecimen_anatomic_site	Scalp		
+sample	biospecimen_anatomic_site	Scapula		
+sample	biospecimen_anatomic_site	Sciatic Nerve		
+sample	biospecimen_anatomic_site	Scrotum		
+sample	biospecimen_anatomic_site	Seminal Vesicle		
+sample	biospecimen_anatomic_site	Shoulder		
+sample	biospecimen_anatomic_site	Sigmoid Colon		
+sample	biospecimen_anatomic_site	Sinus		
+sample	biospecimen_anatomic_site	Sinus(es), Maxillary		
+sample	biospecimen_anatomic_site	Skeletal Muscle		
+sample	biospecimen_anatomic_site	Skin		
+sample	biospecimen_anatomic_site	Skull		
+sample	biospecimen_anatomic_site	Small Bowel		
+sample	biospecimen_anatomic_site	Small Bowel - Mucosa Only		
+sample	biospecimen_anatomic_site	Small Finger		
+sample	biospecimen_anatomic_site	Soft Tissue		
+sample	biospecimen_anatomic_site	Spinal Column		
+sample	biospecimen_anatomic_site	Spinal Cord		
+sample	biospecimen_anatomic_site	Spleen		
+sample	biospecimen_anatomic_site	Splenic Flexure		
+sample	biospecimen_anatomic_site	Sternum		
+sample	biospecimen_anatomic_site	Stomach		
+sample	biospecimen_anatomic_site	Stomach - Mucosa Only		
+sample	biospecimen_anatomic_site	Subcutaneous Tissue		
+sample	biospecimen_anatomic_site	Synovium		
+sample	biospecimen_anatomic_site	Temporal Cortex		
+sample	biospecimen_anatomic_site	Tendon		
+sample	biospecimen_anatomic_site	Testis		
+sample	biospecimen_anatomic_site	Thigh		
+sample	biospecimen_anatomic_site	Thoracic Spine		
+sample	biospecimen_anatomic_site	Thorax		
+sample	biospecimen_anatomic_site	Throat		
+sample	biospecimen_anatomic_site	Thumb		
+sample	biospecimen_anatomic_site	Thymus		
+sample	biospecimen_anatomic_site	Thyroid		
+sample	biospecimen_anatomic_site	Tibia		
+sample	biospecimen_anatomic_site	Tongue		
+sample	biospecimen_anatomic_site	Tonsil		
+sample	biospecimen_anatomic_site	Tonsil (Pharyngeal)		
+sample	biospecimen_anatomic_site	Trachea		
+sample	biospecimen_anatomic_site	Transverse Colon		
+sample	biospecimen_anatomic_site	Trunk		
+sample	biospecimen_anatomic_site	Umbilical Cord		
+sample	biospecimen_anatomic_site	Unknown		
+sample	biospecimen_anatomic_site	Ureter		
+sample	biospecimen_anatomic_site	Urethra		
+sample	biospecimen_anatomic_site	Urinary Tract		
+sample	biospecimen_anatomic_site	Uterus		
+sample	biospecimen_anatomic_site	Uvula		
+sample	biospecimen_anatomic_site	Vagina		
+sample	biospecimen_anatomic_site	Vas Deferens		
+sample	biospecimen_anatomic_site	Vein		
+sample	biospecimen_anatomic_site	Venous		
+sample	biospecimen_anatomic_site	Vertebra		
+sample	biospecimen_anatomic_site	Vulva		
+sample	biospecimen_anatomic_site	White Blood Cells		
+sample	biospecimen_anatomic_site	Wrist		
+sample	composition	Bone Marrow Components		
+sample	composition	Bone Marrow Components NOS		
+sample	composition	Buccal Cells		
+sample	composition	Buffy Coat		
+sample	composition	Cell		
+sample	composition	Control Analyte		
+sample	composition	Derived Cell Line		
+sample	composition	EBV Immortalized		
+sample	composition	Fibroblasts from Bone Marrow Normal		
+sample	composition	Granulocytes		
+sample	composition	Human Original Cells		
+sample	composition	Liquid Suspension Cell Line		
+sample	composition	Lymphocytes		
+sample	composition	Mononuclear Cells from Bone Marrow Normal		
+sample	composition	Not Reported		
+sample	composition	Peripheral Blood Components NOS		
+sample	composition	Peripheral Whole Blood		
+sample	composition	Plasma		
+sample	composition	Pleural Effusion		
+sample	composition	Saliva		
+sample	composition	Serum		
+sample	composition	Solid Tissue		
+sample	composition	Sorted Cells		
+sample	composition	Sputum		
+sample	composition	Unknown		
+sample	composition	Whole Bone Marrow		
+sample	method_of_sample_procurement	Endoscopic Biopsy		
+sample	method_of_sample_procurement	Endoscopic Mucosal Resection (EMR)		
+sample	method_of_sample_procurement	Enucleation		
+sample	method_of_sample_procurement	Excisional Biopsy		
+sample	method_of_sample_procurement	Fine Needle Aspiration		
+sample	method_of_sample_procurement	Full Hysterectomy		
+sample	method_of_sample_procurement	Gross Total Resection		
+sample	method_of_sample_procurement	Hand Assisted Laparoscopic Radical Nephrectomy		
+sample	method_of_sample_procurement	Hysterectomy NOS		
+sample	method_of_sample_procurement	Incisional Biopsy		
+sample	method_of_sample_procurement	Indeterminant		
+sample	method_of_sample_procurement	Laparoscopic Biopsy		
+sample	method_of_sample_procurement	Laparoscopic Partial Nephrectomy		
+sample	method_of_sample_procurement	Laparoscopic Radical Nephrectomy		
+sample	method_of_sample_procurement	Laparoscopic Radical Prostatectomy with Robotics		
+sample	method_of_sample_procurement	Laparoscopic Radical Prostatectomy without Robotics		
+sample	method_of_sample_procurement	Left Hemicolectomy		
+sample	method_of_sample_procurement	Lobectomy		
+sample	method_of_sample_procurement	Local Resection (Exoresection, wall resection)		
+sample	method_of_sample_procurement	Lumpectomy		
+sample	method_of_sample_procurement	Modified Radical Mastectomy		
+sample	method_of_sample_procurement	Needle Biopsy		
+sample	method_of_sample_procurement	Not Reported		
+sample	method_of_sample_procurement	Open Craniotomy		
+sample	method_of_sample_procurement	Open Partial Nephrectomy		
+sample	method_of_sample_procurement	Open Radical Nephrectomy		
+sample	method_of_sample_procurement	Open Radical Prostatectomy		
+sample	method_of_sample_procurement	Orchiectomy		
+sample	method_of_sample_procurement	Other		
+sample	method_of_sample_procurement	Other Surgical Resection		
+sample	method_of_sample_procurement	Pan-Procto Colectomy		
+sample	method_of_sample_procurement	Pancreatectomy		
+sample	method_of_sample_procurement	Paracentesis		
+sample	method_of_sample_procurement	Pneumonectomy		
+sample	method_of_sample_procurement	Right Hemicolectomy		
+sample	method_of_sample_procurement	Sigmoid Colectomy		
+sample	method_of_sample_procurement	Simple Mastectomy		
+sample	method_of_sample_procurement	Subtotal Resection		
+sample	method_of_sample_procurement	Surgical Resection		
+sample	method_of_sample_procurement	Thoracoscopic Biopsy		
+sample	method_of_sample_procurement	Total Colectomy		
+sample	method_of_sample_procurement	Total Mastectomy		
+sample	method_of_sample_procurement	Transplant		
+sample	method_of_sample_procurement	Transurethral resection (TURBT)		
+sample	method_of_sample_procurement	Transverse Colectomy		
+sample	method_of_sample_procurement	Tumor Resection		
+sample	method_of_sample_procurement	Unknown		
+sample	method_of_sample_procurement	Wedge Resection		
+sample	method_of_sample_procurement	Whipple Procedure		
+aliquot	aliquot_container	Not Applicable		
+aliquot	aliquot_container	Other		
+aliquot	aliquot_container	Slide		
+aliquot	aliquot_container	Vial		
+aliquot	analyte_type	Cell Count		
+aliquot	analyte_type	DNA		
+aliquot	analyte_type	Morphology		
+aliquot	analyte_type	Peptide		
+aliquot	analyte_type	Protein		
+aliquot	analyte_type	RNA		
+aliquot	preservation_method	Cryopreserved		
+aliquot	preservation_method	FFPE		
+aliquot	preservation_method	Fresh		
+aliquot	preservation_method	Frozen		
+aliquot	preservation_method	OCT		
+aliquot	preservation_method	Snap Frozen		
+aliquot	preservation_method	Unknown		
+subject	lss_sample_class	1 - Original LSS		
+subject	lss_sample_class	2 - Reserved (less than 2.5km)		
+subject	lss_sample_class	3 - Nagasaki Distal Additions		
+subject	lss_sample_class	4 - NIC - early		
+subject	lss_sample_class	5 - NIC - late		
+subject	lss_census	1 - national census 1950		
+subject	lss_census	2 - ABCC 1st sample census		
+subject	lss_census	3 - ABCC 2nd sample census		
+subject	lss_census	4 - NIC 1953 census (Hiroshima)		
+subject	lss_census	5 - Setai-Daicho (Nagasaki)		
+subject	ahs_subgroup	1 - original(ME-200)		
+subject	ahs_subgroup	2 - extension(ME-200-1)		
+subject	ahs_subgroup	3 - PE-86(ME-200-2)		
+subject	ahs_subgroup	4 - young extension(ME-200-3)		
+subject	ahs_exp_category	1 - proximal (< 2000m), some symptom		
+subject	ahs_exp_category	2 - proximal (< 2000m), no symptom		
+subject	ahs_exp_category	3 - distal (Hiroshima; 3000-3499m, Nagasaki; 3000-3999m)		
+subject	ahs_exp_category	4 - Unexposed		
+subject	f1_sample	1 - F1 mortality original		
+subject	f1_sample	2 - F1 mortality extension		
+subject	f1_sample	3 - F1 BGS original		
+subject	f1_sample	4 - F1 BGS extension		
+subject	f1_sample	5 - F1 GE3 only		
+subject	f1_ind	0 - Not included in F1 cohort		
+subject	f1_ind	1 - Included in F1 cohort		
+inutero	prog	A - AHS sample (ME-200-2)		
+inutero	prog	B - BGS		
+inutero	prog	C - Cyto		
+inutero	prog	G - GE3		
+inutero	prog	I - IQ sample		
+inutero	prog	M - Mortality sample		
+inutero	prog	P - PLC		
+inutero	prog	Y - mail		
+f1	prog	A - AHS sample (ME-200-2)		
+f1	prog	B - BGS		
+f1	prog	C - Cyto		
+f1	prog	G - GE3		
+f1	prog	I - IQ sample		
+f1	prog	M - Mortality sample		
+f1	prog	P - PLC		
+f1	prog	Y - mail		
+exam_diag	icd_rev	7		
+exam_diag	icd_rev	8		
+exam_diag	icd_rev	9		
+exam_diag	icd_rev	10		
+subject	death_icd_rev	7		
+subject	death_icd_rev	8		
+subject	death_icd_rev	9		
+subject	death_icd_rev	10		
+subject	death_icd_grp	10 - Tuberculosis		
+subject	death_icd_grp	99 - Other Infect/Parasit Dis		
+subject	death_icd_grp	140 - Lip		
+subject	death_icd_grp	141 - Tongue		
+subject	death_icd_grp	142 - Salivary Glands (Major)		
+subject	death_icd_grp	143 - Mouth		
+subject	death_icd_grp	146 - Pharynx		
+subject	death_icd_grp	150 - Esophagus		
+subject	death_icd_grp	151 - Stomach		
+subject	death_icd_grp	152 - Small intestine		
+subject	death_icd_grp	153 - Colon		
+subject	death_icd_grp	154 - Rectum		
+subject	death_icd_grp	155 - Liver (primary)		
+subject	death_icd_grp	155 - Liver (NOS)		
+subject	death_icd_grp	156 - Gallbladder  etc.		
+subject	death_icd_grp	157 - Pancreas		
+subject	death_icd_grp	159 - Other Digestive		
+subject	death_icd_grp	159 - Other Digestive		
+subject	death_icd_grp	160 - Nasal cavity  etc.		
+subject	death_icd_grp	161 - Larynx		
+subject	death_icd_grp	162 - Lung		
+subject	death_icd_grp	169 - Other respiratory		
+subject	death_icd_grp	170 - Bone		
+subject	death_icd_grp	171 - Connective Tissue		
+subject	death_icd_grp	172 - Melanoma of the Skin		
+subject	death_icd_grp	173 - Non-melanoma skin		
+subject	death_icd_grp	174 - Breast (Male and Female)		
+subject	death_icd_grp	179 - Uterus NOS		
+subject	death_icd_grp	180 - Cervix Uteri		
+subject	death_icd_grp	182 - Corpus Uteri		
+subject	death_icd_grp	183 - Ovary  etc.		
+subject	death_icd_grp	183 - Ovary  etc.		
+subject	death_icd_grp	184 - Other Female genital		
+subject	death_icd_grp	185 - Prostate		
+subject	death_icd_grp	187 - Other male genital		
+subject	death_icd_grp	188 - Urinary bladder		
+subject	death_icd_grp	189 - Kidney		
+subject	death_icd_grp	189 - Renal Pelvis & Ureter		
+subject	death_icd_grp	189 - Other Urinary		
+subject	death_icd_grp	191 - Brain		
+subject	death_icd_grp	192 - Meninges		
+subject	death_icd_grp	192 - Other nervous system		
+subject	death_icd_grp	193 - Thyroid		
+subject	death_icd_grp	194 - Other primary		
+subject	death_icd_grp	199 - Secondary & unspecified		
+subject	death_icd_grp	200 - Non - Hodgkin's lymphoma		
+subject	death_icd_grp	201 - Hodgkin's lymphoma		
+subject	death_icd_grp	203 - Multiple myeloma		
+subject	death_icd_grp	204 - Acute lymphoid leukemia		
+subject	death_icd_grp	204 - Chronic lymphoid leukemia		
+subject	death_icd_grp	204 - Other/unspec lymphoid leukemia		
+subject	death_icd_grp	205 - Acute myeloid leukemia		
+subject	death_icd_grp	205 - Chronic myeloid leukemia		
+subject	death_icd_grp	205 - Other/unspec myeloid leukemia		
+subject	death_icd_grp	208 - Acute NOS		
+subject	death_icd_grp	208 - Chronic NOS		
+subject	death_icd_grp	208 - Adult T-cell leukemia		
+subject	death_icd_grp	208 - Other/unspec leukemia		
+subject	death_icd_grp	210 - Salivary Gland (Major)		
+subject	death_icd_grp	211 - Stomach		
+subject	death_icd_grp	211 - Colon		
+subject	death_icd_grp	218 - Myoma Uteri		
+subject	death_icd_grp	225 - Brain		
+subject	death_icd_grp	225 - Meninges		
+subject	death_icd_grp	225 - Other nervous system		
+subject	death_icd_grp	226 - Thyroid		
+subject	death_icd_grp	229 - Other benign neoplasm		
+subject	death_icd_grp	240 - Thyroid		
+subject	death_icd_grp	250 - Diabetes		
+subject	death_icd_grp	250 - Other Endocrine		
+subject	death_icd_grp	260 - Nutritional and metabolic		
+subject	death_icd_grp	280 - Blood and Blood-Forming organs		
+subject	death_icd_grp	290 - Mental disorders		
+subject	death_icd_grp	320 - Nerv syst & sense organs		
+subject	death_icd_grp	390 - Rheumatic heart disease		
+subject	death_icd_grp	402 - Hypertensive heart disease		
+subject	death_icd_grp	404 - Other Hypertensive disease		
+subject	death_icd_grp	410 - Coronary heart disease		
+subject	death_icd_grp	429 - Other heart disease		
+subject	death_icd_grp	430 - Stroke		
+subject	death_icd_grp	459 - Other Circulatory disease		
+subject	death_icd_grp	480 - Pneumonia & influenza		
+subject	death_icd_grp	490 - Emphysema & bronchitis		
+subject	death_icd_grp	519 - Other respiratory disease		
+subject	death_icd_grp	531 - Ulcer		
+subject	death_icd_grp	570 - Other liver disease		
+subject	death_icd_grp	571 - Cirrhosis		
+subject	death_icd_grp	579 - Other digestive disease		
+subject	death_icd_grp	580 - Urinary disease		
+subject	death_icd_grp	600 - Genital disease		
+subject	death_icd_grp	780 - Ill-defined conditions  incl. senility		
+subject	death_icd_grp	799 - Other non-external causes		
+subject	death_icd_grp	800 - Accident		
+subject	death_icd_grp	850 - Injury and poisoning (**)		
+subject	death_icd_grp	950 - Suicide		
+subject	death_icd_grp	960 - Homicide & other external		
+subject	death_icd_grp	999 - unknown		
+subject	dose_shloc	1 - Inside		
+subject	dose_shloc	2 - Outside		
+subject	dose_shloc	3 - NIC		
+subject	dose_shloc	4 - Unknown		
+subject	dose_ds02cal	Unexposed (NIC)		
+subject	dose_ds02cal	Dose Known (FIA known SKR known)		
+subject	dose_ds02cal	No selected for DS86 Calculation, ground distance > 3000m		
+subject	dose_ds02cal	Dose Uncalculated (FIA known SKR uncalculated)		
+subject	dose_ds02cal	Dose Unknown (FIA unknown, SKR unknown)		
+subject	dose_ds02cat	0 - InOpen		
+subject	dose_ds02cat	1 - 9P House		
+subject	dose_ds02cat	2 - 9P School		
+subject	dose_ds02cat	3 - Factory		
+subject	dose_ds02cat	4 - 9P Factory		
+subject	dose_ds02cat	5 - Globe		
+subject	dose_ds02cat	6 - Globe Terrain		
+subject	dose_ds02cat	7 - Other House		
+subject	dose_ds02cat	8 - 9P Other		
+subject	dose_ds02cat	9 - Concrete building		
+subject	dose_ds02cat	10 - Other Outside		
+subject	dose_ds02cat	11 - Other Inside		
+subject	dose_ds02cat	12 - NIC		
+subject	dose_ds02cat	13 - No Shielding Information		
+dose	discript	1 - skeleton		
+dose	discript	2 - marrow		
+dose	discript	3 - urinary		
+dose	discript	4 - brain		
+dose	discript	5 - breast		
+dose	discript	6 - eye lense		
+dose	discript	7 - colon		
+dose	discript	8 - liver		
+dose	discript	9 - lungs		
+dose	discript	10 - ovary		
+dose	discript	11 - pancreas		
+dose	discript	12 - stomach		
+dose	discript	13 - testes		
+dose	discript	14 - thyroid		
+dose	discript	15 - uterus		
+dose	discript	16 - fia_kerma		
+dose	discript	17 - skin		
+dose	discript	18 - distal_fia		
+dose	discript	19 - sh_kerma		
+cancer_diag	res	1 - in city		
+cancer_diag	res	2 - in prefecture		
+cancer_diag	res	3 - outside prefecture		
+cancer_diag	res	9 - unknown		
+cancer_diag	city	1 - Hiroshima		
+cancer_diag	city	2 - Nagasaki		
+cancer_diag	motiv	1 - Group examination		
+cancer_diag	motiv	2 - Health examination		
+cancer_diag	motiv	3 - Subjective symptom		
+cancer_diag	motiv	4 - Others		
+cancer_diag	motiv	9 - Unknown		
+cancer_diag	behavior	0 - Benign		
+cancer_diag	behavior	1 - Uncertain whether benign or malignant		
+cancer_diag	behavior	2 - Carcinoma in-situ, Intraepithelial, Non-infiltrative, non-invasive		
+cancer_diag	behavior	3 - Malignant		
+cancer_diag	behavior	6 - Malignant, metastatic site. Secondary site		
+cancer_diag	behavior	9 - Malignant, uncertain		
+cancer_diag	onc_rev	1 - ICD-O 1st		
+cancer_diag	onc_rev	2 - ICD-O 2nd		
+cancer_diag	onc_rev	3 - ICD-O 3rd		
+cancer_diag	icd_grp	10 - Tuberculosis		
+cancer_diag	icd_grp	99 - Other Infect/Parasit Dis		
+cancer_diag	icd_grp	140 - Lip		
+cancer_diag	icd_grp	141 - Tongue		
+cancer_diag	icd_grp	142 - Salivary Glands (Major)		
+cancer_diag	icd_grp	143 - Mouth		
+cancer_diag	icd_grp	146 - Pharynx		
+cancer_diag	icd_grp	150 - Esophagus		
+cancer_diag	icd_grp	151 - Stomach		
+cancer_diag	icd_grp	152 - Small intestine		
+cancer_diag	icd_grp	153 - Colon		
+cancer_diag	icd_grp	154 - Rectum		
+cancer_diag	icd_grp	155 - Liver (primary)		
+cancer_diag	icd_grp	155 - Liver (NOS)		
+cancer_diag	icd_grp	156 - Gallbladder  etc.		
+cancer_diag	icd_grp	157 - Pancreas		
+cancer_diag	icd_grp	159 - Other Digestive		
+cancer_diag	icd_grp	159 - Other Digestive		
+cancer_diag	icd_grp	160 - Nasal cavity  etc.		
+cancer_diag	icd_grp	161 - Larynx		
+cancer_diag	icd_grp	162 - Lung		
+cancer_diag	icd_grp	169 - Other respiratory		
+cancer_diag	icd_grp	170 - Bone		
+cancer_diag	icd_grp	171 - Connective Tissue		
+cancer_diag	icd_grp	172 - Melanoma of the Skin		
+cancer_diag	icd_grp	173 - Non-melanoma skin		
+cancer_diag	icd_grp	174 - Breast (Male and Female)		
+cancer_diag	icd_grp	179 - Uterus NOS		
+cancer_diag	icd_grp	180 - Cervix Uteri		
+cancer_diag	icd_grp	182 - Corpus Uteri		
+cancer_diag	icd_grp	183 - Ovary  etc.		
+cancer_diag	icd_grp	183 - Ovary  etc.		
+cancer_diag	icd_grp	184 - Other Female genital		
+cancer_diag	icd_grp	185 - Prostate		
+cancer_diag	icd_grp	187 - Other male genital		
+cancer_diag	icd_grp	188 - Urinary bladder		
+cancer_diag	icd_grp	189 - Kidney		
+cancer_diag	icd_grp	189 - Renal Pelvis & Ureter		
+cancer_diag	icd_grp	189 - Other Urinary		
+cancer_diag	icd_grp	191 - Brain		
+cancer_diag	icd_grp	192 - Meninges		
+cancer_diag	icd_grp	192 - Other nervous system		
+cancer_diag	icd_grp	193 - Thyroid		
+cancer_diag	icd_grp	194 - Other primary		
+cancer_diag	icd_grp	199 - Secondary & unspecified		
+cancer_diag	icd_grp	200 - Non - Hodgkin's lymphoma		
+cancer_diag	icd_grp	201 - Hodgkin's lymphoma		
+cancer_diag	icd_grp	203 - Multiple myeloma		
+cancer_diag	icd_grp	204 - Acute lymphoid leukemia		
+cancer_diag	icd_grp	204 - Chronic lymphoid leukemia		
+cancer_diag	icd_grp	204 - Other/unspec lymphoid leukemia		
+cancer_diag	icd_grp	205 - Acute myeloid leukemia		
+cancer_diag	icd_grp	205 - Chronic myeloid leukemia		
+cancer_diag	icd_grp	205 - Other/unspec myeloid leukemia		
+cancer_diag	icd_grp	208 - Acute NOS		
+cancer_diag	icd_grp	208 - Chronic NOS		
+cancer_diag	icd_grp	208 - Adult T-cell leukemia		
+cancer_diag	icd_grp	208 - Other/unspec leukemia		
+cancer_diag	icd_grp	210 - Salivary Gland (Major)		
+cancer_diag	icd_grp	211 - Stomach		
+cancer_diag	icd_grp	211 - Colon		
+cancer_diag	icd_grp	218 - Myoma Uteri		
+cancer_diag	icd_grp	225 - Brain		
+cancer_diag	icd_grp	225 - Meninges		
+cancer_diag	icd_grp	225 - Other nervous system		
+cancer_diag	icd_grp	226 - Thyroid		
+cancer_diag	icd_grp	229 - Other benign neoplasm		
+cancer_diag	icd_grp	240 - Thyroid		
+cancer_diag	icd_grp	250 - Diabetes		
+cancer_diag	icd_grp	250 - Other Endocrine		
+cancer_diag	icd_grp	260 - Nutritional and metabolic		
+cancer_diag	icd_grp	280 - Blood and Blood-Forming organs		
+cancer_diag	icd_grp	290 - Mental disorders		
+cancer_diag	icd_grp	320 - Nerv syst & sense organs		
+cancer_diag	icd_grp	390 - Rheumatic heart disease		
+cancer_diag	icd_grp	402 - Hypertensive heart disease		
+cancer_diag	icd_grp	404 - Other Hypertensive disease		
+cancer_diag	icd_grp	410 - Coronary heart disease		
+cancer_diag	icd_grp	429 - Other heart disease		
+cancer_diag	icd_grp	430 - Stroke		
+cancer_diag	icd_grp	459 - Other Circulatory disease		
+cancer_diag	icd_grp	480 - Pneumonia & influenza		
+cancer_diag	icd_grp	490 - Emphysema & bronchitis		
+cancer_diag	icd_grp	519 - Other respiratory disease		
+cancer_diag	icd_grp	531 - Ulcer		
+cancer_diag	icd_grp	570 - Other liver disease		
+cancer_diag	icd_grp	571 - Cirrhosis		
+cancer_diag	icd_grp	579 - Other digestive disease		
+cancer_diag	icd_grp	580 - Urinary disease		
+cancer_diag	icd_grp	600 - Genital disease		
+cancer_diag	icd_grp	780 - Ill-defined conditions  incl. senility		
+cancer_diag	icd_grp	799 - Other non-external causes		
+cancer_diag	icd_grp	800 - Accident		
+cancer_diag	icd_grp	850 - Injury and poisoning (**)		
+cancer_diag	icd_grp	950 - Suicide		
+cancer_diag	icd_grp	960 - Homicide & other external		
+cancer_diag	icd_grp	999 - unknown		
+cancer_diag	machi	1		
+cancer_diag	machi	2		
+cancer_diag	machi	3		
+cancer_diag	machi	4		
+cancer_diag	machi	5		
+cancer_diag	machi	6		
+cancer_diag	machi	7		
+cancer_diag	machi	8		
+cancer_diag	machi	9		
+cancer_diag	machi	10		
+cancer_diag	machi	11		
+cancer_diag	machi	12		
+cancer_diag	machi	13		
+cancer_diag	machi	14		
+cancer_diag	machi	15		
+cancer_diag	machi	16		
+cancer_diag	machi	17		
+cancer_diag	machi	18		
+cancer_diag	machi	19		
+cancer_diag	machi	20		
+cancer_diag	machi	21		
+cancer_diag	machi	22		
+cancer_diag	machi	23		
+cancer_diag	machi	24		
+cancer_diag	machi	25		
+cancer_diag	machi	26		
+cancer_diag	machi	27		
+cancer_diag	machi	28		
+cancer_diag	machi	29		
+cancer_diag	machi	30		
+cancer_diag	machi	31		
+cancer_diag	machi	32		
+cancer_diag	machi	33		
+cancer_diag	machi	34		
+cancer_diag	machi	35		
+cancer_diag	machi	36		
+cancer_diag	machi	37		
+cancer_diag	machi	38		
+cancer_diag	machi	39		
+cancer_diag	machi	40		
+cancer_diag	machi	41		
+cancer_diag	machi	42		
+cancer_diag	machi	43		
+cancer_diag	machi	44		
+cancer_diag	machi	45		
+cancer_diag	machi	46		
+cancer_diag	machi	47		
+cancer_diag	machi	48		
+cancer_diag	machi	49		
+cancer_diag	machi	50		
+cancer_diag	machi	51		
+cancer_diag	machi	52		
+cancer_diag	machi	53		
+cancer_diag	machi	54		
+cancer_diag	machi	55		
+cancer_diag	machi	56		
+cancer_diag	machi	57		
+cancer_diag	machi	58		
+cancer_diag	machi	59		
+cancer_diag	machi	60		
+cancer_diag	machi	61		
+cancer_diag	machi	62		
+cancer_diag	machi	63		
+cancer_diag	machi	64		
+cancer_diag	machi	65		
+cancer_diag	machi	66		
+cancer_diag	machi	67		
+cancer_diag	machi	68		
+cancer_diag	machi	69		
+cancer_diag	machi	70		
+cancer_diag	machi	71		
+cancer_diag	machi	72		
+cancer_diag	machi	73		
+cancer_diag	machi	74		
+cancer_diag	machi	75		
+cancer_diag	machi	76		
+cancer_diag	machi	77		
+cancer_diag	machi	78		
+cancer_diag	machi	79		
+cancer_diag	machi	80		
+cancer_diag	machi	81		
+cancer_diag	machi	82		
+cancer_diag	machi	83		
+cancer_diag	machi	84		
+cancer_diag	machi	85		
+cancer_diag	machi	86		
+cancer_diag	machi	87		
+cancer_diag	machi	88		
+cancer_diag	machi	89		
+cancer_diag	machi	90		
+cancer_diag	machi	91		
+cancer_diag	machi	92		
+cancer_diag	machi	93		
+cancer_diag	machi	94		
+cancer_diag	machi	95		
+cancer_diag	machi	96		
+cancer_diag	machi	97		
+cancer_diag	machi	98		
+cancer_diag	machi	99		
+cancer_diag	machi	100		
+cancer_diag	machi	101		
+cancer_diag	machi	102		
+cancer_diag	machi	103		
+cancer_diag	machi	104		
+cancer_diag	machi	105		
+cancer_diag	machi	106		
+cancer_diag	machi	107		
+cancer_diag	machi	108		
+cancer_diag	machi	109		
+cancer_diag	machi	110		
+cancer_diag	machi	111		
+cancer_diag	machi	112		
+cancer_diag	machi	113		
+cancer_diag	machi	114		
+cancer_diag	machi	115		
+cancer_diag	machi	116		
+cancer_diag	machi	117		
+cancer_diag	machi	118		
+cancer_diag	machi	119		
+cancer_diag	machi	120		
+cancer_diag	machi	121		
+cancer_diag	machi	122		
+cancer_diag	machi	123		
+cancer_diag	machi	124		
+cancer_diag	machi	125		
+cancer_diag	machi	126		
+cancer_diag	machi	127		
+cancer_diag	machi	128		
+cancer_diag	machi	129		
+cancer_diag	machi	130		
+cancer_diag	machi	131		
+cancer_diag	machi	132		
+cancer_diag	machi	133		
+cancer_diag	machi	134		
+cancer_diag	machi	135		
+cancer_diag	machi	136		
+cancer_diag	machi	137		
+cancer_diag	machi	138		
+cancer_diag	machi	139		
+cancer_diag	machi	140		
+cancer_diag	machi	141		
+cancer_diag	machi	142		
+cancer_diag	machi	143		
+cancer_diag	machi	144		
+cancer_diag	machi	145		
+cancer_diag	machi	146		
+cancer_diag	machi	147		
+cancer_diag	machi	148		
+cancer_diag	machi	149		
+cancer_diag	machi	150		
+cancer_diag	machi	151		
+cancer_diag	machi	152		
+cancer_diag	machi	153		
+cancer_diag	machi	154		
+cancer_diag	machi	155		
+cancer_diag	machi	156		
+cancer_diag	machi	157		
+cancer_diag	machi	158		
+cancer_diag	machi	159		
+cancer_diag	machi	160		
+cancer_diag	machi	161		
+cancer_diag	machi	162		
+cancer_diag	machi	163		
+cancer_diag	machi	164		
+cancer_diag	machi	165		
+cancer_diag	machi	166		
+cancer_diag	machi	167		
+cancer_diag	machi	168		
+cancer_diag	machi	169		
+cancer_diag	machi	170		
+cancer_diag	machi	171		
+cancer_diag	machi	172		
+cancer_diag	machi	173		
+cancer_diag	machi	174		
+cancer_diag	machi	175		
+cancer_diag	machi	176		
+cancer_diag	machi	177		
+cancer_diag	machi	178		
+cancer_diag	machi	179		
+cancer_diag	machi	180		
+cancer_diag	machi	181		
+cancer_diag	machi	182		
+cancer_diag	machi	183		
+cancer_diag	machi	184		
+cancer_diag	machi	185		
+cancer_diag	machi	186		
+cancer_diag	machi	187		
+cancer_diag	machi	188		
+cancer_diag	machi	189		
+cancer_diag	machi	190		
+cancer_diag	machi	191		
+cancer_diag	machi	192		
+cancer_diag	machi	193		
+cancer_diag	machi	194		
+cancer_diag	machi	195		
+cancer_diag	machi	196		
+cancer_diag	machi	197		
+cancer_diag	machi	198		
+cancer_diag	machi	199		
+cancer_diag	machi	200		
+cancer_diag	machi	201		
+cancer_diag	machi	202		
+cancer_diag	machi	203		
+cancer_diag	machi	204		
+cancer_diag	machi	205		
+cancer_diag	machi	206		
+cancer_diag	machi	207		
+cancer_diag	machi	208		
+cancer_diag	machi	209		
+cancer_diag	machi	210		
+cancer_diag	machi	211		
+cancer_diag	machi	212		
+cancer_diag	machi	213		
+cancer_diag	machi	214		
+cancer_diag	machi	215		
+cancer_diag	machi	216		
+cancer_diag	machi	217		
+cancer_diag	machi	218		
+cancer_diag	machi	219		
+cancer_diag	machi	220		
+cancer_diag	machi	221		
+cancer_diag	machi	222		
+cancer_diag	machi	223		
+cancer_diag	machi	224		
+cancer_diag	machi	225		
+cancer_diag	machi	226		
+cancer_diag	machi	227		
+cancer_diag	machi	228		
+cancer_diag	machi	229		
+cancer_diag	machi	230		
+cancer_diag	machi	231		
+cancer_diag	machi	232		
+cancer_diag	machi	233		
+cancer_diag	machi	234		
+cancer_diag	machi	235		
+cancer_diag	machi	236		
+cancer_diag	machi	237		
+cancer_diag	machi	238		
+cancer_diag	machi	239		
+cancer_diag	machi	240		
+cancer_diag	machi	241		
+cancer_diag	machi	242		
+cancer_diag	machi	243		
+cancer_diag	machi	244		
+cancer_diag	machi	245		
+cancer_diag	machi	246		
+cancer_diag	machi	247		
+cancer_diag	machi	248		
+cancer_diag	machi	249		
+cancer_diag	machi	250		
+cancer_diag	machi	251		
+cancer_diag	machi	252		
+cancer_diag	machi	253		
+cancer_diag	machi	254		
+cancer_diag	machi	255		
+cancer_diag	machi	256		
+cancer_diag	machi	257		
+cancer_diag	machi	258		
+cancer_diag	machi	259		
+cancer_diag	machi	260		
+cancer_diag	machi	261		
+cancer_diag	machi	262		
+cancer_diag	machi	263		
+cancer_diag	machi	264		
+cancer_diag	machi	265		
+cancer_diag	machi	266		
+cancer_diag	machi	267		
+cancer_diag	machi	268		
+cancer_diag	machi	269		
+cancer_diag	machi	270		
+cancer_diag	machi	271		
+cancer_diag	machi	272		
+cancer_diag	machi	273		
+cancer_diag	machi	274		
+cancer_diag	machi	275		
+cancer_diag	machi	276		
+cancer_diag	machi	277		
+cancer_diag	machi	278		
+cancer_diag	machi	279		
+cancer_diag	machi	280		
+cancer_diag	machi	281		
+cancer_diag	machi	282		
+cancer_diag	machi	283		
+cancer_diag	machi	284		
+cancer_diag	machi	285		
+cancer_diag	machi	286		
+cancer_diag	machi	287		
+cancer_diag	machi	288		
+cancer_diag	machi	289		
+cancer_diag	machi	290		
+cancer_diag	machi	291		
+cancer_diag	machi	292		
+cancer_diag	machi	293		
+cancer_diag	machi	294		
+cancer_diag	machi	295		
+cancer_diag	machi	296		
+cancer_diag	machi	297		
+cancer_diag	machi	298		
+cancer_diag	machi	299		
+cancer_diag	machi	300		
+cancer_diag	machi	301		
+cancer_diag	machi	302		
+cancer_diag	machi	303		
+cancer_diag	machi	304		
+cancer_diag	machi	305		
+cancer_diag	machi	306		
+cancer_diag	machi	307		
+cancer_diag	machi	308		
+cancer_diag	machi	309		
+cancer_diag	machi	310		
+cancer_diag	machi	311		
+cancer_diag	machi	312		
+cancer_diag	machi	313		
+cancer_diag	machi	314		
+cancer_diag	machi	315		
+cancer_diag	machi	316		
+cancer_diag	machi	317		
+cancer_diag	machi	318		
+cancer_diag	machi	319		
+cancer_diag	machi	320		
+cancer_diag	machi	321		
+cancer_diag	machi	322		
+cancer_diag	machi	323		
+cancer_diag	machi	324		
+cancer_diag	machi	325		
+cancer_diag	machi	326		
+cancer_diag	machi	327		
+cancer_diag	machi	328		
+cancer_diag	machi	329		
+cancer_diag	machi	330		
+cancer_diag	machi	331		
+cancer_diag	machi	332		
+cancer_diag	machi	333		
+cancer_diag	machi	334		
+cancer_diag	machi	335		
+cancer_diag	machi	336		
+cancer_diag	machi	337		
+cancer_diag	machi	338		
+cancer_diag	machi	339		
+cancer_diag	machi	340		
+cancer_diag	machi	341		
+cancer_diag	machi	342		
+cancer_diag	machi	343		
+cancer_diag	machi	344		
+cancer_diag	machi	345		
+cancer_diag	machi	346		
+cancer_diag	machi	347		
+cancer_diag	machi	348		
+cancer_diag	machi	349		
+cancer_diag	machi	350		
+cancer_diag	machi	351		
+cancer_diag	machi	352		
+cancer_diag	machi	353		
+cancer_diag	machi	354		
+cancer_diag	machi	355		
+cancer_diag	machi	356		
+cancer_diag	machi	357		
+cancer_diag	machi	358		
+cancer_diag	machi	359		
+cancer_diag	machi	360		
+cancer_diag	machi	361		
+cancer_diag	machi	362		
+cancer_diag	machi	363		
+cancer_diag	machi	364		
+cancer_diag	machi	365		
+cancer_diag	machi	366		
+cancer_diag	machi	367		
+cancer_diag	machi	368		
+cancer_diag	machi	369		
+cancer_diag	machi	370		
+cancer_diag	machi	371		
+cancer_diag	machi	372		
+cancer_diag	machi	373		
+cancer_diag	machi	374		
+cancer_diag	machi	375		
+cancer_diag	machi	376		
+cancer_diag	machi	377		
+cancer_diag	machi	378		
+cancer_diag	machi	379		
+cancer_diag	machi	380		
+cancer_diag	machi	381		
+cancer_diag	machi	382		
+cancer_diag	machi	383		
+cancer_diag	machi	384		
+cancer_diag	machi	385		
+cancer_diag	machi	386		
+cancer_diag	machi	387		
+cancer_diag	machi	388		
+cancer_diag	machi	389		
+cancer_diag	machi	390		
+cancer_diag	machi	391		
+cancer_diag	machi	392		
+cancer_diag	machi	393		
+cancer_diag	machi	394		
+cancer_diag	machi	395		
+cancer_diag	machi	396		
+cancer_diag	machi	397		
+cancer_diag	machi	398		
+cancer_diag	machi	399		
+cancer_diag	machi	400		
+cancer_diag	machi	401		
+cancer_diag	machi	402		
+cancer_diag	machi	403		
+cancer_diag	machi	404		
+cancer_diag	machi	405		
+cancer_diag	machi	406		
+cancer_diag	machi	407		
+cancer_diag	machi	408		
+cancer_diag	machi	409		
+cancer_diag	machi	410		
+cancer_diag	machi	411		
+cancer_diag	machi	412		
+cancer_diag	machi	413		
+cancer_diag	machi	414		
+cancer_diag	machi	415		
+cancer_diag	machi	416		
+cancer_diag	machi	417		
+cancer_diag	machi	418		
+cancer_diag	machi	419		
+cancer_diag	machi	420		
+cancer_diag	machi	421		
+cancer_diag	machi	422		
+cancer_diag	machi	423		
+cancer_diag	machi	424		
+cancer_diag	machi	425		
+cancer_diag	machi	426		
+cancer_diag	machi	427		
+cancer_diag	machi	428		
+cancer_diag	machi	429		
+cancer_diag	machi	430		
+cancer_diag	machi	431		
+cancer_diag	machi	432		
+cancer_diag	machi	433		
+cancer_diag	machi	434		
+cancer_diag	machi	435		
+cancer_diag	machi	436		
+cancer_diag	machi	437		
+cancer_diag	machi	438		
+cancer_diag	machi	439		
+cancer_diag	machi	440		
+cancer_diag	machi	441		
+cancer_diag	machi	442		
+cancer_diag	machi	443		
+cancer_diag	machi	444		
+cancer_diag	machi	445		
+cancer_diag	machi	446		
+cancer_diag	machi	447		
+cancer_diag	machi	448		
+cancer_diag	machi	449		
+cancer_diag	machi	450		
+cancer_diag	machi	451		
+cancer_diag	machi	452		
+cancer_diag	machi	453		
+cancer_diag	machi	454		
+cancer_diag	machi	455		
+cancer_diag	machi	456		
+cancer_diag	machi	457		
+cancer_diag	machi	458		
+cancer_diag	machi	459		
+cancer_diag	machi	460		
+cancer_diag	machi	461		
+cancer_diag	machi	462		
+cancer_diag	machi	463		
+cancer_diag	machi	464		
+cancer_diag	machi	465		
+cancer_diag	machi	466		
+cancer_diag	machi	467		
+cancer_diag	machi	468		
+cancer_diag	machi	469		
+cancer_diag	machi	470		
+cancer_diag	machi	471		
+cancer_diag	machi	472		
+cancer_diag	machi	473		
+cancer_diag	machi	474		
+cancer_diag	machi	475		
+cancer_diag	machi	476		
+cancer_diag	machi	477		
+cancer_diag	machi	478		
+cancer_diag	machi	479		
+cancer_diag	machi	480		
+cancer_diag	machi	481		
+cancer_diag	machi	482		
+cancer_diag	machi	483		
+cancer_diag	machi	484		
+cancer_diag	machi	485		
+cancer_diag	machi	486		
+cancer_diag	machi	487		
+cancer_diag	machi	488		
+cancer_diag	machi	489		
+cancer_diag	machi	490		
+cancer_diag	machi	491		
+cancer_diag	machi	492		
+cancer_diag	machi	493		
+cancer_diag	machi	494		
+cancer_diag	machi	495		
+cancer_diag	machi	496		
+cancer_diag	machi	497		
+cancer_diag	machi	498		
+cancer_diag	machi	499		
+cancer_diag	machi	500		
+cancer_diag	machi	501		
+cancer_diag	machi	502		
+cancer_diag	machi	503		
+cancer_diag	machi	504		
+cancer_diag	machi	505		
+cancer_diag	machi	506		
+cancer_diag	machi	507		
+cancer_diag	machi	508		
+cancer_diag	machi	509		
+cancer_diag	machi	510		
+cancer_diag	machi	511		
+cancer_diag	machi	512		
+cancer_diag	machi	513		
+cancer_diag	machi	514		
+cancer_diag	machi	515		
+cancer_diag	machi	516		
+cancer_diag	machi	517		
+cancer_diag	machi	518		
+cancer_diag	machi	519		
+cancer_diag	machi	520		
+cancer_diag	machi	521		
+cancer_diag	machi	522		
+cancer_diag	machi	523		
+cancer_diag	machi	524		
+cancer_diag	machi	525		
+cancer_diag	machi	526		
+cancer_diag	machi	527		
+cancer_diag	machi	528		
+cancer_diag	machi	529		
+cancer_diag	machi	530		
+cancer_diag	machi	531		
+cancer_diag	machi	532		
+cancer_diag	machi	533		
+cancer_diag	machi	534		
+cancer_diag	machi	535		
+cancer_diag	machi	536		
+cancer_diag	machi	537		
+cancer_diag	machi	538		
+cancer_diag	machi	539		
+cancer_diag	machi	540		
+cancer_diag	machi	541		
+cancer_diag	machi	542		
+cancer_diag	machi	543		
+cancer_diag	machi	544		
+cancer_diag	machi	545		
+cancer_diag	machi	546		
+cancer_diag	machi	547		
+cancer_diag	machi	548		
+cancer_diag	machi	549		
+cancer_diag	machi	550		
+cancer_diag	machi	551		
+cancer_diag	machi	552		
+cancer_diag	machi	553		
+cancer_diag	machi	554		
+cancer_diag	machi	555		
+cancer_diag	machi	556		
+cancer_diag	machi	557		
+cancer_diag	machi	558		
+cancer_diag	machi	559		
+cancer_diag	machi	560		
+cancer_diag	machi	561		
+cancer_diag	machi	562		
+cancer_diag	machi	563		
+cancer_diag	machi	564		
+cancer_diag	machi	565		
+cancer_diag	machi	566		
+cancer_diag	machi	567		
+cancer_diag	machi	568		
+cancer_diag	machi	569		
+cancer_diag	machi	570		
+cancer_diag	machi	571		
+cancer_diag	machi	572		
+cancer_diag	machi	573		
+cancer_diag	machi	574		
+cancer_diag	machi	575		
+cancer_diag	machi	576		
+cancer_diag	machi	577		
+cancer_diag	machi	578		
+cancer_diag	machi	579		
+cancer_diag	machi	580		
+cancer_diag	machi	581		
+cancer_diag	machi	582		
+cancer_diag	machi	583		
+cancer_diag	machi	584		
+cancer_diag	machi	585		
+cancer_diag	machi	586		
+cancer_diag	machi	587		
+cancer_diag	machi	588		
+cancer_diag	machi	589		
+cancer_diag	machi	590		
+cancer_diag	machi	591		
+cancer_diag	machi	592		
+cancer_diag	machi	593		
+cancer_diag	machi	594		
+cancer_diag	machi	595		
+cancer_diag	machi	596		
+cancer_diag	machi	597		
+cancer_diag	machi	598		
+cancer_diag	machi	599		
+cancer_diag	machi	600		
+cancer_diag	machi	601		
+cancer_diag	machi	602		
+cancer_diag	machi	603		
+cancer_diag	machi	604		
+cancer_diag	machi	605		
+cancer_diag	machi	606		
+cancer_diag	machi	607		
+cancer_diag	machi	608		
+cancer_diag	machi	609		
+cancer_diag	machi	610		
+cancer_diag	machi	611		
+cancer_diag	machi	612		
+cancer_diag	machi	613		
+cancer_diag	machi	614		
+cancer_diag	machi	615		
+cancer_diag	machi	616		
+cancer_diag	machi	617		
+cancer_diag	machi	618		
+cancer_diag	machi	619		
+cancer_diag	machi	620		
+cancer_diag	machi	621		
+cancer_diag	machi	622		
+cancer_diag	machi	623		
+cancer_diag	machi	624		
+cancer_diag	machi	625		
+cancer_diag	machi	626		
+cancer_diag	machi	627		
+cancer_diag	machi	628		
+cancer_diag	machi	629		
+cancer_diag	machi	630		
+cancer_diag	machi	631		
+cancer_diag	machi	632		
+cancer_diag	machi	633		
+cancer_diag	machi	634		
+cancer_diag	machi	635		
+cancer_diag	machi	636		
+cancer_diag	machi	637		
+cancer_diag	machi	638		
+cancer_diag	machi	639		
+cancer_diag	machi	640		
+cancer_diag	machi	641		
+cancer_diag	machi	642		
+cancer_diag	machi	643		
+cancer_diag	machi	644		
+cancer_diag	machi	645		
+cancer_diag	machi	646		
+cancer_diag	machi	647		
+cancer_diag	machi	648		
+cancer_diag	machi	649		
+cancer_diag	machi	650		
+cancer_diag	machi	651		
+cancer_diag	machi	652		
+cancer_diag	machi	653		
+cancer_diag	machi	654		
+cancer_diag	machi	655		
+cancer_diag	machi	656		
+cancer_diag	machi	657		
+cancer_diag	machi	658		
+cancer_diag	machi	659		
+cancer_diag	machi	660		
+cancer_diag	machi	661		
+cancer_diag	machi	662		
+cancer_diag	machi	663		
+cancer_diag	machi	664		
+cancer_diag	machi	665		
+cancer_diag	machi	666		
+cancer_diag	machi	667		
+cancer_diag	machi	668		
+cancer_diag	machi	669		
+cancer_diag	machi	670		
+cancer_diag	machi	671		
+cancer_diag	machi	672		
+cancer_diag	machi	673		
+cancer_diag	machi	674		
+cancer_diag	machi	675		
+cancer_diag	machi	676		
+cancer_diag	machi	677		
+cancer_diag	machi	678		
+cancer_diag	machi	679		
+cancer_diag	machi	680		
+cancer_diag	machi	681		
+cancer_diag	machi	682		
+cancer_diag	machi	683		
+cancer_diag	machi	684		
+cancer_diag	machi	685		
+cancer_diag	machi	686		
+cancer_diag	machi	687		
+cancer_diag	machi	688		
+cancer_diag	machi	689		
+cancer_diag	machi	690		
+cancer_diag	machi	691		
+cancer_diag	machi	692		
+cancer_diag	machi	693		
+cancer_diag	machi	694		
+cancer_diag	machi	695		
+cancer_diag	machi	696		
+cancer_diag	machi	697		
+cancer_diag	machi	698		
+cancer_diag	machi	699		
+cancer_diag	machi	700		
+cancer_diag	machi	701		
+cancer_diag	machi	702		
+cancer_diag	machi	703		
+cancer_diag	machi	704		
+cancer_diag	machi	705		
+cancer_diag	machi	706		
+cancer_diag	machi	707		
+cancer_diag	machi	708		
+cancer_diag	machi	709		
+cancer_diag	machi	710		
+cancer_diag	machi	711		
+cancer_diag	machi	712		
+cancer_diag	machi	713		
+cancer_diag	machi	714		
+cancer_diag	machi	715		
+cancer_diag	machi	716		
+cancer_diag	machi	717		
+cancer_diag	machi	718		
+cancer_diag	machi	719		
+cancer_diag	machi	720		
+cancer_diag	machi	721		
+cancer_diag	machi	722		
+cancer_diag	machi	723		
+cancer_diag	machi	724		
+cancer_diag	machi	725		
+cancer_diag	machi	726		
+cancer_diag	machi	727		
+cancer_diag	machi	728		
+cancer_diag	machi	729		
+cancer_diag	machi	730		
+cancer_diag	machi	731		
+cancer_diag	machi	732		
+cancer_diag	machi	733		
+cancer_diag	machi	734		
+cancer_diag	machi	735		
+cancer_diag	machi	736		
+cancer_diag	machi	737		
+cancer_diag	machi	738		
+cancer_diag	machi	739		
+cancer_diag	machi	740		
+cancer_diag	machi	741		
+cancer_diag	machi	742		
+cancer_diag	machi	743		
+cancer_diag	machi	744		
+cancer_diag	machi	745		
+cancer_diag	machi	746		
+cancer_diag	machi	747		
+cancer_diag	machi	748		
+cancer_diag	machi	749		
+cancer_diag	machi	750		
+cancer_diag	machi	751		
+cancer_diag	machi	752		
+cancer_diag	machi	753		
+cancer_diag	machi	754		
+cancer_diag	machi	755		
+cancer_diag	machi	756		
+cancer_diag	machi	757		
+cancer_diag	machi	758		
+cancer_diag	machi	759		
+cancer_diag	machi	760		
+cancer_diag	machi	761		
+cancer_diag	machi	762		
+cancer_diag	machi	763		
+cancer_diag	machi	764		
+cancer_diag	machi	765		
+cancer_diag	machi	766		
+cancer_diag	machi	767		
+cancer_diag	machi	768		
+cancer_diag	machi	769		
+cancer_diag	machi	770		
+cancer_diag	machi	771		
+cancer_diag	machi	772		
+cancer_diag	machi	773		
+cancer_diag	machi	774		
+cancer_diag	machi	775		
+cancer_diag	machi	776		
+cancer_diag	machi	777		
+cancer_diag	machi	778		
+cancer_diag	machi	779		
+cancer_diag	machi	780		
+cancer_diag	machi	781		
+cancer_diag	machi	782		
+cancer_diag	machi	783		
+cancer_diag	machi	784		
+cancer_diag	machi	785		
+cancer_diag	machi	786		
+cancer_diag	machi	787		
+cancer_diag	machi	788		
+cancer_diag	machi	789		
+cancer_diag	machi	790		
+cancer_diag	machi	791		
+cancer_diag	machi	792		
+cancer_diag	machi	793		
+cancer_diag	machi	794		
+cancer_diag	machi	795		
+cancer_diag	machi	796		
+cancer_diag	machi	797		
+cancer_diag	machi	798		
+cancer_diag	machi	799		
+cancer_diag	machi	800		
+cancer_diag	machi	801		
+cancer_diag	machi	802		
+cancer_diag	machi	803		
+cancer_diag	machi	804		
+cancer_diag	machi	805		
+cancer_diag	machi	806		
+cancer_diag	machi	807		
+cancer_diag	machi	808		
+cancer_diag	machi	809		
+cancer_diag	machi	810		
+cancer_diag	machi	811		
+cancer_diag	machi	812		
+cancer_diag	machi	813		
+cancer_diag	machi	814		
+cancer_diag	machi	815		
+cancer_diag	machi	816		
+cancer_diag	machi	817		
+cancer_diag	machi	818		
+cancer_diag	machi	819		
+cancer_diag	machi	820		
+cancer_diag	machi	821		
+cancer_diag	machi	822		
+cancer_diag	machi	823		
+cancer_diag	machi	824		
+cancer_diag	machi	825		
+cancer_diag	machi	826		
+cancer_diag	machi	827		
+cancer_diag	machi	828		
+cancer_diag	machi	829		
+cancer_diag	machi	830		
+cancer_diag	machi	831		
+cancer_diag	machi	832		
+cancer_diag	machi	833		
+cancer_diag	machi	834		
+cancer_diag	machi	835		
+cancer_diag	machi	836		
+cancer_diag	machi	837		
+cancer_diag	machi	838		
+cancer_diag	machi	839		
+cancer_diag	machi	840		
+cancer_diag	machi	841		
+cancer_diag	machi	842		
+cancer_diag	machi	843		
+cancer_diag	machi	844		
+cancer_diag	machi	845		
+cancer_diag	machi	846		
+cancer_diag	machi	847		
+cancer_diag	machi	848		
+cancer_diag	machi	849		
+cancer_diag	machi	850		
+cancer_diag	machi	851		
+cancer_diag	machi	852		
+cancer_diag	machi	853		
+cancer_diag	machi	854		
+cancer_diag	machi	855		
+cancer_diag	machi	856		
+cancer_diag	machi	857		
+cancer_diag	machi	858		
+cancer_diag	machi	859		
+cancer_diag	machi	860		
+cancer_diag	machi	861		
+cancer_diag	machi	862		
+cancer_diag	machi	863		
+cancer_diag	machi	864		
+cancer_diag	machi	865		
+cancer_diag	machi	866		
+cancer_diag	machi	867		
+cancer_diag	machi	868		
+cancer_diag	machi	869		
+cancer_diag	machi	870		
+cancer_diag	machi	871		
+cancer_diag	machi	872		
+cancer_diag	machi	873		
+cancer_diag	machi	874		
+cancer_diag	machi	875		
+cancer_diag	machi	876		
+cancer_diag	machi	877		
+cancer_diag	machi	878		
+cancer_diag	machi	879		
+cancer_diag	machi	880		
+cancer_diag	machi	881		
+cancer_diag	machi	882		
+cancer_diag	machi	883		
+cancer_diag	machi	884		
+cancer_diag	machi	885		
+cancer_diag	machi	886		
+cancer_diag	machi	887		
+cancer_diag	machi	888		
+cancer_diag	machi	889		
+cancer_diag	machi	890		
+cancer_diag	machi	891		
+cancer_diag	machi	892		
+cancer_diag	machi	893		
+cancer_diag	machi	894		
+cancer_diag	machi	895		
+cancer_diag	machi	896		
+cancer_diag	machi	897		
+cancer_diag	machi	898		
+cancer_diag	machi	899		
+cancer_diag	machi	900		
+cancer_diag	machi	901		
+cancer_diag	machi	902		
+cancer_diag	machi	903		
+cancer_diag	machi	904		
+cancer_diag	machi	905		
+cancer_diag	machi	906		
+cancer_diag	machi	907		
+cancer_diag	machi	908		
+cancer_diag	machi	909		
+cancer_diag	machi	910		
+cancer_diag	machi	911		
+cancer_diag	machi	912		
+cancer_diag	machi	913		
+cancer_diag	machi	914		
+cancer_diag	machi	915		
+cancer_diag	machi	916		
+cancer_diag	machi	917		
+cancer_diag	machi	918		
+cancer_diag	machi	919		
+cancer_diag	machi	920		
+cancer_diag	machi	921		
+cancer_diag	machi	922		
+cancer_diag	machi	923		
+cancer_diag	machi	924		
+cancer_diag	machi	925		
+cancer_diag	machi	926		
+cancer_diag	machi	927		
+cancer_diag	machi	928		
+cancer_diag	machi	929		
+cancer_diag	machi	930		
+cancer_diag	machi	931		
+cancer_diag	machi	932		
+cancer_diag	machi	933		
+cancer_diag	machi	934		
+cancer_diag	machi	935		
+cancer_diag	machi	936		
+cancer_diag	machi	937		
+cancer_diag	machi	938		
+cancer_diag	machi	939		
+cancer_diag	machi	940		
+cancer_diag	machi	941		
+cancer_diag	machi	942		
+cancer_diag	machi	943		
+cancer_diag	machi	944		
+cancer_diag	machi	945		
+cancer_diag	machi	946		
+cancer_diag	machi	947		
+cancer_diag	machi	948		
+cancer_diag	machi	949		
+cancer_diag	machi	950		
+cancer_diag	machi	951		
+cancer_diag	machi	952		
+cancer_diag	machi	953		
+cancer_diag	machi	954		
+cancer_diag	machi	955		
+cancer_diag	machi	956		
+cancer_diag	machi	957		
+cancer_diag	machi	958		
+cancer_diag	machi	959		
+cancer_diag	machi	960		
+cancer_diag	machi	961		
+cancer_diag	machi	962		
+cancer_diag	machi	963		
+cancer_diag	machi	964		
+cancer_diag	machi	965		
+cancer_diag	machi	966		
+cancer_diag	machi	967		
+cancer_diag	machi	968		
+cancer_diag	machi	969		
+cancer_diag	machi	970		
+cancer_diag	machi	971		
+cancer_diag	machi	972		
+cancer_diag	machi	973		
+cancer_diag	machi	974		
+cancer_diag	machi	975		
+cancer_diag	machi	976		
+cancer_diag	machi	977		
+cancer_diag	machi	978		
+cancer_diag	machi	979		
+cancer_diag	machi	980		
+cancer_diag	machi	981		
+cancer_diag	machi	982		
+cancer_diag	machi	983		
+cancer_diag	machi	984		
+cancer_diag	machi	985		
+cancer_diag	machi	986		
+cancer_diag	machi	987		
+cancer_diag	machi	988		
+cancer_diag	machi	989		
+cancer_diag	machi	990		
+cancer_diag	machi	991		
+cancer_diag	machi	992		
+cancer_diag	machi	993		
+cancer_diag	machi	994		
+cancer_diag	machi	995		
+cancer_diag	machi	996		
+cancer_diag	machi	997		
+cancer_diag	machi	998		
+cancer_diag	machi	999		
+cancer_diag	machi	1000		
+cancer_diag	machi	1001		
+cancer_diag	machi	1002		
+cancer_diag	machi	1003		
+cancer_diag	machi	1004		
+cancer_diag	machi	1006		
+cancer_diag	machi	1007		
+cancer_diag	machi	1008		
+cancer_diag	machi	1009		
+cancer_diag	machi	1010		
+cancer_diag	machi	1011		
+cancer_diag	machi	1012		
+cancer_diag	machi	1013		
+cancer_diag	machi	1014		
+cancer_diag	machi	1015		
+cancer_diag	machi	1016		
+cancer_diag	machi	1017		
+cancer_diag	machi	1018		
+cancer_diag	machi	1019		
+cancer_diag	machi	1020		
+cancer_diag	machi	1021		
+cancer_diag	machi	1022		
+cancer_diag	machi	1023		
+cancer_diag	machi	1024		
+cancer_diag	machi	1025		
+cancer_diag	machi	1026		
+cancer_diag	machi	1027		
+cancer_diag	machi	1028		
+cancer_diag	machi	1029		
+cancer_diag	machi	1030		
+cancer_diag	machi	1031		
+cancer_diag	machi	1032		
+cancer_diag	machi	1033		
+cancer_diag	machi	1034		
+cancer_diag	machi	1035		
+cancer_diag	machi	1036		
+cancer_diag	machi	1037		
+cancer_diag	machi	1038		
+cancer_diag	machi	1039		
+cancer_diag	machi	1040		
+cancer_diag	machi	1041		
+cancer_diag	machi	1042		
+cancer_diag	machi	1043		
+cancer_diag	machi	1044		
+cancer_diag	machi	1045		
+cancer_diag	machi	1046		
+cancer_diag	machi	1047		
+cancer_diag	machi	1048		
+cancer_diag	machi	1049		
+cancer_diag	machi	1050		
+cancer_diag	machi	1051		
+cancer_diag	machi	1052		
+cancer_diag	machi	1053		
+cancer_diag	machi	1054		
+cancer_diag	machi	1055		
+cancer_diag	machi	1056		
+cancer_diag	machi	1057		
+cancer_diag	machi	1058		
+cancer_diag	machi	1059		
+cancer_diag	machi	1060		
+cancer_diag	machi	1061		
+cancer_diag	machi	1062		
+cancer_diag	machi	1063		
+cancer_diag	machi	1064		
+cancer_diag	machi	1065		
+cancer_diag	machi	1066		
+cancer_diag	machi	1067		
+cancer_diag	machi	1068		
+cancer_diag	machi	1069		
+cancer_diag	machi	1070		
+cancer_diag	machi	1071		
+cancer_diag	machi	1072		
+cancer_diag	machi	1073		
+cancer_diag	machi	1074		
+cancer_diag	machi	1075		
+cancer_diag	machi	1076		
+cancer_diag	machi	1077		
+cancer_diag	machi	1078		
+cancer_diag	machi	1079		
+cancer_diag	machi	1080		
+cancer_diag	machi	1081		
+cancer_diag	machi	1082		
+cancer_diag	machi	1083		
+cancer_diag	machi	1084		
+cancer_diag	machi	1085		
+cancer_diag	machi	1086		
+cancer_diag	machi	1087		
+cancer_diag	machi	1088		
+cancer_diag	machi	1089		
+cancer_diag	machi	1090		
+cancer_diag	machi	1091		
+cancer_diag	machi	1092		
+cancer_diag	machi	1093		
+cancer_diag	machi	1094		
+cancer_diag	machi	1095		
+cancer_diag	machi	1096		
+cancer_diag	machi	1097		
+cancer_diag	machi	1098		
+cancer_diag	machi	1099		
+cancer_diag	machi	1100		
+cancer_diag	machi	1101		
+cancer_diag	machi	1102		
+cancer_diag	machi	1103		
+cancer_diag	machi	1104		
+cancer_diag	machi	1105		
+cancer_diag	machi	1106		
+cancer_diag	machi	1107		
+cancer_diag	machi	1108		
+cancer_diag	machi	1109		
+cancer_diag	machi	1110		
+cancer_diag	machi	1111		
+cancer_diag	machi	1112		
+cancer_diag	machi	1113		
+cancer_diag	machi	1114		
+cancer_diag	machi	1115		
+cancer_diag	machi	1116		
+cancer_diag	machi	1117		
+cancer_diag	machi	1118		
+cancer_diag	machi	1119		
+cancer_diag	machi	1901		
+cancer_diag	machi	1902		
+cancer_diag	machi	1903		
+cancer_diag	machi	1904		
+cancer_diag	machi	1905		
+cancer_diag	machi	1906		
+cancer_diag	machi	1907		
+cancer_diag	machi	1908		
+cancer_diag	machi	2000		
+cancer_diag	machi	2100		
+cancer_diag	machi	2200		
+cancer_diag	machi	2300		
+cancer_diag	machi	2400		
+cancer_diag	machi	2500		
+cancer_diag	machi	2600		
+cancer_diag	machi	2700		
+cancer_diag	machi	2800		
+cancer_diag	machi	2900		
+cancer_diag	machi	3000		
+cancer_diag	machi	3002		
+cancer_diag	machi	3003		
+cancer_diag	machi	3005		
+cancer_diag	machi	3006		
+cancer_diag	machi	3007		
+cancer_diag	machi	3009		
+cancer_diag	machi	3010		
+cancer_diag	machi	3011		
+cancer_diag	machi	3013		
+cancer_diag	machi	3014		
+cancer_diag	machi	3015		
+cancer_diag	machi	3016		
+cancer_diag	machi	3017		
+cancer_diag	machi	3018		
+cancer_diag	machi	3019		
+cancer_diag	machi	3020		
+cancer_diag	machi	3030		
+cancer_diag	machi	3100		
+cancer_diag	machi	3101		
+cancer_diag	machi	3102		
+cancer_diag	machi	3103		
+cancer_diag	machi	3104		
+cancer_diag	machi	3105		
+cancer_diag	machi	3106		
+cancer_diag	machi	3107		
+cancer_diag	machi	3200		
+cancer_diag	machi	3201		
+cancer_diag	machi	3202		
+cancer_diag	machi	3203		
+cancer_diag	machi	3204		
+cancer_diag	machi	3300		
+cancer_diag	machi	3301		
+cancer_diag	machi	3302		
+cancer_diag	machi	3304		
+cancer_diag	machi	3305		
+cancer_diag	machi	3309		
+cancer_diag	machi	3310		
+cancer_diag	machi	3311		
+cancer_diag	machi	3312		
+cancer_diag	machi	3313		
+cancer_diag	machi	3400		
+cancer_diag	machi	3401		
+cancer_diag	machi	3402		
+cancer_diag	machi	3403		
+cancer_diag	machi	3500		
+cancer_diag	machi	3503		
+cancer_diag	machi	3504		
+cancer_diag	machi	3505		
+cancer_diag	machi	3506		
+cancer_diag	machi	3507		
+cancer_diag	machi	3508		
+cancer_diag	machi	3509		
+cancer_diag	machi	3510		
+cancer_diag	machi	3511		
+cancer_diag	machi	3512		
+cancer_diag	machi	3513		
+cancer_diag	machi	3600		
+cancer_diag	machi	3601		
+cancer_diag	machi	3602		
+cancer_diag	machi	3604		
+cancer_diag	machi	3605		
+cancer_diag	machi	3606		
+cancer_diag	machi	3700		
+cancer_diag	machi	3701		
+cancer_diag	machi	3702		
+cancer_diag	machi	3703		
+cancer_diag	machi	3800		
+cancer_diag	machi	3801		
+cancer_diag	machi	3802		
+cancer_diag	machi	3803		
+cancer_diag	machi	3805		
+cancer_diag	machi	3806		
+cancer_diag	machi	3807		
+cancer_diag	machi	3808		
+cancer_diag	machi	3810		
+cancer_diag	machi	3900		
+cancer_diag	machi	3901		
+cancer_diag	machi	3902		
+cancer_diag	machi	3903		
+cancer_diag	machi	3904		
+cancer_diag	machi	3905		
+cancer_diag	machi	3906		
+cancer_diag	machi	3907		
+cancer_diag	machi	3908		
+cancer_diag	machi	3909		
+cancer_diag	machi	3910		
+cancer_diag	machi	3911		
+cancer_diag	machi	4000		
+cancer_diag	machi	4001		
+cancer_diag	machi	4002		
+cancer_diag	machi	4100		
+cancer_diag	machi	4101		
+cancer_diag	machi	4102		
+cancer_diag	machi	4103		
+cancer_diag	machi	4104		
+cancer_diag	machi	4105		
+cancer_diag	machi	4200		
+cancer_diag	machi	4201		
+cancer_diag	machi	4202		
+cancer_diag	machi	4300		
+cancer_diag	machi	4301		
+cancer_diag	machi	4302		
+cancer_diag	machi	4303		
+cancer_diag	machi	4304		
+cancer_diag	machi	4306		
+cancer_diag	machi	4307		
+cancer_diag	machi	4400		
+cancer_diag	machi	4401		
+cancer_diag	machi	4402		
+cancer_diag	machi	4403		
+cancer_diag	machi	4500		
+cancer_diag	machi	4501		
+cancer_diag	machi	4502		
+cancer_diag	machi	4503		
+cancer_diag	machi	4504		
+cancer_diag	machi	4505		
+cancer_diag	machi	4506		
+cancer_diag	machi	4507		
+cancer_diag	machi	4508		
+cancer_diag	machi	4509		
+cancer_diag	machi	4600		
+cancer_diag	machi	4700		
+cancer_diag	machi	4800		
+cancer_diag	machi	4900		
+cancer_diag	machi	5000		
+cancer_diag	machi	9001		
+cancer_diag	machi	9002		
+cancer_diag	machi	9003		
+cancer_diag	machi	9004		
+cancer_diag	machi	9005		
+cancer_diag	machi	9006		
+cancer_diag	machi	9007		
+cancer_diag	machi	9008		
+cancer_diag	machi	9009		
+cancer_diag	machi	9010		
+cancer_diag	machi	9011		
+cancer_diag	machi	9012		
+cancer_diag	machi	9013		
+cancer_diag	machi	9014		
+cancer_diag	machi	9015		
+cancer_diag	machi	9016		
+cancer_diag	machi	9017		
+cancer_diag	machi	9018		
+cancer_diag	machi	9019		
+cancer_diag	machi	9020		
+cancer_diag	machi	9021		
+cancer_diag	machi	9022		
+cancer_diag	machi	9023		
+cancer_diag	machi	9024		
+cancer_diag	machi	9025		
+cancer_diag	machi	9026		
+cancer_diag	machi	9027		
+cancer_diag	machi	9028		
+cancer_diag	machi	9029		
+cancer_diag	machi	9030		
+cancer_diag	machi	9031		
+cancer_diag	machi	9032		
+cancer_diag	machi	9033		
+cancer_diag	machi	9034		
+cancer_diag	machi	9035		
+cancer_diag	machi	9036		
+cancer_diag	machi	9037		
+cancer_diag	machi	9038		
+cancer_diag	machi	9039		
+cancer_diag	machi	9040		
+cancer_diag	machi	9041		
+cancer_diag	machi	9042		
+cancer_diag	machi	9043		
+cancer_diag	machi	9044		
+cancer_diag	machi	9045		
+cancer_diag	machi	9046		
+cancer_diag	machi	9047		
+cancer_diag	machi	9101		
+cancer_diag	machi	9102		
+cancer_diag	machi	9103		
+cancer_diag	machi	9104		
+cancer_diag	machi	9105		
+cancer_diag	machi	9106		
+cancer_diag	machi	9107		
+cancer_diag	machi	9108		
+cancer_diag	machi	9109		
+cancer_diag	machi	9110		
+cancer_diag	machi	9111		
+cancer_diag	machi	9112		
+cancer_diag	machi	9113		
+cancer_diag	machi	9114		
+cancer_diag	machi	9115		
+cancer_diag	machi	9116		
+cancer_diag	machi	9117		
+cancer_diag	machi	9118		
+cancer_diag	machi	9119		
+cancer_diag	machi	9120		
+cancer_diag	machi	9600		
+cancer_diag	machi	9800		
+cancer_diag	machi	9995		
+cancer_diag	machi	9996		
+cancer_diag	machi	9997		
+cancer_diag	machi	9998		
+cancer_diag	machi	9999		
+cancer_diag	machi	5001		
+cancer_diag	machi	5002		
+cancer_diag	machi	5003		
+cancer_diag	machi	5004		
+cancer_diag	machi	5005		
+cancer_diag	machi	5006		
+cancer_diag	machi	5007		
+cancer_diag	machi	5008		
+cancer_diag	machi	5009		
+cancer_diag	machi	5010		
+cancer_diag	machi	5011		
+cancer_diag	machi	5012		
+cancer_diag	machi	5013		
+cancer_diag	machi	5014		
+cancer_diag	machi	5015		
+cancer_diag	machi	5016		
+cancer_diag	machi	5017		
+cancer_diag	machi	5018		
+cancer_diag	machi	5019		
+cancer_diag	machi	5020		
+cancer_diag	machi	5021		
+cancer_diag	machi	5022		
+cancer_diag	machi	5023		
+cancer_diag	machi	5024		
+cancer_diag	machi	5025		
+cancer_diag	machi	5026		
+cancer_diag	machi	5027		
+cancer_diag	machi	5028		
+cancer_diag	machi	5029		
+cancer_diag	machi	5030		
+cancer_diag	machi	5031		
+cancer_diag	machi	5032		
+cancer_diag	machi	5033		
+cancer_diag	machi	5034		
+cancer_diag	machi	5035		
+cancer_diag	machi	5036		
+cancer_diag	machi	5037		
+cancer_diag	machi	5038		
+cancer_diag	machi	5039		
+cancer_diag	machi	5040		
+cancer_diag	machi	5041		
+cancer_diag	machi	5042		
+cancer_diag	machi	5043		
+cancer_diag	machi	5044		
+cancer_diag	machi	5045		
+cancer_diag	machi	5046		
+cancer_diag	machi	5047		
+cancer_diag	machi	5048		
+cancer_diag	machi	5049		
+cancer_diag	machi	5050		
+cancer_diag	machi	5051		
+cancer_diag	machi	5052		
+cancer_diag	machi	5053		
+cancer_diag	machi	5054		
+cancer_diag	machi	5055		
+cancer_diag	machi	5056		
+cancer_diag	machi	5057		
+cancer_diag	machi	5058		
+cancer_diag	machi	5059		
+cancer_diag	machi	5060		
+cancer_diag	machi	5061		
+cancer_diag	machi	5062		
+cancer_diag	machi	5063		
+cancer_diag	machi	5064		
+cancer_diag	machi	5065		
+cancer_diag	machi	5066		
+cancer_diag	machi	5067		
+cancer_diag	machi	5068		
+cancer_diag	machi	5069		
+cancer_diag	machi	5070		
+cancer_diag	machi	5071		
+cancer_diag	machi	5072		
+cancer_diag	machi	5073		
+cancer_diag	machi	5074		
+cancer_diag	machi	5075		
+cancer_diag	machi	5076		
+cancer_diag	machi	5077		
+cancer_diag	machi	5078		
+cancer_diag	machi	5079		
+cancer_diag	machi	5080		
+cancer_diag	machi	5081		
+cancer_diag	machi	5082		
+cancer_diag	machi	5083		
+cancer_diag	machi	5084		
+cancer_diag	machi	5085		
+cancer_diag	machi	5086		
+cancer_diag	machi	5087		
+cancer_diag	machi	5088		
+cancer_diag	machi	5089		
+cancer_diag	machi	5090		
+cancer_diag	machi	5091		
+cancer_diag	machi	5092		
+cancer_diag	machi	5093		
+cancer_diag	machi	5094		
+cancer_diag	machi	5095		
+cancer_diag	machi	5096		
+cancer_diag	machi	5097		
+cancer_diag	machi	5098		
+cancer_diag	machi	5099		
+cancer_diag	machi	5100		
+cancer_diag	machi	5101		
+cancer_diag	machi	5102		
+cancer_diag	machi	5103		
+cancer_diag	machi	5104		
+cancer_diag	machi	5105		
+cancer_diag	machi	5106		
+cancer_diag	machi	5107		
+cancer_diag	machi	5108		
+cancer_diag	machi	5109		
+cancer_diag	machi	5110		
+cancer_diag	machi	5111		
+cancer_diag	machi	5112		
+cancer_diag	machi	5113		
+cancer_diag	machi	5114		
+cancer_diag	machi	5115		
+cancer_diag	machi	5116		
+cancer_diag	machi	5117		
+cancer_diag	machi	5118		
+cancer_diag	machi	5119		
+cancer_diag	machi	5120		
+cancer_diag	machi	5121		
+cancer_diag	machi	5122		
+cancer_diag	machi	5123		
+cancer_diag	machi	5124		
+cancer_diag	machi	5125		
+cancer_diag	machi	5126		
+cancer_diag	machi	5127		
+cancer_diag	machi	5128		
+cancer_diag	machi	5129		
+cancer_diag	machi	5130		
+cancer_diag	machi	5131		
+cancer_diag	machi	5132		
+cancer_diag	machi	5133		
+cancer_diag	machi	5134		
+cancer_diag	machi	5135		
+cancer_diag	machi	5136		
+cancer_diag	machi	5137		
+cancer_diag	machi	5138		
+cancer_diag	machi	5139		
+cancer_diag	machi	5140		
+cancer_diag	machi	5141		
+cancer_diag	machi	5142		
+cancer_diag	machi	5143		
+cancer_diag	machi	5144		
+cancer_diag	machi	5145		
+cancer_diag	machi	5146		
+cancer_diag	machi	5147		
+cancer_diag	machi	5148		
+cancer_diag	machi	5149		
+cancer_diag	machi	5150		
+cancer_diag	machi	5151		
+cancer_diag	machi	5152		
+cancer_diag	machi	5153		
+cancer_diag	machi	5154		
+cancer_diag	machi	5155		
+cancer_diag	machi	5156		
+cancer_diag	machi	5157		
+cancer_diag	machi	5158		
+cancer_diag	machi	5159		
+cancer_diag	machi	5160		
+cancer_diag	machi	5161		
+cancer_diag	machi	5162		
+cancer_diag	machi	5163		
+cancer_diag	machi	5164		
+cancer_diag	machi	5165		
+cancer_diag	machi	5166		
+cancer_diag	machi	5167		
+cancer_diag	machi	5168		
+cancer_diag	machi	5169		
+cancer_diag	machi	5170		
+cancer_diag	machi	5171		
+cancer_diag	machi	5172		
+cancer_diag	machi	5173		
+cancer_diag	machi	5174		
+cancer_diag	machi	5175		
+cancer_diag	machi	5176		
+cancer_diag	machi	5177		
+cancer_diag	machi	5178		
+cancer_diag	machi	5179		
+cancer_diag	machi	5180		
+cancer_diag	machi	5181		
+cancer_diag	machi	5182		
+cancer_diag	machi	5183		
+cancer_diag	machi	5184		
+cancer_diag	machi	5185		
+cancer_diag	machi	5186		
+cancer_diag	machi	5187		
+cancer_diag	machi	5188		
+cancer_diag	machi	5189		
+cancer_diag	machi	5190		
+cancer_diag	machi	5191		
+cancer_diag	machi	5192		
+cancer_diag	machi	5193		
+cancer_diag	machi	5194		
+cancer_diag	machi	5195		
+cancer_diag	machi	5196		
+cancer_diag	machi	5197		
+cancer_diag	machi	5198		
+cancer_diag	machi	5199		
+cancer_diag	machi	5200		
+cancer_diag	machi	5201		
+cancer_diag	machi	5202		
+cancer_diag	machi	5203		
+cancer_diag	machi	5204		
+cancer_diag	machi	5205		
+cancer_diag	machi	5206		
+cancer_diag	machi	5207		
+cancer_diag	machi	5208		
+cancer_diag	machi	5209		
+cancer_diag	machi	5210		
+cancer_diag	machi	5211		
+cancer_diag	machi	5212		
+cancer_diag	machi	5213		
+cancer_diag	machi	5214		
+cancer_diag	machi	5215		
+cancer_diag	machi	5216		
+cancer_diag	machi	5217		
+cancer_diag	machi	5218		
+cancer_diag	machi	5219		
+cancer_diag	machi	5220		
+cancer_diag	machi	5221		
+cancer_diag	machi	5222		
+cancer_diag	machi	5223		
+cancer_diag	machi	5224		
+cancer_diag	machi	5225		
+cancer_diag	machi	5226		
+cancer_diag	machi	5227		
+cancer_diag	machi	5228		
+cancer_diag	machi	5229		
+cancer_diag	machi	5230		
+cancer_diag	machi	5231		
+cancer_diag	machi	5232		
+cancer_diag	machi	5233		
+cancer_diag	machi	5234		
+cancer_diag	machi	5235		
+cancer_diag	machi	5236		
+cancer_diag	machi	5237		
+cancer_diag	machi	5238		
+cancer_diag	machi	5239		
+cancer_diag	machi	5240		
+cancer_diag	machi	5241		
+cancer_diag	machi	5242		
+cancer_diag	machi	5243		
+cancer_diag	machi	5244		
+cancer_diag	machi	5245		
+cancer_diag	machi	5246		
+cancer_diag	machi	5247		
+cancer_diag	machi	5248		
+cancer_diag	machi	5249		
+cancer_diag	machi	5250		
+cancer_diag	machi	5251		
+cancer_diag	machi	5252		
+cancer_diag	machi	5253		
+cancer_diag	machi	5254		
+cancer_diag	machi	5255		
+cancer_diag	machi	5256		
+cancer_diag	machi	5257		
+cancer_diag	machi	5258		
+cancer_diag	machi	5259		
+cancer_diag	machi	5260		
+cancer_diag	machi	5261		
+cancer_diag	machi	5262		
+cancer_diag	machi	5263		
+cancer_diag	machi	5264		
+cancer_diag	machi	5265		
+cancer_diag	machi	5266		
+cancer_diag	machi	5267		
+cancer_diag	machi	5268		
+cancer_diag	machi	5269		
+cancer_diag	machi	5270		
+cancer_diag	machi	5271		
+cancer_diag	machi	5272		
+cancer_diag	machi	5273		
+cancer_diag	machi	5274		
+cancer_diag	machi	5275		
+cancer_diag	machi	5276		
+cancer_diag	machi	5277		
+cancer_diag	machi	5278		
+cancer_diag	machi	5279		
+cancer_diag	machi	5280		
+cancer_diag	machi	5281		
+cancer_diag	machi	5282		
+cancer_diag	machi	5283		
+cancer_diag	machi	5284		
+cancer_diag	machi	5285		
+cancer_diag	machi	5286		
+cancer_diag	machi	5287		
+cancer_diag	machi	5288		
+cancer_diag	machi	5289		
+cancer_diag	machi	5290		
+cancer_diag	machi	5291		
+cancer_diag	machi	5292		
+cancer_diag	machi	5293		
+cancer_diag	machi	5294		
+cancer_diag	machi	5295		
+cancer_diag	machi	5296		
+cancer_diag	machi	5297		
+cancer_diag	machi	5298		
+cancer_diag	machi	5299		
+cancer_diag	machi	5300		
+cancer_diag	machi	5301		
+cancer_diag	machi	5302		
+cancer_diag	machi	5303		
+cancer_diag	machi	5304		
+cancer_diag	machi	5305		
+cancer_diag	machi	5306		
+cancer_diag	machi	5307		
+cancer_diag	machi	5308		
+cancer_diag	machi	5309		
+cancer_diag	machi	5310		
+cancer_diag	machi	5311		
+cancer_diag	machi	5312		
+cancer_diag	machi	5313		
+cancer_diag	machi	5314		
+cancer_diag	machi	5315		
+cancer_diag	machi	5316		
+cancer_diag	machi	5317		
+cancer_diag	machi	5318		
+cancer_diag	machi	5319		
+cancer_diag	machi	5320		
+cancer_diag	machi	5321		
+cancer_diag	machi	5322		
+cancer_diag	machi	5323		
+cancer_diag	machi	5324		
+cancer_diag	machi	5325		
+cancer_diag	machi	5326		
+cancer_diag	machi	5327		
+cancer_diag	machi	5328		
+cancer_diag	machi	5329		
+cancer_diag	machi	5330		
+cancer_diag	machi	5331		
+cancer_diag	machi	5332		
+cancer_diag	machi	5333		
+cancer_diag	machi	5334		
+cancer_diag	machi	5335		
+cancer_diag	machi	5336		
+cancer_diag	machi	5337		
+cancer_diag	machi	5338		
+cancer_diag	machi	5339		
+cancer_diag	machi	5340		
+cancer_diag	machi	5341		
+cancer_diag	machi	5342		
+cancer_diag	machi	5343		
+cancer_diag	machi	5344		
+cancer_diag	machi	5345		
+cancer_diag	machi	5346		
+cancer_diag	machi	5347		
+cancer_diag	machi	5348		
+cancer_diag	machi	5349		
+cancer_diag	machi	5350		
+cancer_diag	machi	5351		
+cancer_diag	machi	5352		
+cancer_diag	machi	5353		
+cancer_diag	machi	5354		
+cancer_diag	machi	5355		
+cancer_diag	machi	5356		
+cancer_diag	machi	5357		
+cancer_diag	machi	5358		
+cancer_diag	machi	5359		
+cancer_diag	machi	5360		
+cancer_diag	machi	5361		
+cancer_diag	machi	5362		
+cancer_diag	machi	5363		
+cancer_diag	machi	5364		
+cancer_diag	machi	5365		
+cancer_diag	machi	5366		
+cancer_diag	machi	5367		
+cancer_diag	machi	5368		
+cancer_diag	machi	5369		
+cancer_diag	machi	5370		
+cancer_diag	machi	5371		
+cancer_diag	machi	5372		
+cancer_diag	machi	5373		
+cancer_diag	machi	5374		
+cancer_diag	machi	5375		
+cancer_diag	machi	5376		
+cancer_diag	machi	5377		
+cancer_diag	machi	5378		
+cancer_diag	machi	5379		
+cancer_diag	machi	5380		
+cancer_diag	machi	5381		
+cancer_diag	machi	5382		
+cancer_diag	machi	5383		
+cancer_diag	machi	5384		
+cancer_diag	machi	5385		
+cancer_diag	machi	5386		
+cancer_diag	machi	5387		
+cancer_diag	machi	5388		
+cancer_diag	machi	5389		
+cancer_diag	machi	5390		
+cancer_diag	machi	5391		
+cancer_diag	machi	5392		
+cancer_diag	machi	5393		
+cancer_diag	machi	5394		
+cancer_diag	machi	5395		
+cancer_diag	machi	5396		
+cancer_diag	machi	5397		
+cancer_diag	machi	5398		
+cancer_diag	machi	5399		
+cancer_diag	machi	5400		
+cancer_diag	machi	5401		
+cancer_diag	machi	5402		
+cancer_diag	machi	5403		
+cancer_diag	machi	5404		
+cancer_diag	machi	5405		
+cancer_diag	machi	5406		
+cancer_diag	machi	5407		
+cancer_diag	machi	5408		
+cancer_diag	machi	5409		
+cancer_diag	machi	5410		
+cancer_diag	machi	5411		
+cancer_diag	machi	5412		
+cancer_diag	machi	5413		
+cancer_diag	machi	5414		
+cancer_diag	machi	5415		
+cancer_diag	machi	5416		
+cancer_diag	machi	5417		
+cancer_diag	machi	5418		
+cancer_diag	machi	5419		
+cancer_diag	machi	5420		
+cancer_diag	machi	5421		
+cancer_diag	machi	5422		
+cancer_diag	machi	5423		
+cancer_diag	machi	5424		
+cancer_diag	machi	5425		
+cancer_diag	machi	5426		
+cancer_diag	machi	5427		
+cancer_diag	machi	5428		
+cancer_diag	machi	5429		
+cancer_diag	machi	5430		
+cancer_diag	machi	5431		
+cancer_diag	machi	5432		
+cancer_diag	machi	5433		
+cancer_diag	machi	5434		
+cancer_diag	machi	5435		
+cancer_diag	machi	5436		
+cancer_diag	machi	5437		
+cancer_diag	machi	5438		
+cancer_diag	machi	5439		
+cancer_diag	machi	5440		
+cancer_diag	machi	5441		
+cancer_diag	machi	5442		
+cancer_diag	machi	5443		
+cancer_diag	machi	5444		
+cancer_diag	machi	5445		
+cancer_diag	machi	5446		
+cancer_diag	machi	5447		
+cancer_diag	machi	5448		
+cancer_diag	machi	5449		
+cancer_diag	machi	5450		
+cancer_diag	machi	5451		
+cancer_diag	machi	5452		
+cancer_diag	machi	5453		
+cancer_diag	machi	5454		
+cancer_diag	machi	5455		
+cancer_diag	machi	5456		
+cancer_diag	machi	5457		
+cancer_diag	machi	5458		
+cancer_diag	machi	5459		
+cancer_diag	machi	5460		
+cancer_diag	machi	5461		
+cancer_diag	machi	5462		
+cancer_diag	machi	5463		
+cancer_diag	machi	5464		
+cancer_diag	machi	5465		
+cancer_diag	machi	5466		
+cancer_diag	machi	5467		
+cancer_diag	machi	5468		
+cancer_diag	machi	5469		
+cancer_diag	machi	5470		
+cancer_diag	machi	5471		
+cancer_diag	machi	5472		
+cancer_diag	machi	5473		
+cancer_diag	machi	5474		
+cancer_diag	machi	5475		
+cancer_diag	machi	5476		
+cancer_diag	machi	5477		
+cancer_diag	machi	5478		
+cancer_diag	machi	5479		
+cancer_diag	machi	5480		
+cancer_diag	machi	5481		
+cancer_diag	machi	5482		
+cancer_diag	machi	5483		
+cancer_diag	machi	5484		
+cancer_diag	machi	5485		
+cancer_diag	machi	5486		
+cancer_diag	machi	5487		
+cancer_diag	machi	5488		
+cancer_diag	machi	5489		
+cancer_diag	machi	5490		
+cancer_diag	machi	5491		
+cancer_diag	machi	5492		
+cancer_diag	machi	5493		
+cancer_diag	machi	5494		
+cancer_diag	machi	5495		
+cancer_diag	machi	5496		
+cancer_diag	machi	5497		
+cancer_diag	machi	5498		
+cancer_diag	machi	5499		
+cancer_diag	machi	7000		
+cancer_diag	machi	7100		
+cancer_diag	machi	7200		
+cancer_diag	machi	7300		
+cancer_diag	machi	7400		
+cancer_diag	machi	7500		
+cancer_diag	machi	7600		
+cancer_diag	machi	7700		
+cancer_diag	machi	7701		
+cancer_diag	machi	7702		
+cancer_diag	machi	7703		
+cancer_diag	machi	7704		
+cancer_diag	machi	7800		
+cancer_diag	machi	7801		
+cancer_diag	machi	7802		
+cancer_diag	machi	7803		
+cancer_diag	machi	7900		
+cancer_diag	machi	7901		
+cancer_diag	machi	7902		
+cancer_diag	machi	7903		
+cancer_diag	machi	7904		
+cancer_diag	machi	8000		
+cancer_diag	machi	8001		
+cancer_diag	machi	8002		
+cancer_diag	machi	8003		
+cancer_diag	machi	8004		
+cancer_diag	machi	8005		
+cancer_diag	machi	8006		
+cancer_diag	machi	8007		
+cancer_diag	machi	8008		
+cancer_diag	machi	8009		
+cancer_diag	machi	8010		
+cancer_diag	machi	8011		
+cancer_diag	machi	8012		
+cancer_diag	machi	8013		
+cancer_diag	machi	8100		
+cancer_diag	machi	8101		
+cancer_diag	machi	8102		
+cancer_diag	machi	8103		
+cancer_diag	machi	8200		
+cancer_diag	machi	8201		
+cancer_diag	machi	8202		
+cancer_diag	machi	8203		
+cancer_diag	machi	8205		
+cancer_diag	machi	8206		
+cancer_diag	machi	8207		
+cancer_diag	machi	8208		
+cancer_diag	machi	8209		
+cancer_diag	machi	8210		
+cancer_diag	machi	8211		
+cancer_diag	machi	8212		
+cancer_diag	machi	8213		
+cancer_diag	machi	8214		
+cancer_diag	machi	8215		
+cancer_diag	machi	8216		
+cancer_diag	machi	8300		
+cancer_diag	machi	8301		
+cancer_diag	machi	8302		
+cancer_diag	machi	8303		
+cancer_diag	machi	8400		
+cancer_diag	machi	8401		
+cancer_diag	machi	8402		
+cancer_diag	machi	8403		
+cancer_diag	machi	8404		
+cancer_diag	machi	8405		
+cancer_diag	machi	8406		
+cancer_diag	machi	8407		
+cancer_diag	machi	8408		
+cancer_diag	machi	8409		
+cancer_diag	machi	8410		
+cancer_diag	machi	8411		
+cancer_diag	machi	8412		
+cancer_diag	machi	8413		
+cancer_diag	machi	8414		
+cancer_diag	machi	8415		
+cancer_diag	machi	8416		
+cancer_diag	machi	8500		
+cancer_diag	machi	8501		
+cancer_diag	machi	8502		
+cancer_diag	machi	8503		
+cancer_diag	machi	8504		
+cancer_diag	machi	8505		
+cancer_diag	machi	8506		
+cancer_diag	machi	8507		
+cancer_diag	machi	8508		
+cancer_diag	machi	8509		
+cancer_diag	machi	8510		
+cancer_diag	machi	8511		
+cancer_diag	machi	8601		
+cancer_diag	machi	8602		
+cancer_diag	machi	8603		
+cancer_diag	machi	8604		
+cancer_diag	machi	8605		
+cancer_diag	machi	8606		
+cancer_diag	machi	8800		
+cancer_diag	machi	9000		
+cancer_diag	machi	9991		
+cancer_diag	machi	9992		
+cancer_diag	machi	9993		
+birth	birth_source	60 - 1960 census		
+birth	birth_source	AH - Adult Health Study		
+birth	birth_source	BR - Birth record		
+birth	birth_source	CN - Contact Card		
+birth	birth_source	CR - Cross Index		
+birth	birth_source	DE - Death Certification		
+birth	birth_source	FU - Fuhyo		
+birth	birth_source	G3 - Genetic study (GE-3)		
+birth	birth_source	JS - Residence registry inquiry (regional cancer registry)		
+birth	birth_source	KO - Koseki		
+birth	birth_source	MC - Master File Code		
+birth	birth_source	MF - Master File record		
+birth	birth_source	MO - Mortality		
+birth	birth_source	MQ - Master Sample Questionnaire		
+birth	birth_source	OT - Other		
+birth	birth_source	SK - Death certificate (regional cancer registry)		
+birth	birth_source	TE - Hibakusha Techo		
+birth	birth_source	TI - Tissue Registry Data Base		
+birth	birth_source	TR - Tumor Registry Data Base		
+birth	birth_source	YU - Mail Survey		
+birth	birth_ind	0 - Not use		
+birth	birth_ind	1 - use		
+subject	city	1 - Hiroshima		
+subject	city	2 - Nagasaki		
+subject	sex	1 - Male		
+subject	sex	2 - Female		
+subject	sex	3 - Other		
+subject	sex	4 - Unknown		
